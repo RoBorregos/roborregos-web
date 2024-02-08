@@ -63,6 +63,21 @@ const tryRequire = (imgPath: string) => {
   }
 };
 
+const updateNameQueryParam = (name: string, lastname: string) => {
+  const currentUrl = window.location.href;
+
+  const newQueryParam = `name=${name}%20${lastname}`;
+  let updatedUrl;
+  const questionMark = currentUrl.indexOf("?");
+  if (questionMark !== -1) {
+    updatedUrl = currentUrl.substring(0, questionMark) + "?" + newQueryParam;
+  } else {
+    updatedUrl = currentUrl + "?" + newQueryParam;
+  }
+
+  window.history.pushState({ path: updatedUrl }, "", updatedUrl);
+};
+
 function MembersGrid() {
   const [showModal, setShowModal] = useState(false);
   const [firstLoad, setFirstLoad] = useState(false);
@@ -231,6 +246,8 @@ function MembersGrid() {
               setShowModal(true);
               setMemberIndex(index);
               setActive(member.status !== "inactive");
+              if (!firstLoad) setFirstLoad(true); // Remove the first load flag
+              updateNameQueryParam(member.name, member.lastname);
             }}
           >
             <div className="member-image-container">
@@ -267,7 +284,10 @@ function MembersGrid() {
           type="text"
           className="members-grid-search-bar-input"
           placeholder='Try  "mechanic",  "software",  "Aurora"'
-          onChange={(e) => setSearchBarText(e.target.value)}
+          onChange={(e) => {
+            setSearchBarText(e.target.value);
+            if (!firstLoad) setFirstLoad(true); // Remove the first load flag
+          }}
           value={searchBarText}
         />
       </div>
@@ -288,7 +308,13 @@ function MembersGrid() {
             timeout={200}
             fullHeightHover={false}
             indicators={false}
-            onChange={(next) => setMemberIndex(next)}
+            onChange={(next) => {
+              setMemberIndex(next);
+              updateNameQueryParam(
+                memberList[next].name,
+                memberList[next].lastname
+              );
+            }}
             index={memberIndex}
             startAt={memberIndex}
           >
