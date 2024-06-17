@@ -30,6 +30,11 @@
       "name": "Noah",
       "img_path": "noah-azul.svg",
       "link":"http://www.noahsuzhou.com/"
+    },
+    {
+      "name": "test",
+      "img_path": "pedraza.png",
+      "link":"http://www.test.com/"
     }
   ],
   "packages": [
