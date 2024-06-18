@@ -3,7 +3,7 @@ import React, { Component } from "react";
 import { Navbar, Nav } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import logo from "../../images/white_logo.png";
-import sponsor_logo from "../../images/sponsors/noah.svg";
+import sponsor_logo from "../../images/sponsors/LogoTec.png";
 import "./NavBar.css";
 
 type RouteType = {
