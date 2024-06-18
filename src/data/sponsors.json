@@ -7,29 +7,14 @@
       "link": "https://tec.mx/es"
     },
     {
-      "name": "Amazon Web Services",
-      "img_path": "aws-logo.png",
-      "link": "https://aws.amazon.com/"
-    },
-    {
       "name": "Mitutoyo",
       "img_path": "mitutoyo.png",
       "link": "https://www.mitutoyo.com.mx/"
     },
     {
-      "name": "Pedraza",
-      "img_path": "pedraza.png",
-      "link": "http://pedraza.biz/"
-    },
-    {
       "name": "atb",
       "img_path": "ATB.png",
       "link": "https://www.linkedin.com/in/aurotb/"
-    },
-    {
-      "name": "Noah",
-      "img_path": "noah-azul.svg",
-      "link":"http://www.noahsuzhou.com/"
     }
   ],
   "packages": [
