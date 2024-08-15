@@ -1036,21 +1036,6 @@
             "tags": "CLP, Finances, Logistics, Business, Communication, Candidates, Team building"
         },
         {
-            "id": "95",
-            "name": "Juan Jesús",
-            "lastname": "Ortíz",
-            "status": "active",
-            "role": "Mechanical Design",
-            "subtitle": "",
-            "class": "2022",
-            "semesters": "2",
-            "description": "I'm Juan Jesus, 5th semester student of Mechatronics Engineering, I'm currently a mechanical designer for the team, and I'm very passionate about everything that flies.",
-            "github": "",
-            "github_user": "",
-            "linkedin": "https://www.linkedin.com/in/juanjesusortizvazquez/",
-            "tags": "Mechanics, Structural mechanics, Mechanisms"
-        },
-        {
             "id": "97",
             "name": "David",
             "lastname": "Vázquez",
@@ -1169,21 +1154,6 @@
             "github_user": "",
             "linkedin": "https://www.linkedin.com/in/ángel-antonio-cervantes-0354b7139/",
             "tags": "Electronics, Electrical, Logic electronics, Power electronics, Soccer"
-        },
-        {
-            "id": "105",
-            "name": "Antonio",
-            "lastname": "González",
-            "status": "active",
-            "role": "Software Development",
-            "subtitle": "",
-            "class": "2022",
-            "semesters": "2",
-            "description": "I am Antonio, a 3rd-semester student in Engineering Physics. I partly participated as a programmer in the RoboCup Soccer Lightweight League 2023, developing the ball-sensing system. My passions are Aerodynamics and Physics. In my free time, I enjoy playing the piano.  ",
-            "github": "https://github.com/TonyGzz04",
-            "github_user": "TonyGzz04",
-            "linkedin": "https://www.linkedin.com/in/antonio-gonzalez-041350283/",
-            "tags": "Programming, Software, Programmer, Developer, Algorithms"
         },
         {
             "id": "106",
