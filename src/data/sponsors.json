@@ -4,17 +4,38 @@
     {
       "name": "Tecnológico de Monterrey",
       "img_path": "itesm.png",
-      "link": "https://tec.mx/es"
+      "link": "https://tec.mx/es",
+      "size": "L"
+    },
+    {
+      "name": "Dipole Digital",
+      "img_path": "dipole.png",
+      "link": "https://dipole.digital/",
+      "size": "L"
+    },
+    {
+      "name": "Acuity Brands",
+      "img_path": "acuity.png",
+      "link": "https://www.acuitybrands.com/",
+      "size": "L"
+    },
+    {
+      "name": "Diram",
+      "img_path": "diram.png",
+      "link": "https://www.diram.com/",
+      "size": "M"
     },
     {
       "name": "Mitutoyo",
       "img_path": "mitutoyo.png",
-      "link": "https://www.mitutoyo.com.mx/"
+      "link": "https://www.mitutoyo.com.mx/",
+      "size": "M"
     },
     {
       "name": "atb",
-      "img_path": "ATB.png",
-      "link": "https://www.linkedin.com/in/aurotb/"
+      "img_path": "ATB2.png",
+      "link": "https://www.linkedin.com/in/aurotb/",
+      "size": "M"
     }
   ],
   "packages": [
