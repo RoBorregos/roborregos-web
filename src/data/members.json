@@ -1149,10 +1149,10 @@
             "subtitle": "",
             "class": "2022",
             "semesters": "2",
-            "description": "I'm Angel, I am currently studying the 5th semestre of Mechatronics Engineering. I've been involved in the team as Electronics engineer in the Robocup Soccer Lightweight competition achieving 3rd place at national level.",
-            "github": "",
-            "github_user": "",
-            "linkedin": "https://www.linkedin.com/in/ángel-antonio-cervantes-0354b7139/",
+            "description": "I am Angel, Mechatronics Engineering Student. I am currently involved in navigation tasks. I have been enrolled in many competitions such as RoboCup Soccer and IEEE LARC. I like to workout and play tenis on my free times.",
+            "github": "https://github.com/angelcervant1",
+            "github_user": "angelcervant1",
+            "linkedin": "https://www.linkedin.com/in/angelcervant",
             "tags": "Electronics, Electrical, Logic electronics, Power electronics, Soccer"
         },
         {
@@ -1367,21 +1367,6 @@
         },
         {
             "id": "121",
-            "name": "Angel",
-            "lastname": "Cervantes",
-            "status": "active",
-            "role": "Electronics",
-            "subtitle": "",
-            "class": "2023",
-            "semesters": "8",
-            "description": "I am Angel, Mechatronics Engineering Student. I am currently involved in navigation tasks. I have been enrolled in many competitions such as RoboCup Soccer and IEEE LARC. I like to workout and play tenis on my free times.",
-            "github": "https://github.com/angelcervant1",
-            "github_user": "angelcervant1",
-            "linkedin": "https://www.linkedin.com/in/angelcervant",
-            "tags": "Electronics"
-        },
-        {
-            "id": "122",
             "name": "Gustavo",
             "lastname": "Hidalgo",
             "status": "active",
@@ -1396,7 +1381,7 @@
             "tags": "Mechanical/Electronic"
         },
         {
-            "id": "123",
+            "id": "122",
             "name": "Ximena",
             "lastname": "Trejo",
             "status": "active",
@@ -1411,7 +1396,7 @@
             "tags": "PM, Electronics, PCB, Hardware, Embedded Software, Schematics"
         },
         {
-            "id": "124",
+            "id": "123",
             "name": "Alejandro",
             "lastname": "González",
             "status": "active",
@@ -1426,7 +1411,7 @@
             "tags": "Mechanical Design"
         },
         {
-            "id": "125",
+            "id": "124",
             "name": "Jocelyn",
             "lastname": "Velarde",
             "status": "active",
@@ -1441,7 +1426,7 @@
             "tags": "Programmer, HRI, Vision, Soccer Open League"
         },
         {
-            "id": "126",
+            "id": "125",
             "name": "Gilberto",
             "lastname": "Malagamba",
             "status": "active",
