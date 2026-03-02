@@ -8,18 +8,6 @@
       "size": "L"
     },
     {
-      "name": "Capital One",
-      "img_path": "capital-one.png",
-      "link": "https://www.capitalone.com/",
-      "size": "L"
-    },
-    {
-      "name": "Stanser",
-      "img_path": "stanser.png",
-      "link": "https://www.stanser.com/",
-      "size": "L"
-    },
-    {
       "name": "3D Factory",
       "img_path": "3d-factory.avif",
       "link": "https://3dfactory.mx/",
