@@ -92,7 +92,7 @@ const GoBackButton = () => (
   </div>
 );
 
-const MarkText = () => <div className="mark-text">@2022 RoBorregos</div>;
+const MarkText = () => <div className="mark-text">@2026 RoBorregos</div>;
 
 const Footer = () => {
   const [isViewLarge, setIsViewLarge] = useState(

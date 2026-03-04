@@ -8,34 +8,22 @@
       "size": "L"
     },
     {
-      "name": "Dipole Digital",
-      "img_path": "dipole.png",
-      "link": "https://dipole.digital/",
+      "name": "3D Factory",
+      "img_path": "3d-factory.avif",
+      "link": "https://3dfactory.mx/",
       "size": "L"
     },
     {
-      "name": "Acuity Brands",
-      "img_path": "acuity.png",
-      "link": "https://www.acuitybrands.com/",
+      "name": "Altium",
+      "img_path": "altium.png",
+      "link": "https://www.altium.com/",
       "size": "L"
     },
     {
-      "name": "Diram",
-      "img_path": "diram.png",
-      "link": "https://www.diram.com/",
-      "size": "M"
-    },
-    {
-      "name": "Mitutoyo",
-      "img_path": "mitutoyo.png",
-      "link": "https://www.mitutoyo.com.mx/",
-      "size": "M"
-    },
-    {
-      "name": "atb",
-      "img_path": "ATB2.png",
-      "link": "https://www.linkedin.com/in/aurotb/",
-      "size": "M"
+      "name": "Github",
+      "img_path": "github.png",
+      "link": "https://github.com",
+      "size": "L"
     }
   ],
   "packages": [
