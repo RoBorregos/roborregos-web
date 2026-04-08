@@ -1134,7 +1134,7 @@
             "subtitle": "",
             "class": "2022",
             "semesters": "2",
-            "description": "I am Alejandra Coeto, a Software Developer in Roborregos. I participated in the Robocup Soccer Lightweight competition 2023 and am currently part of the Vision @Home team. I like to face new challenges and look forward to sharing my passion for robotics and programming with the rest of the community.",
+            "description": "I'm a Software Developer in Roborregos and have participated in the Soccer Lightweight competition (2023) and @Home (2024-2026). I was also president from AD24 to FJ25 and have been part of the web development and social responsibility teams. I like to face new challenges and look forward to sharing my passion for robotics and programming with the rest of the community.",
             "github": "https://github.com/Ale-Coeto",
             "github_user": "Ale-Coeto",
             "linkedin": "https://www.linkedin.com/in/alecoeto/",
@@ -1164,7 +1164,7 @@
             "subtitle": "",
             "class": "2022",
             "semesters": "2",
-            "description": "Hi! I'm Oscar, a student currently pursuing a B.S.in Computer Science and Technology (2022 - 2026). I participated in Rescue Maze Jr and was in charge of the control system and computer vision. I am currently working on web development projects inside RoBorregos :0.",
+            "description": "Hi! I'm Oscar, a student currently pursuing a B.S. in Computer Science and Technology (2022 - 2026). Participated in Rescue Maze Jr, @Home (HRI, Integration, HRI PM, Team PM), & web development team. Vicepresident (2025-2026) Feel free to reach out!",
             "github": "https://github.com/Oscar-gg",
             "github_user": "Oscar-gg",
             "linkedin": "https://www.linkedin.com/in/oscar-arreola04/",
@@ -1310,7 +1310,7 @@
             "name": "Gerardo",
             "lastname": "Fregoso",
             "status": "active",
-            "role": "Electronics",
+            "role": "Electronics / Home",
             "subtitle": "",
             "class": "2023",
             "semesters": "3",
@@ -1439,6 +1439,36 @@
             "github_user": "GilMM27",
             "linkedin": "https://www.linkedin.com/in/gilberto-malagamba-montejo-587a23305/",
             "tags": "Programmer, HRI, Vision, Maze, Rescue, Software"
+        },
+        {
+            "id": "126",
+            "name": "Juan",
+            "lastname": "Pablo Gutiérrez García",
+            "status": "active",
+            "role": "@Home vision",
+            "subtitle": "",
+            "class": "2024",
+            "semesters": "",
+            "description": "Hi, I'm Juan Pablo. I participated during the LARC Open 2025 season, and I'm currently working on @Home as part of the computer vision team. I'm passionate about learning new things, get to know new people with different ideas, and trying out new technologies.",
+            "github": "https://github.com/jpgtzg",
+            "github_user": "jpgtzg",
+            "linkedin": "https://www.linkedin.com/in/jpgtzg/",
+            "tags": ""
+        },
+        {
+            "id": "127",
+            "name": "Dana",
+            "lastname": "Elizabeth Torres Estrada",
+            "status": "active",
+            "role": "",
+            "subtitle": "",
+            "class": "2024",
+            "semesters": "",
+            "description": "Hii :p",
+            "github": "",
+            "github_user": "",
+            "linkedin": "",
+            "tags": ""
         }
     ]
 }
