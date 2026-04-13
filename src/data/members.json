@@ -1469,6 +1469,66 @@
             "github_user": "",
             "linkedin": "",
             "tags": ""
+        },
+        {
+            "id": "128",
+            "name": "Brisma",
+            "lastname": "Teresita Alvarez Valdez",
+            "status": "active",
+            "role": "Programmer",
+            "subtitle": "",
+            "class": "",
+            "semesters": "",
+            "description": "Hi, I’m a Data Science and Mathematics student passionate about learning and innovation. I was also a programmer at LARC Open 2025, and I’m currently serving as Director of Logistics, leading project coordination and team operations. I consider myself a hardworking, proactive, and committed individual who enjoys taking on challenges and turning ideas into impactful results.",
+            "github": "https://github.com/https://github.com/brbrbre",
+            "github_user": "https://github.com/brbrbre",
+            "linkedin": "https://www.linkedin.com/in/brisma-alvarez-valdez/",
+            "tags": ""
+        },
+        {
+            "id": "129",
+            "name": "Emil",
+            "lastname": "Winkler Partida",
+            "status": "active",
+            "role": "Home Manipulation",
+            "subtitle": "",
+            "class": "",
+            "semesters": "",
+            "description": "",
+            "github": "https://github.com/emilwinkp",
+            "github_user": "emilwinkp",
+            "linkedin": "https://www.linkedin.com/in/emil-winkler-partida-599469293/",
+            "tags": ""
+        },
+        {
+            "id": "130",
+            "name": "Hector",
+            "lastname": "Eduardo Tovar Mendoza",
+            "status": "active",
+            "role": "@Home",
+            "subtitle": "",
+            "class": "",
+            "semesters": "",
+            "description": "",
+            "github": "https://github.com/htovarm7",
+            "github_user": "htovarm7",
+            "linkedin": "https://www.linkedin.com/in/hectortovarm/",
+            "tags": ""
+        },
+        {
+            "id": "131",
+            "name": "Luis",
+            "lastname": "Benvenuto Valerdi",
+            "status": "active",
+            "role": "@Home HRI/Integration, RoboWeb",
+            "subtitle": "",
+            "class": "",
+            "semesters": "",
+            "description": "Hi, I'm Luis, a Data Science and Mathematics Engineering student. I participated in the Rescue Maze team in 2025, and l am currently collaborating in the @Home competition with the HRI and Integration team. I'm passionate about exploring new ideas, gaining new experiences, and discovering the beauty of life :)",
+            "github": "https://github.com/biweep863",
+            "github_user": "biweep863",
+            "linkedin": "https://www.linkedin.com/in/luis-benvenuto",
+            "tags": ""
         }
     ]
 }
