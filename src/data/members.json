@@ -1546,6 +1546,21 @@
             "tags": ""
         },
         {
+            "id": "135",
+            "name": "Fernando",
+            "lastname": "Hernández Cantú",
+            "status": "active",
+            "role": "Home",
+            "subtitle": "",
+            "class": "",
+            "semesters": "",
+            "description": "I'm a software developer and a student of computer science Engineering. Passionate about web development and robotics competitions, integrating software to create innovative solutions.",
+            "github": "https://github.com/https://github.com/Fernando94654",
+            "github_user": "https://github.com/Fernando94654",
+            "linkedin": "https://www.linkedin.com/in/fernando-hdz-cantu",
+            "tags": ""
+        },
+        {
             "id": "136",
             "name": "Ángela",
             "lastname": "Camila Tite Haro",
@@ -1603,6 +1618,36 @@
             "github": "",
             "github_user": "",
             "linkedin": "https://www.linkedin.com/in/erickflores-m1/",
+            "tags": ""
+        },
+        {
+            "id": "146",
+            "name": "Andrés",
+            "lastname": "Rodríguez Cantú",
+            "status": "active",
+            "role": "Soccer Infrared",
+            "subtitle": "",
+            "class": "",
+            "semesters": "",
+            "description": "Programmer",
+            "github": "https://github.com/TEC-Andres",
+            "github_user": "TEC-Andres",
+            "linkedin": "https://www.linkedin.com/in/andr%C3%A9s-rodr%C3%ADguez-cant%C3%BA-6aa345273?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+            "tags": ""
+        },
+        {
+            "id": "147",
+            "name": "Hans",
+            "lastname": "Enrique Velarde Barrón",
+            "status": "active",
+            "role": "LARC Open",
+            "subtitle": "",
+            "class": "",
+            "semesters": "",
+            "description": "",
+            "github": "",
+            "github_user": "",
+            "linkedin": "",
             "tags": ""
         }
     ]
