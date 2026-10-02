@@ -1,0 +1,470 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-01T19:50:36+00:00",
+  "title": "Design System: RoBorregos",
+  "extensions": {
+    "colorMeta": {
+      "floor": {
+        "role": "neutral",
+        "displayName": "Night Floor",
+        "canonical": "oklch(18.2% 0.004 264)",
+        "tonalRamp": [
+          "oklch(15% 0.004 264)",
+          "oklch(26% 0.004 264)",
+          "oklch(37% 0.004 264)",
+          "oklch(48% 0.004 264)",
+          "oklch(60% 0.004 264)",
+          "oklch(71% 0.004 264)",
+          "oklch(83% 0.004 264)",
+          "oklch(95% 0.004 264)"
+        ]
+      },
+      "floor-raised": {
+        "role": "neutral",
+        "displayName": "Raised Floor",
+        "canonical": "oklch(22.6% 0.007 258)",
+        "tonalRamp": [
+          "oklch(15% 0.007 258)",
+          "oklch(26% 0.007 258)",
+          "oklch(37% 0.007 258)",
+          "oklch(48% 0.007 258)",
+          "oklch(60% 0.007 258)",
+          "oklch(71% 0.007 258)",
+          "oklch(83% 0.007 258)",
+          "oklch(95% 0.007 258)"
+        ]
+      },
+      "seam": {
+        "role": "neutral",
+        "displayName": "Seam",
+        "canonical": "oklch(29.6% 0.008 256)",
+        "tonalRamp": [
+          "oklch(15% 0.008 256)",
+          "oklch(26% 0.008 256)",
+          "oklch(37% 0.008 256)",
+          "oklch(48% 0.008 256)",
+          "oklch(60% 0.008 256)",
+          "oklch(71% 0.008 256)",
+          "oklch(83% 0.008 256)",
+          "oklch(95% 0.008 256)"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Wall Ink",
+        "canonical": "oklch(94.4% 0.004 122)",
+        "tonalRamp": [
+          "oklch(15% 0.004 122)",
+          "oklch(26% 0.004 122)",
+          "oklch(37% 0.004 122)",
+          "oklch(48% 0.004 122)",
+          "oklch(60% 0.004 122)",
+          "oklch(71% 0.004 122)",
+          "oklch(83% 0.004 122)",
+          "oklch(95% 0.004 122)"
+        ]
+      },
+      "ink-muted": {
+        "role": "neutral",
+        "displayName": "Muted Ink",
+        "canonical": "oklch(79.4% 0.008 254)",
+        "tonalRamp": [
+          "oklch(15% 0.008 254)",
+          "oklch(26% 0.008 254)",
+          "oklch(37% 0.008 254)",
+          "oklch(48% 0.008 254)",
+          "oklch(60% 0.008 254)",
+          "oklch(71% 0.008 254)",
+          "oklch(83% 0.008 254)",
+          "oklch(95% 0.008 254)"
+        ]
+      },
+      "ink-faint": {
+        "role": "neutral",
+        "displayName": "Faint Ink",
+        "canonical": "oklch(65.5% 0.012 257)",
+        "tonalRamp": [
+          "oklch(15% 0.012 257)",
+          "oklch(26% 0.012 257)",
+          "oklch(37% 0.012 257)",
+          "oklch(48% 0.012 257)",
+          "oklch(60% 0.012 257)",
+          "oklch(71% 0.012 257)",
+          "oklch(83% 0.012 257)",
+          "oklch(95% 0.012 257)"
+        ]
+      },
+      "hole": {
+        "role": "neutral",
+        "displayName": "Hole Black",
+        "canonical": "oklch(0% 0 0)",
+        "tonalRamp": [
+          "oklch(15% 0 0)",
+          "oklch(26% 0 0)",
+          "oklch(37% 0 0)",
+          "oklch(48% 0 0)",
+          "oklch(60% 0 0)",
+          "oklch(71% 0 0)",
+          "oklch(83% 0 0)",
+          "oklch(95% 0 0)"
+        ]
+      },
+      "on-hole": {
+        "role": "neutral",
+        "displayName": "On-Hole Ink",
+        "canonical": "oklch(94.4% 0.004 122)",
+        "tonalRamp": [
+          "oklch(15% 0.004 122)",
+          "oklch(26% 0.004 122)",
+          "oklch(37% 0.004 122)",
+          "oklch(48% 0.004 122)",
+          "oklch(60% 0.004 122)",
+          "oklch(71% 0.004 122)",
+          "oklch(83% 0.004 122)",
+          "oklch(95% 0.004 122)"
+        ]
+      },
+      "on-hole-muted": {
+        "role": "neutral",
+        "displayName": "On-Hole Muted",
+        "canonical": "oklch(73.9% 0.010 253)",
+        "tonalRamp": [
+          "oklch(15% 0.01 253)",
+          "oklch(26% 0.01 253)",
+          "oklch(37% 0.01 253)",
+          "oklch(48% 0.01 253)",
+          "oklch(60% 0.01 253)",
+          "oklch(71% 0.01 253)",
+          "oklch(83% 0.01 253)",
+          "oklch(95% 0.01 253)"
+        ]
+      },
+      "checkpoint-silver": {
+        "role": "primary",
+        "displayName": "Checkpoint Silver",
+        "canonical": "oklch(79.7% 0.010 258)",
+        "tonalRamp": [
+          "oklch(15% 0.01 258)",
+          "oklch(26% 0.01 258)",
+          "oklch(37% 0.01 258)",
+          "oklch(48% 0.01 258)",
+          "oklch(60% 0.01 258)",
+          "oklch(71% 0.01 258)",
+          "oklch(83% 0.01 258)",
+          "oklch(95% 0.01 258)"
+        ]
+      },
+      "checkpoint-silver-hi": {
+        "role": "primary",
+        "displayName": "Checkpoint Silver Highlight",
+        "canonical": "oklch(88.4% 0.006 255)",
+        "tonalRamp": [
+          "oklch(15% 0.007 258)",
+          "oklch(26% 0.007 258)",
+          "oklch(37% 0.007 258)",
+          "oklch(48% 0.007 258)",
+          "oklch(60% 0.007 258)",
+          "oklch(71% 0.007 258)",
+          "oklch(83% 0.007 258)",
+          "oklch(95% 0.007 258)"
+        ]
+      },
+      "checkpoint-silver-lo": {
+        "role": "primary",
+        "displayName": "Checkpoint Silver Shade",
+        "canonical": "oklch(68.2% 0.011 262)",
+        "tonalRamp": [
+          "oklch(15% 0.011 258)",
+          "oklch(26% 0.011 258)",
+          "oklch(37% 0.011 258)",
+          "oklch(48% 0.011 258)",
+          "oklch(60% 0.011 258)",
+          "oklch(71% 0.011 258)",
+          "oklch(83% 0.011 258)",
+          "oklch(95% 0.011 258)"
+        ]
+      },
+      "here-blue": {
+        "role": "secondary",
+        "displayName": "Jersey Royal Blue",
+        "canonical": "oklch(48.4% 0.207 264)",
+        "tonalRamp": [
+          "oklch(15% 0.207 264)",
+          "oklch(26% 0.207 264)",
+          "oklch(37% 0.207 264)",
+          "oklch(48% 0.207 264)",
+          "oklch(60% 0.207 264)",
+          "oklch(71% 0.207 264)",
+          "oklch(83% 0.207 264)",
+          "oklch(95% 0.207 264)"
+        ]
+      },
+      "here-blue-text": {
+        "role": "secondary",
+        "displayName": "Signal Blue Text",
+        "canonical": "oklch(73.6% 0.119 269)",
+        "tonalRamp": [
+          "oklch(15% 0.119 269)",
+          "oklch(26% 0.119 269)",
+          "oklch(37% 0.119 269)",
+          "oklch(48% 0.119 269)",
+          "oklch(60% 0.119 269)",
+          "oklch(71% 0.119 269)",
+          "oklch(83% 0.119 269)",
+          "oklch(95% 0.119 269)"
+        ]
+      },
+      "victim-red": {
+        "role": "tertiary",
+        "displayName": "Victim Red",
+        "canonical": "oklch(69.2% 0.198 22)",
+        "tonalRamp": [
+          "oklch(15% 0.198 22)",
+          "oklch(26% 0.198 22)",
+          "oklch(37% 0.198 22)",
+          "oklch(48% 0.198 22)",
+          "oklch(60% 0.198 22)",
+          "oklch(71% 0.198 22)",
+          "oklch(83% 0.198 22)",
+          "oklch(95% 0.198 22)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Page titles in the page head; smaller clamp in the Home hero."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Section titles, closing-band calls, year labels, package names."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Row and tile titles, checkpoint labels, flagship and role names."
+      },
+      "lead": {
+        "displayName": "Lead",
+        "purpose": "The paragraph under a display or headline, muted ink, max 58ch."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Reading text with tabular figures."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Buttons, form labels, nav tiles, dates and counts; sentence case."
+      }
+    },
+    "shadows": [
+      {
+        "name": "checkpoint-bevel",
+        "value": "inset 0 1px 0 #d6d9dd, inset 0 -2px 0 #9599a0",
+        "purpose": "Relief of a reflective checkpoint tile; checkpoints only."
+      },
+      {
+        "name": "sheet-lift",
+        "value": "0 30px 80px -20px rgba(0,0,0,0.8)",
+        "purpose": "Modal sheets over a rgba(0,0,0,0.72) scrim; sheets only."
+      },
+      {
+        "name": "focus-halo",
+        "value": "0 0 0 3px rgba(31,79,209,0.25)",
+        "purpose": "Focused inputs and the member search, with a royal-blue border."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-out",
+        "value": "cubic-bezier(0.23, 1, 0.32, 1)",
+        "purpose": "Press feedback, sheet entry, image zoom, checkpoint glint."
+      },
+      {
+        "name": "ease-move",
+        "value": "cubic-bezier(0.77, 0, 0.175, 1)",
+        "purpose": "Robot marker travel between nav tiles (460ms) and down the year rail (420ms)."
+      },
+      {
+        "name": "press",
+        "value": "transform: scale(0.97) over 160ms ease-out",
+        "purpose": "Active state of checkpoints, buttons and map tiles (icon buttons 0.94)."
+      },
+      {
+        "name": "state-change",
+        "value": "160ms ease",
+        "purpose": "Hover/selected color and background changes; hover only on fine pointers."
+      },
+      {
+        "name": "sheet-in",
+        "value": "fade 200ms ease-out; panel 260ms ease-out from translateY(12px) scale(0.98); bottom sheets slide up on small screens",
+        "purpose": "Application and profile sheets."
+      },
+      {
+        "name": "sponsor-run",
+        "value": "32s linear infinite",
+        "purpose": "User-pinned sponsor marquee; paused on hover/focus, static under reduced motion."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "all animation and transition durations 1ms",
+        "purpose": "prefers-reduced-motion: reduce."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "small",
+        "value": "480px"
+      },
+      {
+        "name": "form-stack",
+        "value": "560px"
+      },
+      {
+        "name": "sheet-dock",
+        "value": "760px"
+      },
+      {
+        "name": "field-6-col",
+        "value": "820px"
+      },
+      {
+        "name": "nav-map",
+        "value": "960px"
+      },
+      {
+        "name": "grid-reduce",
+        "value": "1020px"
+      },
+      {
+        "name": "field-max",
+        "value": "1320px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Checkpoint Tile",
+      "kind": "button",
+      "refersTo": "checkpoint",
+      "description": "The only primary-action frame: Apply to Candidates, Become a sponsor, and form submits.",
+      "html": "<a href=\"#\" class=\"ds-checkpoint\"><span>Apply to Candidates</span><svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"square\" stroke-linejoin=\"miter\" aria-hidden=\"true\"><path d=\"M4 12h15M13 6l6 6-6 6\"/></svg></a>",
+      "css": ".ds-checkpoint { position: relative; display: flex; align-items: flex-end; justify-content: space-between; gap: 12px; min-width: 240px; min-height: 64px; padding: 14px 18px 16px; background: #b9bdc3; color: #000; font-family: Archivo, system-ui, sans-serif; font-stretch: 112%; font-weight: 700; font-size: 1.05rem; line-height: 1.15; text-decoration: none; box-shadow: inset 0 1px 0 #d6d9dd, inset 0 -2px 0 #9599a0; overflow: hidden; transition: transform 160ms cubic-bezier(0.23, 1, 0.32, 1); } .ds-checkpoint::after { content: ''; position: absolute; inset: 0; background: linear-gradient(105deg, transparent 35%, rgba(255,255,255,0.55) 50%, transparent 65%); transform: translateX(-100%); pointer-events: none; } .ds-checkpoint:hover::after { transform: translateX(100%); transition: transform 700ms cubic-bezier(0.23, 1, 0.32, 1); } .ds-checkpoint:active { transform: scale(0.97); } .ds-checkpoint:focus-visible { outline: 3px solid #8aa6f5; outline-offset: 2px; }"
+    },
+    {
+      "name": "Wall Button",
+      "kind": "button",
+      "refersTo": "button-wall",
+      "description": "Secondary action: a light-ink wall outline that inverts on hover.",
+      "html": "<a href=\"#\" class=\"ds-btn-wall\">Watch the classes</a>",
+      "css": ".ds-btn-wall { display: inline-flex; align-items: center; gap: 10px; min-height: 48px; padding: 11px 18px; border: 2px solid #ecedea; background: #111214; color: #ecedea; font-family: Archivo, system-ui, sans-serif; font-weight: 650; font-size: 0.95rem; line-height: 1.2; text-decoration: none; transition: transform 160ms cubic-bezier(0.23, 1, 0.32, 1), background-color 160ms ease, color 160ms ease; } .ds-btn-wall:hover { background: #ecedea; color: #111214; } .ds-btn-wall:active { transform: scale(0.97); } .ds-btn-wall:focus-visible { outline: 3px solid #8aa6f5; outline-offset: 2px; }"
+    },
+    {
+      "name": "Segmented Switch",
+      "kind": "chip",
+      "refersTo": "switch-option",
+      "description": "Flush segmented control for status filter and ES/EN toggle; the pressed option inverts.",
+      "html": "<div class=\"ds-switch\"><button aria-pressed=\"true\">Active</button><button aria-pressed=\"false\">Legacy</button></div>",
+      "css": ".ds-switch { display: inline-flex; border: 2px solid #ecedea; background: #111214; } .ds-switch button { height: 38px; padding: 0 14px; border: 0; background: none; color: #ecedea; font-family: Archivo, system-ui, sans-serif; font-size: 0.9rem; font-weight: 600; cursor: pointer; transition: background-color 160ms ease, color 160ms ease; } .ds-switch button + button { border-left: 2px solid #ecedea; } .ds-switch button[aria-pressed='true'] { background: #ecedea; color: #111214; } .ds-switch button:focus-visible { outline: 3px solid #8aa6f5; outline-offset: 2px; }"
+    },
+    {
+      "name": "Filter Chip",
+      "kind": "chip",
+      "refersTo": "chip",
+      "description": "Area filter on the roster; pressed fills royal blue, unmatched entries dim instead of hiding.",
+      "html": "<div class=\"ds-chips\"><button class=\"ds-chip\" aria-pressed=\"true\">Programming</button><button class=\"ds-chip\" aria-pressed=\"false\">Mechanics</button></div>",
+      "css": ".ds-chips { display: flex; gap: 6px; background: #111214; padding: 8px; } .ds-chip { height: 34px; padding: 0 12px; border: 1.5px solid #2a2d31; background: none; color: #b8bcc1; font-family: Archivo, system-ui, sans-serif; font-size: 0.875rem; font-weight: 550; cursor: pointer; transition: border-color 160ms ease, background-color 160ms ease, color 160ms ease; } .ds-chip:hover { border-color: #ecedea; color: #ecedea; } .ds-chip[aria-pressed='true'] { background: #1f4fd1; border-color: #1f4fd1; color: #fff; } .ds-chip:focus-visible { outline: 3px solid #8aa6f5; outline-offset: 2px; }"
+    },
+    {
+      "name": "Text Field",
+      "kind": "input",
+      "refersTo": "input",
+      "description": "Form field with label above; blue border and halo on focus, red on error.",
+      "html": "<label class=\"ds-field\"><span>Email</span><input type=\"email\" placeholder=\"you@tec.mx\" /></label>",
+      "css": ".ds-field { display: grid; gap: 6px; padding: 12px; background: #111214; color: #ecedea; font-family: Archivo, system-ui, sans-serif; } .ds-field span { font-size: 0.875rem; font-weight: 650; } .ds-field input { width: 100%; padding: 12px 14px; border: 2px solid #ecedea; border-radius: 0; background: #1a1c1f; color: #ecedea; font: inherit; font-size: 17px; transition: box-shadow 160ms ease, border-color 160ms ease; } .ds-field input::placeholder { color: #8c9198; } .ds-field input:focus { outline: none; border-color: #1f4fd1; box-shadow: 0 0 0 3px rgba(31,79,209,0.25); }"
+    },
+    {
+      "name": "Nav Tile Strip",
+      "kind": "nav",
+      "refersTo": "nav-tile",
+      "description": "Six seam-divided nav tiles under a 4px wall; current tile raised, visited tiles mapped, robot marker on the current tile.",
+      "html": "<nav class=\"ds-nav\"><a class=\"ds-nav-tile is-here\" href=\"#\">Home<span class=\"ds-robot\"></span></a><a class=\"ds-nav-tile\" href=\"#\">About<i class=\"ds-mapped\"></i></a><a class=\"ds-nav-tile\" href=\"#\">Projects</a><a class=\"ds-nav-tile\" href=\"#\">Members</a></nav>",
+      "css": ".ds-nav { display: flex; height: 76px; background: #111214; border-bottom: 4px solid #ecedea; border-left: 1px solid #2a2d31; font-family: Archivo, system-ui, sans-serif; } .ds-nav-tile { position: relative; display: flex; align-items: center; justify-content: center; min-width: 104px; padding: 0 16px 10px; border-right: 1px solid #2a2d31; color: #b8bcc1; font-size: 0.9rem; font-weight: 600; text-decoration: none; transition: background-color 160ms ease, color 160ms ease; } .ds-nav-tile:hover, .ds-nav-tile.is-here { background: #1a1c1f; color: #ecedea; } .ds-nav-tile:focus-visible { outline: 3px solid #8aa6f5; outline-offset: -3px; } .ds-mapped { position: absolute; top: 10px; right: 10px; width: 6px; height: 6px; background: #9599a0; } .ds-robot { position: absolute; left: 50%; bottom: 2px; width: 14px; height: 20px; margin-left: -7px; background: #1a1c1f; border: 1.5px solid #ecedea; box-shadow: inset 0 3px 0 #1f4fd1; }"
+    },
+    {
+      "name": "Threshold",
+      "kind": "custom",
+      "description": "Section divider: a full-width wall with one doorway gap in its second tile.",
+      "html": "<div class=\"ds-threshold-wrap\"><div class=\"ds-threshold\"></div></div>",
+      "css": ".ds-threshold-wrap { padding: 32px 16px; background: #111214; } .ds-threshold { --tile: 60px; height: 4px; background: linear-gradient(90deg, #ecedea 0, #ecedea var(--tile), transparent var(--tile), transparent calc(var(--tile) * 2), #ecedea calc(var(--tile) * 2)); }"
+    },
+    {
+      "name": "Hole Tile",
+      "kind": "card",
+      "refersTo": "hole-tile",
+      "description": "True-black tile holding dated proof or a closing call, with on-hole ink.",
+      "html": "<div class=\"ds-hole\"><p><strong>March 2015.</strong> Four students win Rescue Maze at the Mexican Robotics Tournament.</p><a href=\"#\">Read the history</a></div>",
+      "css": ".ds-hole { display: flex; flex-direction: column; gap: 16px; padding: 24px; background: #000; color: #a6abb1; font-family: Archivo, system-ui, sans-serif; font-size: 17px; line-height: 1.55; max-width: 420px; } .ds-hole strong { color: #ecedea; font-weight: 700; } .ds-hole a { align-self: flex-start; color: #ecedea; font-weight: 650; text-decoration: underline; text-decoration-thickness: 1.5px; text-underline-offset: 0.22em; } .ds-hole a:focus-visible { outline: 3px solid #8aa6f5; outline-offset: 2px; }"
+    },
+    {
+      "name": "Sponsor Marquee",
+      "kind": "custom",
+      "description": "User-pinned continuous linear loop of sponsor logos as light silhouettes; pauses on hover and focus, static under reduced motion.",
+      "html": "<div class=\"ds-marquee\"><ul><li>Tec de Monterrey</li><li>3D Factory</li><li>Altium</li><li>GitHub</li></ul></div>",
+      "css": ".ds-marquee { overflow: hidden; background: #111214; border-top: 1px solid #2a2d31; border-bottom: 1px solid #2a2d31; font-family: Archivo, system-ui, sans-serif; } .ds-marquee ul { display: flex; margin: 0; padding: 0; list-style: none; width: max-content; animation: ds-run 32s linear infinite; } .ds-marquee:hover ul, .ds-marquee:focus-within ul { animation-play-state: paused; } .ds-marquee li { display: grid; place-items: center; width: 180px; height: 72px; border-right: 1px solid #2a2d31; color: #ecedea; opacity: 0.72; font-weight: 700; font-stretch: 112%; } @keyframes ds-run { to { transform: translateX(-50%); } } @media (prefers-reduced-motion: reduce) { .ds-marquee ul { animation: none; } .ds-marquee { overflow-x: auto; } }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Maze Field at Night",
+    "overview": "The site is a RoboCup Rescue Maze field seen from above, the arena where the team's first robot won in 2015. Everything sits on one square tile module: a 12-column field (6 columns under 820px) whose tile width is the field width divided by the column count. The floor is a dark, cool field (the shipped state is dark mode, by user decision), seams are hairlines between tiles, walls are light ink bars, hole tiles are true black, and the field's two kinds of marked tile carry meaning: silver checkpoint tiles are the only frame for the two primary actions (Apply to Candidates, Become a sponsor), and royal blue marks \"you are here\".\n\nDensity is editorial rather than dashboard: long single-axis pages, each section separated from the next by a wall with one doorway gap. Content is rows on the floor (dated results, roles, timeline entries) divided by seams and walls, not floating cards. Photography is real team and competition imagery, square-cropped to tiles. Type is Archivo throughout, its width axis doing the work a second family would: the expanded heavy cut for display, normal width for reading.\n\nMotion answers input. A small top-down robot marker travels between nav tiles and down the About year rail; pages already visited stay mapped with a small silver dot. The only continuous motion is the user-pinned sponsor marquee on Home. There is no load-time hero run: the hero photo shows immediately.",
+    "keyCharacteristics": [
+      "One square tile module drives every column, gap and section padding.",
+      "Square corners everywhere; borders are walls (2px to 4px light ink) or seams (1px).",
+      "Silver checkpoint = primary action, blue = current location or selected state, red = error. Nothing else is colored.",
+      "Archivo variable (wdth 62..125, wght 100..900), one family, width as the hierarchy axis.",
+      "Dark field, light ink, logos rendered as light silhouettes."
+    ],
+    "rules": [
+      {
+        "name": "The One Meaning Rule",
+        "body": "Silver means \"act here\", blue means \"you are here / selected\", red means \"something is wrong\". Never use one of them for decoration or for a different meaning.",
+        "section": "colors"
+      },
+      {
+        "name": "The Checkpoint Scarcity Rule",
+        "body": "A screen carries at most the two primary actions as checkpoint tiles (plus a form's submit). Every other action is a wall-outline button or a text link.",
+        "section": "colors"
+      },
+      {
+        "name": "The Width Axis Rule",
+        "body": "Hierarchy comes from Archivo's width and weight axes, never from a second family. Expanded (wdth 112 to 125) is for headings and tile labels only; reading text stays at normal width.",
+        "section": "typography"
+      },
+      {
+        "name": "The Plain Label Rule",
+        "body": "Labels are sentence case at normal tracking. No monospace, no uppercase micro-labels, no small text set above a heading.",
+        "section": "typography"
+      },
+      {
+        "name": "The Flat Field Rule",
+        "body": "Nothing on the floor casts a shadow. Separate surfaces with a wall, a seam or a tone step.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "**Do** size columns, gaps and padding in tiles so the field stays on one module.",
+      "**Do** separate sections with a threshold wall with one doorway, and rows with 1px seams.",
+      "**Do** frame the two primary actions (Apply to Candidates, Become a sponsor) and form submits as silver checkpoint tiles with black text, and nothing else.",
+      "**Do** use royal blue only for \"you are here\" and selection, signal blue for blue text and focus, red only for errors.",
+      "**Do** keep motion responsive to input: press scale 0.97, 150 to 250ms ease-out state changes, hover effects only on fine pointers, and every animation reduced to near zero under reduced motion.",
+      "**Do** render partner logos as light silhouettes on the dark field.",
+      "**Do** dim filtered items rather than hiding them."
+    ],
+    "donts": [
+      "**Don't** round corners; every radius is 0.",
+      "**Don't** add drop shadows, glows or decorative gradient fills to anything on the floor (the checkpoint bevel, its glint and the sheet lift are the only depth effects).",
+      "**Don't** introduce a second typeface, monospace labels, uppercase micro-labels or small text above headings.",
+      "**Don't** use any accent color outside its one meaning, or add new hues.",
+      "**Don't** add load-time choreography or autoplaying motion; the sponsor marquee is the single continuous loop."
+    ]
+  }
+}

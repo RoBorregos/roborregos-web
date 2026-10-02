@@ -1,0 +1,131 @@
+{
+  "title": "Choose the visual world for RoBorregos",
+  "question": "The roll assigned the Rescue Maze field. Keep it, take an alternate, or re-roll.",
+  "options": [
+    {
+      "id": "assigned",
+      "label": "Rescue Maze Field",
+      "kicker": "THE ROLL",
+      "lineage": "RoboCup Junior Rescue Maze, the league RoBorregos won its first title in (TMR 2015)",
+      "thesis": "The site is a competition field the visitor explores tile by tile, the way the team's first robot did.",
+      "palette": ["#F3F4F1", "#000000", "#1F4FD1", "#B9BDC3", "#D7262E"],
+      "materials": ["30 cm square field tiles", "white wall segments", "black hole tiles", "silver checkpoint tiles", "printed victim letters"],
+      "viewport": "A top-down maze field fills the first viewport; the team photo and headline sit in open tiles while a small robot marker runs one exploration path from the entry tile to the Join and Sponsor tiles.",
+      "risk": "Visitors who never saw Rescue Maze read the grid as abstract; the tile language must stay functional, not decorative.",
+      "raised": [
+        { "from": "challenger-hypercard", "raise": "Navigation keeps your trail: pages you have visited stay marked on the nav's tile strip, like the robot mapping explored tiles." },
+        { "from": "challenger-detector", "raise": "Selecting a filter or member isolates it and dims the rest instead of removing them, so the whole roster stays in view." },
+        { "from": "challenger-jacquard", "raise": "Every headline number traces to its source rows: tap a stat and the dated timeline entries behind it open." },
+        { "from": "challenger-deco", "raise": "One primary-action treatment (the checkpoint tile) used only for Join and Sponsor, everywhere else actions recede." },
+        { "from": "challenger-versailles", "raise": "Each page is laid out along one axis of the field, with sections arriving as thresholds rather than stacked cards." }
+      ]
+    },
+    {
+      "id": "model-pick",
+      "label": "Borregos Game-Day Program",
+      "kicker": "IMPECCABLE’S PICK",
+      "lineage": "Tec de Monterrey Borregos varsity programs, rosters and jerseys",
+      "thesis": "RoBorregos presented as a varsity program: roster, season record and robots as team entries.",
+      "palette": ["#F2F3F1", "#000000", "#1D44C8", "#6B7280", "#D7D9D6"],
+      "materials": ["block varsity numerals", "roster cards", "printed season-record tables", "jersey stripe"],
+      "viewport": "Full-bleed team photo under a wide block wordmark, with a season-record strip of real dated results below.",
+      "risk": "The most familiar choice: sports-team pages are a common look for university teams."
+    },
+    {
+      "id": "challenger-livery",
+      "label": "Endurance Livery Garage",
+      "verdict": "competitive",
+      "lineage": "Gulf and Martini endurance-racing liveries",
+      "thesis": "The team's identity runs as a livery: stripe spine, number roundels and sponsor panels on every robot.",
+      "palette": ["#FFFFFF", "#000000", "#1D44C8", "#8FB3E8", "#C8102E"],
+      "materials": ["livery stripes", "number roundels", "sponsor decal panels", "pit board"],
+      "viewport": "A robot shot as a car in the garage, the royal-blue stripe running nose to tail into the nav, sponsor panels gridded on the bodywork.",
+      "case": "Sponsors read it instantly (logos on bodywork is sponsorship); loses on clarity because robots are not race cars.",
+      "risk": "Reads as motorsport cosplay if the stripe system becomes decoration.",
+      "hero": "https://impeccable.style/worlds/cards/pop-culture-shelf-endurance-livery-garage-hero.webp",
+      "board": "https://impeccable.style/worlds/cards/pop-culture-shelf-endurance-livery-garage.webp"
+    },
+    {
+      "id": "challenger-hypercard",
+      "label": "HyperCard Stack",
+      "verdict": "declined",
+      "lineage": "1987 HyperCard stacks",
+      "thesis": "Every page a black-and-white card linked by painted buttons.",
+      "palette": ["#FFFFFF", "#000000", "#808080"],
+      "materials": ["one-bit dither", "painted buttons"],
+      "viewport": "A fixed card with the team's name in a pixel menu bar.",
+      "case": "Students and sponsors do not identify with 1987 Mac software; nostalgia hides the robots.",
+      "risk": "Retro novelty.",
+      "kept": "The back-trail: visited pages stay marked in navigation.",
+      "hero": "https://impeccable.style/worlds/cards/medium-native-hypercard-stack-shoebox-hero.webp"
+    },
+    {
+      "id": "challenger-detector",
+      "label": "Collider Event Display",
+      "verdict": "declined",
+      "lineage": "particle-detector event displays",
+      "thesis": "The team as one frozen collision of tracks and energy.",
+      "palette": ["#05070A", "#5A7FA8", "#F2D21B", "#22D3EE", "#E0402B"],
+      "materials": ["detector rings", "particle tracks"],
+      "viewport": "A ring cross-section with members as tracks.",
+      "case": "Near-black with signal accents is exactly the look you asked to drop; physics is not the team's field.",
+      "risk": "Dark-neon tell.",
+      "kept": "Select-to-isolate: choosing an item dims the rest instead of hiding it.",
+      "hero": "https://impeccable.style/worlds/cards/scientific-notation-particle-detector-event-display-hero.webp"
+    },
+    {
+      "id": "challenger-jacquard",
+      "label": "Jacquard Brocade",
+      "verdict": "declined",
+      "lineage": "punch-card jacquard looms",
+      "thesis": "Thousands of binary choices weaving one image.",
+      "palette": ["#141B3A", "#C9A227", "#EFE6CF"],
+      "materials": ["silk", "punched cards"],
+      "viewport": "A woven bird resolving from instruction rows.",
+      "case": "Textiles carry neither audience nor the robots.",
+      "risk": "Ornamental.",
+      "kept": "Full traceability from the finished picture down to each instruction row.",
+      "hero": "https://impeccable.style/worlds/cards/textiles-weave-drape-fashion-jacquard-punched-brocade-hero.webp"
+    },
+    {
+      "id": "challenger-deco",
+      "label": "Deco Cinema Lobby",
+      "verdict": "declined",
+      "lineage": "Art Deco cinema lobbies",
+      "thesis": "Arrival staged as marquee, lobby and house.",
+      "palette": ["#121010", "#C9A961", "#8E1B24"],
+      "materials": ["brass", "lacquer", "velvet"],
+      "viewport": "A sunburst marquee over the team name.",
+      "case": "Glamour reads wrong for a student engineering team.",
+      "risk": "Costume.",
+      "kept": "One primary-action frame reserved for the main action only.",
+      "hero": "https://impeccable.style/worlds/cards/design-canon-deco-cinema-lobby-hero.webp"
+    },
+    {
+      "id": "challenger-versailles",
+      "label": "Versailles Vistas",
+      "verdict": "declined",
+      "lineage": "Versailles garden plans",
+      "thesis": "Axial vistas with secret bosquets.",
+      "palette": ["#4A5D3A", "#D8CBB0", "#B8975A"],
+      "materials": ["clipped hedges", "gravel", "gilt bronze"],
+      "viewport": "A palace axis receding into parterres.",
+      "case": "Royal gardens have nothing to do with robotics or Monterrey.",
+      "risk": "Irrelevant.",
+      "kept": "Measured sequence along one axis, sections as thresholds.",
+      "hero": "https://impeccable.style/worlds/cards/architecture-inhabitable-space-versailles-bosquet-vistas-hero.webp"
+    }
+  ],
+  "reroll": { "registers": ["safer", "bolder"] },
+  "buildPath": { "value": "code", "toggle": false },
+  "canon": true,
+  "canonCard": {
+    "label": "The category standard",
+    "thesis": "A university robotics team site the way most teams ship it, executed carefully.",
+    "palette": ["#FFFFFF", "#111827", "#1D44C8"],
+    "materials": ["photo hero", "card grid", "sponsor logo row"],
+    "viewport": "Team photo hero with headline and two buttons, then project cards and sponsor logos.",
+    "risk": "Indistinguishable from other teams by design."
+  },
+  "steer": true
+}
