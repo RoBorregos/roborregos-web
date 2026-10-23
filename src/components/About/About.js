@@ -2,7 +2,6 @@
 import React from 'react'
 import AboutTimeline from './AboutTimeline/AboutTimeline'
 import HeaderBanner from '../Shared/HeaderBanner/HeaderBanner'
-import './About.css'
 import Carousel from './AboutCarousel/carousel'
 import RoborregosVideo from './VideoPlayer/Responsive-Video-Player'
 
@@ -17,8 +16,6 @@ const About = () => {
         title={headerTitle}
         mainText={headerMainText}
         subText={headerSubText}
-        bgColorScheme={{ primary: '#FF7549', secondary: '#141213E6' }}
-        iconColorScheme={{ primary: '#FF7549', secondary: '#C43F65' }}
       />
       <RoborregosVideo />
       <Carousel />

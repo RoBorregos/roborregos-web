@@ -1,7 +1,5 @@
 import React from 'react'
-import { Row, Col } from 'react-bootstrap'
 import placeholder from '../../../images/placeholder-rectangle.png'
-import './SupportUsCompetitions.css'
 import competitionsData from '../../../data/competitions.json'
 
 type CompetitionType = {
@@ -14,9 +12,9 @@ type Props = {
   language: number
 };
 
-const tryRequire = (img_path: string) => {
+const tryRequire = (imgPath: string) => {
   try {
-    return require(`../../../images/${img_path}`) 
+    return require(`../../../images/${imgPath}`)
   } catch (err) {
     return placeholder
   }
@@ -28,27 +26,19 @@ const { competitions } = competitionsData
 
 function ContactCompetitions({ language }: Props) {
   return (
-    <Row className="contact-competitions-container">
-      <Col xs="10">
-        <Row className="contact-competitions-title">
-          {description[language]}
-        </Row>
-        <Row>
-          { competitions.map((competition: CompetitionType, id: number) => (
-            <Col lg="2" md="4" sm="4" xs="6" key={id} test-id={id}>
-              <Row className="justify-content-center">
-                <a className="competitions-img" href={competition.url} target="_blank" rel="noreferrer">
-                  <img src={tryRequire(competition.img)} alt={competition.name} />
-                </a>
-              </Row>
-              <Row className="competitions-text">
-                { competition.name }
-              </Row>
-            </Col>
+    <section className="px-6 py-20">
+      <div className="mx-auto max-w-6xl">
+        <p className="section-subtitle mb-12 text-center normal-case">{description[language]}</p>
+        <div className="grid grid-cols-2 gap-8 md:grid-cols-3 lg:grid-cols-6">
+          {competitions.map((competition: CompetitionType) => (
+            <a key={competition.name} href={competition.url} target="_blank" rel="noreferrer" className="group flex flex-col items-center gap-3 text-center">
+              <img src={tryRequire(competition.img)} alt={competition.name} className="h-28 w-28 rounded-full bg-white object-contain p-3 transition duration-300 group-hover:scale-110" />
+              <span className="text-sm text-gray-300 group-hover:text-roboblue">{competition.name}</span>
+            </a>
           ))}
-        </Row>
-      </Col>
-    </Row>
+        </div>
+      </div>
+    </section>
   )
 }
 

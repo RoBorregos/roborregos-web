@@ -1,6 +1,6 @@
-import React from "react";
-import placeholder from "../../../../images/placeholder-rectangle.png";
-import "./HomeSingleSponsor.css";
+// @flow
+import React from 'react'
+import placeholder from '../../../../images/placeholder-rectangle.png'
 
 type SponsorType = {
   name: string,
@@ -10,55 +10,32 @@ type SponsorType = {
 
 type Props = {
   sponsor: SponsorType,
+  large: boolean,
 };
 
-const HomeSingleSponsor = (props: Props) => {
-  const tryRequire = (img_path: string) => {
-    try {
-      return require(`../../../../images/sponsors/${img_path}`);
-    } catch (err) {
-      return placeholder;
-    }
-  };
-  const { sponsor } = props;
+const tryRequire = (imgPath: string) => {
+  try {
+    return require(`../../../../images/sponsors/${imgPath}`)
+  } catch (err) {
+    return placeholder
+  }
+}
 
-  return (
-    <a
-      test-id="a1"
-      href={sponsor.link}
-      className="single-sponsor"
-      target="_blank"
-      rel="noreferrer noopener"
-    >
-      {props.large ? (
-        <img
-          className="sponsor-image-lg"
-          src={tryRequire(sponsor.img_path)}
-          alt={sponsor.name}
-        />
-      ) : (
-        <img
-          className="sponsor-image-md"
-          src={tryRequire(sponsor.img_path)}
-          alt={sponsor.name}
-        />
-      )}
+const HomeSingleSponsor = ({ sponsor, large }: Props) => (
+  <a
+    href={sponsor.link}
+    target="_blank"
+    rel="noreferrer noopener"
+    className={`group flex items-center justify-center rounded-xl bg-white p-6 transition duration-300 hover:scale-105 hover:shadow-[0_0_30px_rgba(10,56,239,0.5)] ${
+      large ? 'h-48' : 'h-32'
+    }`}
+  >
+    <img
+      src={tryRequire(sponsor.img_path)}
+      alt={sponsor.name}
+      className="max-h-full max-w-full object-contain"
+    />
+  </a>
+)
 
-      {/* <img
-        className="sponsor-image"
-        src=""
-        style={{
-          backgroundImage: `url(${tryRequire(sponsor.img_path)})`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          height: "500px", // or specify a fixed height if needed
-          width: "auto", // or specify a fixed width if needed
-        }}
-        aria-label={sponsor.name}
-      /> */}
-      <div className="img-filter" />
-    </a>
-  );
-};
-
-export default HomeSingleSponsor;
+export default HomeSingleSponsor

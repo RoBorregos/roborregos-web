@@ -1,73 +1,12 @@
 // @flow
 import React, { useState } from "react";
-import { Row, Col, Button } from "reactstrap";
 import ReCAPTCHA from "react-google-recaptcha";
-import "./SendEmail.css";
-import { withStyles } from "@material-ui/core/styles";
-import TextField from "@material-ui/core/TextField";
-import Checkbox from "@material-ui/core/Checkbox";
 import FormsSnackBar from "../../Shared/FormsSnackBar/FormsSnackbar";
 import { sendContactUsEmail } from "../../../scripts/apiScripts";
 
 type Props = {
   language: number,
 };
-
-const FormTextField = withStyles({
-  root: {
-    "& input:valid:focus + fieldset": {
-      borderColor: "#6A2C94",
-    },
-    "& .MuiTextField-root": {
-      borderColor: "#6A2C94",
-    },
-    "& .MuiInputLabel-root": {
-      color: "#6A2C94",
-    },
-    "& .MuiOutlinedInput-root": {
-      backgroundColor: "white",
-      height: "9vh",
-      "& fieldset": {
-        borderColor: "#6A2C94",
-      },
-      "&:hover fieldset": {
-        borderColor: "#6A2C94",
-      },
-    },
-  },
-})(TextField);
-
-const MultipleLineFormTextField = withStyles({
-  root: {
-    "& input:valid:focus + fieldset": {
-      borderColor: "#6A2C94",
-    },
-    "& .MuiTextField-root": {
-      borderColor: "#6A2C94",
-    },
-    "&:valid:focus + fieldset": {
-      borderColor: "#6A2C94",
-    },
-    "& .MuiOutlinedInput-root": {
-      backgroundColor: "white",
-      "& fieldset": {
-        borderColor: "#6A2C94",
-      },
-      "&:hover fieldset": {
-        borderColor: "#6A2C94",
-      },
-    },
-  },
-})(TextField);
-
-const SendCopyCheckbox = withStyles({
-  root: {
-    "&$checked": {
-      color: "#6A2C94",
-    },
-  },
-  checked: {},
-})(Checkbox);
 
 function SendEmail({ language }: Props) {
   const recaptchaRef = React.createRef();
@@ -102,8 +41,6 @@ function SendEmail({ language }: Props) {
     "Favor de llenar este campo",
     "Please fill this textfield",
   ];
-  const paddingError = ["0vh", "3.3vh"];
-
   const [isLoading, setIsLoading] = useState(false);
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -234,131 +171,54 @@ function SendEmail({ language }: Props) {
     recaptcha_ref.execute();
   };
 
+  const fieldCls = (err: boolean) =>
+    `w-full rounded-lg border bg-white px-4 py-3 text-black outline-none transition focus:ring-2 focus:ring-roboblue disabled:opacity-50 ${
+      err ? "border-red-500" : "border-gray-300"
+    }`;
+  const errText = (err: boolean) =>
+    err ? <p className="mt-1 text-sm text-red-400">{helperText[language]}</p> : null;
+
   return (
     <>
-      <Row id="send-email">
-        <Col xs="12" md="6" className="send-email-phrase">
-          <div className="big-letters-title">{title_send_email[language]}</div>
-        </Col>
-        <Col xs="12" md="6" className="send-email-form position-relative">
-          <div className={`form-container ${isLoading ? "formLoading" : ""}`}>
-            <Row className="send-email-title">{forms[0][language]}</Row>
-            <Row
-              style={{
-                paddingBottom: formError[0] ? paddingError[0] : paddingError[1],
-              }}
-            >
-              <FormTextField
-                variant="outlined"
-                label={forms[1][language]}
-                onChange={handleChangeName}
-                fullWidth
-                value={name}
-                error={formError[0]}
-                disabled={isLoading}
-                helperText={formError[0] ? helperText[language] : ""}
-              />
-            </Row>
-            <Row
-              style={{
-                paddingBottom: formError[1] ? paddingError[0] : paddingError[1],
-              }}
-            >
-              <FormTextField
-                label="Email"
-                variant="outlined"
-                onChange={handleChangeEmail}
-                fullWidth
-                value={email}
-                error={formError[1]}
-                disabled={isLoading}
-                helperText={formError[1] ? helperText[language] : ""}
-              />
-            </Row>
-            <Row
-              style={{
-                paddingBottom: formError[2] ? paddingError[0] : paddingError[1],
-              }}
-            >
-              <FormTextField
-                label={forms[3][language]}
-                variant="outlined"
-                onChange={handleChangePhone}
-                fullWidth
-                className="SelectOptionsDropDown"
-                value={phone}
-                error={formError[2]}
-                disabled={isLoading}
-                helperText={formError[2] ? helperText[language] : ""}
-              />
-            </Row>
-            <Row
-              style={{
-                paddingBottom: formError[3] ? paddingError[0] : paddingError[1],
-              }}
-            >
-              <MultipleLineFormTextField
-                multiline
-                rows={4}
-                variant="outlined"
-                placeholder={forms[4][language]}
-                onChange={handleChangeMessage}
-                fullWidth
-                value={message}
-                error={formError[3]}
-                disabled={isLoading}
-                helperText={formError[3] ? helperText[language] : ""}
-              />
-            </Row>
-            <Row>
-              <SendCopyCheckbox
-                onChange={handleChangeCheckBox}
-                checked={sendCopy}
-                disabled={isLoading}
-              />
-              <div className="checkbox-description">{forms[5][language]}</div>
-            </Row>
-            <Row className="mt-4 mb-1 justify-content-center">
-              <Button
-                className="mr-4 col-3 join form-button-submit"
-                type="submit"
-                value="submit"
-                disabled={isLoading}
-                onClick={handleReCaptcha}
-              >
-                {forms[6][language]}
-              </Button>
-            </Row>
-          </div>
-          <div className={`loadingSymbol ${isLoading ? "" : "d-none"}`}>
-            <svg
-              className="spinSymbol"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-            >
-              <circle
-                className="opacity-25"
-                cx="12"
-                cy="12"
-                r="10"
-                stroke="currentColor"
-                strokeWidth="4"
-              />
-              <path
-                className="opacity-75"
-                fill="currentColor"
-                d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
-              />
-            </svg>
-          </div>
-        </Col>
-      </Row>
+      <section id="send-email" className="grid gap-10 bg-gradient-to-tr from-navy to-black px-6 py-20 md:grid-cols-2 lg:px-16">
+        <div className="flex items-center">
+          <h2 className="section-title">{title_send_email[language]}</h2>
+        </div>
+        <div className="relative rounded-xl bg-neutral-950/80 p-6 shadow-[0_0_50px_rgba(10,56,239,0.3)] md:p-8">
+          <form className={`grid gap-4 ${isLoading ? "opacity-60" : ""}`} onSubmit={(e) => e.preventDefault()}>
+            <h3 className="font-anton text-3xl uppercase tracking-wide">{forms[0][language]}</h3>
+            <div>
+              <input className={fieldCls(formError[0])} placeholder={forms[1][language]} value={name} onChange={handleChangeName} disabled={isLoading} />
+              {errText(formError[0])}
+            </div>
+            <div>
+              <input className={fieldCls(formError[1])} placeholder="Email" value={email} onChange={handleChangeEmail} disabled={isLoading} />
+              {errText(formError[1])}
+            </div>
+            <div>
+              <input className={fieldCls(formError[2])} placeholder={forms[3][language]} value={phone} onChange={handleChangePhone} disabled={isLoading} />
+              {errText(formError[2])}
+            </div>
+            <div>
+              <textarea rows={4} className={fieldCls(formError[3])} placeholder={forms[4][language]} value={message} onChange={handleChangeMessage} disabled={isLoading} />
+              {errText(formError[3])}
+            </div>
+            <label className="flex items-center gap-3 text-gray-300">
+              <input type="checkbox" className="h-5 w-5 accent-roboblue" checked={sendCopy} onChange={handleChangeCheckBox} disabled={isLoading} />
+              {forms[5][language]}
+            </label>
+            <div className="flex justify-center">
+              <button type="submit" className="rb-btn px-10" disabled={isLoading} onClick={handleReCaptcha}>
+                {isLoading ? "..." : forms[6][language]}
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
       <ReCAPTCHA
         ref={recaptchaRef}
         size="invisible"
         sitekey={process.env.REACT_APP_RECAPTCHA || "asd"} //FIXME: remove asd
-        className="d-none"
         onChange={handleSubmit}
       />
       <FormsSnackBar

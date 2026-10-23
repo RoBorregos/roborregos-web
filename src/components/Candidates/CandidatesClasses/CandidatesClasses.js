@@ -1,81 +1,42 @@
 // @flow
 import React from 'react'
-import Grid from '@material-ui/core/Grid'
-import './CandidatesClasses.css'
 import youtubeLogo from '../../../images/candidates/youtube-logo.png'
+
+const embed = (list: string) => `https://www.youtube.com/embed/videoseries?list=${list}`
+const allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
 
 function CandidatesClasses() {
   return (
-    <div className="video-containers">
-      <Grid
-        container
-        className="justify-content-md-center classes-main-row"
-        spacing={2}
-        alignItems="center"
-      >
-        <Grid item sm={12} md={4} className="classes-section-alignment">
-          <div>
-            <h className="learn-with-us">
-              Learn with us on
-            </h>
-            <br />
-            <img
-              className="youtube-logo"
-              src={youtubeLogo}
-              alt="youtube-logo"
+    <section className="bg-gradient-to-tr from-neutral-950 to-neutral-800 px-6 py-20">
+      <div className="mx-auto grid max-w-6xl items-center gap-8 md:grid-cols-[1fr_1.4fr_1fr]">
+        <div className="text-center md:text-left">
+          <h2 className="section-title mb-4 !text-4xl md:!text-5xl">Learn with us on</h2>
+          <img className="mx-auto h-20 md:mx-0" src={youtubeLogo} alt="youtube-logo" />
+          <p className="mt-4 text-lg text-gray-300">And be prepared to take the challenge!</p>
+        </div>
+        <iframe
+          className="aspect-video w-full rounded-xl"
+          src={embed('PLbuFimxJ80Ynff7bdQjdIO7uKH1vZ-Jne')}
+          title="YouTube main playlist"
+          frameBorder="0"
+          allow={allow}
+          allowFullScreen
+        />
+        <div className="grid grid-cols-2 gap-4 md:grid-cols-1">
+          {['PLbuFimxJ80Yn97HhHeuvBvN47Z7cGHAI9', 'PLbuFimxJ80YksGyBqJRjT6_nY0yWKpuzI'].map((list) => (
+            <iframe
+              key={list}
+              className="aspect-video w-full rounded-xl"
+              src={embed(list)}
+              title="YouTube playlist"
+              frameBorder="0"
+              allow={allow}
+              allowFullScreen
             />
-            <br />
-            <p className="caption-phrase">
-              And be prepared to take the challenge!
-            </p>
-          </div>
-        </Grid>
-        <Grid item sm={12} md={5} className="classes-section-alignment">
-          <iframe
-            className="central-playlist"
-            src="https://www.youtube.com/embed/videoseries?list=PLbuFimxJ80Ynff7bdQjdIO7uKH1vZ-Jne"
-            title="YouTube video player"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-          />
-        </Grid>
-        <Grid item sm={12} md={3}>
-          <Grid
-            container
-            className="justify-content-md-center classes-main-row"
-            spacing={2}
-            alignItems="center"
-          >
-            <Grid item xs={6} sm={6} md={12}>
-              <iframe
-                className="secondary-playlist"
-                src="https://www.youtube.com/embed/videoseries?list=PLbuFimxJ80Yn97HhHeuvBvN47Z7cGHAI9"
-                title="YouTube video player"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              />
-            </Grid>
-            <Grid item xs={6} sm={6} md={12}>
-              <iframe
-                className="secondary-playlist"
-                src="https://www.youtube.com/embed/videoseries?list=PLbuFimxJ80YksGyBqJRjT6_nY0yWKpuzI"
-                title="YouTube video player"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              />
-            </Grid>
-            <Grid xs={12}>
-              <p className="caption-phrase-small">
-                And be prepared to take the challenge!
-              </p>
-            </Grid>
-          </Grid>
-        </Grid>
-      </Grid>
-    </div>
+          ))}
+        </div>
+      </div>
+    </section>
   )
 }
 

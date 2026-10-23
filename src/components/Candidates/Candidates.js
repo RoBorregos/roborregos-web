@@ -18,8 +18,6 @@ function Candidates() {
         title={headerTitle}
         mainText={headerMainText}
         subText={headerSubText}
-        bgColorScheme={{ primary: '#E84B77E6', secondary: '#141213E6' }}
-        iconColorScheme={{ primary: '#E84B77', secondary: '#CC2759' }}
       />
       <CandidatesVideo />
       <CandidatesCarousel />

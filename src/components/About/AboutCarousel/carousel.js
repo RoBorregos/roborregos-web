@@ -1,10 +1,4 @@
 import React, { useState } from 'react'
-import './carousel.css'
-import ArrowBackIcon from '@material-ui/icons/ArrowBackIos'
-import ArrowForwardIcon from '@material-ui/icons/ArrowForwardIos'
-import { withStyles } from '@material-ui/core/styles'
-import useWindowSize from '../../../hooks/useWindowSize'
-import { SMALL_WIDTH } from '../../../constants'
 import HighPerformanceTeam from '../../../images/about/carousel/High-Performance.jpg'
 import SocialProjects from '../../../images/about/carousel/Social-Projects.jpg'
 import Events from '../../../images/about/carousel/Events.jpg'
@@ -37,107 +31,28 @@ const images = [
 
 ]
 
-const ArrowForward = withStyles({
-  root: {
-    fontSize: '5vh !important',
-    opacity: '1 !important',
-    color: 'white !important',
-  },
-})(ArrowForwardIcon)
-const ArrowBack = withStyles({
-  root: {
-    fontSize: '5vh !important',
-    opacity: '1 !important',
-    color: 'white !important',
-  },
-})(ArrowBackIcon)
-
 function Carousel() {
-  const { width } = useWindowSize()
   const [currImg, setCurrImg] = useState(0)
-  if (width > SMALL_WIDTH) {
-    return (
-      <div className="carousel">
-        <div className="leftcarouselInner">
-          <div
-            className="leftleft"
-            onClick={() => {
-              if (currImg === 0) {
-                setCurrImg(3)
-              }
-              if (currImg > 0) {
-                setCurrImg(currImg - 1)
-              }
-            }}
-          >
-            <ArrowBack />
-          </div>
-          <div className="leftright">
-            <div className="text-container">
-              <h1>{images[currImg].title}</h1>
-              <p>{images[currImg].subtitle}</p>
-            </div>
-
-          </div>
-          <div className="left3" />
-        </div>
-        <div className="rightcarouselInner" style={{ backgroundImage: `url(${images[currImg].img})` }}>
-          <div className="rightleft" />
-          <div
-            className="rightright"
-            onClick={() => {
-              if (currImg === 3) {
-                setCurrImg(0)
-              }
-              if (currImg < 3) {
-                setCurrImg(currImg + 1)
-              }
-            }}
-          >
-            <ArrowForward />
-          </div>
-        </div>
-      </div>
-    )
-  }
+  const go = (delta) => setCurrImg((c) => (c + delta + images.length) % images.length)
+  const item = images[currImg]
 
   return (
-    <div className="smallcarousel" style={{ backgroundImage: `url(${images[currImg].img})` }}>
-      <div
-        className="left"
-        onClick={() => {
-          if (currImg === 0) {
-            setCurrImg(3)
-          }
-          if (currImg > 0) {
-            setCurrImg(currImg - 1)
-          }
-        }}
-      >
-        <ArrowBack />
-      </div>
-      <div className="center">
-        <div className="SmallText-Container">
-          <h1>{images[currImg].title}</h1>
-          <p>{images[currImg].subtitle}</p>
+    <section className="grid min-h-[70vh] md:grid-cols-2">
+      <div className="flex flex-col justify-center bg-gradient-to-tr from-neutral-950 to-neutral-800 px-8 py-12 md:px-16">
+        <h2 className="section-title mb-6">{item.title}</h2>
+        <p className="text-lg leading-relaxed text-gray-300">{item.subtitle}</p>
+        <div className="mt-8 flex items-center gap-4">
+          <button type="button" aria-label="Previous" onClick={() => go(-1)} className="flex h-12 w-12 items-center justify-center rounded-full border border-steel transition hover:bg-roboblue">
+            <i className="fas fa-chevron-left" />
+          </button>
+          <button type="button" aria-label="Next" onClick={() => go(1)} className="flex h-12 w-12 items-center justify-center rounded-full border border-steel transition hover:bg-roboblue">
+            <i className="fas fa-chevron-right" />
+          </button>
+          <span className="font-anton text-gray-500">{currImg + 1} / {images.length}</span>
         </div>
-
       </div>
-      <div
-        className="right"
-        onClick={() => {
-          if (currImg === 3) {
-            setCurrImg(0)
-          }
-          if (currImg < 3) {
-            setCurrImg(currImg + 1)
-          }
-        }}
-      >
-        <ArrowForward />
-      </div>
-    </div>
-
+      <div className="min-h-[40vh] bg-cover bg-center transition-all duration-500" style={{ backgroundImage: `url(${item.img})` }} />
+    </section>
   )
 }
 

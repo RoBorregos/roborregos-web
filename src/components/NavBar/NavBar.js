@@ -1,10 +1,8 @@
 // @flow
-import React, { Component } from "react";
-import { Navbar, Nav } from "react-bootstrap";
-import { Link } from "react-router-dom";
-import logo from "../../images/white_logo.png";
-import sponsor_logo from "../../images/sponsors/LogoTec.png";
-import "./NavBar.css";
+import React, { useState } from 'react'
+import { Link, useLocation } from 'react-router-dom'
+import logo from '../../images/white_logo.png'
+import sponsorLogo from '../../images/sponsors/LogoTec.png'
 
 type RouteType = {
   path: string,
@@ -16,135 +14,77 @@ type Props = {
   routes: Array<RouteType>,
 };
 
-type State = {
-  active_button: string,
-};
+const NavBar = ({ routes }: Props) => {
+  const [open, setOpen] = useState(false)
+  const { pathname } = useLocation()
+  const isActive = (path: string) => (path === '/' ? pathname === '/' : pathname.startsWith(path))
 
-class NavBar extends Component<Props, State> {
-  constructor(props: Props) {
-    super(props);
-    // this.handleActiveButton = this.handleActiveButton.bind(this);
+  return (
+    <nav className="fixed top-0 z-50 w-screen bg-black/95 font-archivo backdrop-blur">
+      <div className="flex h-16 items-center justify-between px-6 lg:px-12">
+        <Link to="/" onClick={() => setOpen(false)}>
+          <img src={logo} alt="RoBorregos" className="h-9" />
+        </Link>
 
-    const complete_path = window.location.pathname;
-    const first_slash_index = complete_path.indexOf("/");
-    const second_slash_index = complete_path.indexOf(
-      "/",
-      first_slash_index + 1
-    );
-    const current_path =
-      second_slash_index === -1
-        ? complete_path.substring(0, complete_path.length)
-        : complete_path.substring(0, second_slash_index);
-    this.state = {
-      active_button: current_path,
-    };
-  }
-
-  /*
-    TODO: Eliminate Active Tab
-  handleActiveButton() {
-    const activeTabs =
-      document.getElementById('navbar-container').getElementsByClassName('active');
-    if (activeTabs[1]) {
-      activeTabs[1].classList.remove('active');
-    }
-  } */
-
-  getClassName(path: string) {
-    const { active_button } = this.state;
-    return `navbar-btn${path === active_button ? " active" : ""}`;
-  }
-
-  closeNavbar = () => {
-    const navbarCollapseDiv = document.getElementById("basic-navbar-nav");
-    if (navbarCollapseDiv != null) {
-      const navbarIsNotCollapsed = navbarCollapseDiv.classList.contains("show");
-
-      if (navbarIsNotCollapsed) {
-        navbarCollapseDiv.classList.remove("show");
-      }
-    }
-  };
-
-  handleBrandClick = () => {
-    // Collapsing the Navbar on small view
-    this.closeNavbar();
-  };
-
-  handleNavbarClick = (index: string) => {
-    this.setState({ active_button: index });
-    window.scrollTo(0, 0);
-  };
-
-  render() {
-    const { routes } = this.props;
-
-    return (
-      <Navbar
-        collapseOnSelect
-        expand="lg"
-        style={{ backgroundColor: "#191e23" }}
-        variant="dark"
-        fixed="top"
-        id="app-navbar"
-      >
-        <Navbar.Brand
-          as={Link}
-          to="/"
-          onClick={() => {
-            this.handleBrandClick();
-            this.handleNavbarClick("/");
-          }}
-        >
-          <img
-            id="navbar-logo"
-            src={logo}
-            className="d-inline-block align-top"
-            alt="logo"
-          />
-        </Navbar.Brand>
-        <Navbar.Toggle
-          aria-controls="responsive-navbar-nav"
-          expanded="false"
-          test-id="navbar-toggle-button"
-        />
-        <Navbar.Collapse id="basic-navbar-nav" test-id="basic-navbar-collapse">
-          <Nav id="navbar-container" className="mr-auto">
-            {routes.map((route: RouteType, index: number) => (
-              <Nav.Link
-                eventKey={index}
-                key={index}
-                className={this.getClassName(route.path)}
-                as={Link}
+        <ul className="hidden items-center gap-x-10 lg:flex">
+          {routes.map((route) => (
+            <li key={route.path}>
+              <Link
                 to={route.path}
-                onClick={() => {
-                  this.handleNavbarClick(route.path);
-                }}
+                className={`border-b-2 pb-1 text-sm uppercase tracking-widest transition duration-300 ${
+                  isActive(route.path)
+                    ? 'border-roboblue text-white'
+                    : 'border-transparent text-gray-300 hover:text-white'
+                }`}
               >
-                <div className="navbar-btn-legend">{route.legend}</div>
-              </Nav.Link>
-            ))}
-            <Navbar.Brand
-              id="navbar-legend-div"
-              onClick={() => {
-                window.open("http://www.noahsuzhou.com/");
-              }}
-            >
-              <p id="navbar-legend">
-                Powered by
-                <img
-                  id="navbar-sponsor-logo"
-                  src={sponsor_logo}
-                  className="d-inline-block align-top"
-                  alt="logo"
-                />
-              </p>
-            </Navbar.Brand>
-          </Nav>
-        </Navbar.Collapse>
-      </Navbar>
-    );
-  }
+                {route.legend}
+              </Link>
+            </li>
+          ))}
+        </ul>
+
+        <a
+          href="http://www.noahsuzhou.com/"
+          target="_blank"
+          rel="noreferrer"
+          className="hidden items-center gap-2 text-xs text-gray-400 lg:flex"
+        >
+          Powered by
+          <img src={sponsorLogo} alt="Tec de Monterrey" className="h-6" />
+        </a>
+
+        <button
+          type="button"
+          aria-label="Toggle menu"
+          aria-expanded={open}
+          onClick={() => setOpen(!open)}
+          className="flex h-10 w-10 flex-col items-center justify-center gap-1.5 lg:hidden"
+        >
+          <span className={`h-0.5 w-6 bg-white transition ${open ? 'translate-y-2 rotate-45' : ''}`} />
+          <span className={`h-0.5 w-6 bg-white transition ${open ? 'opacity-0' : ''}`} />
+          <span className={`h-0.5 w-6 bg-white transition ${open ? '-translate-y-2 -rotate-45' : ''}`} />
+        </button>
+      </div>
+
+      {open && (
+        <ul className="flex flex-col border-t border-gray-800 bg-black px-6 pb-4 lg:hidden">
+          {routes.map((route) => (
+            <li key={route.path}>
+              <Link
+                to={route.path}
+                onClick={() => setOpen(false)}
+                className={`block py-3 text-sm uppercase tracking-widest ${
+                  isActive(route.path) ? 'text-roboblue' : 'text-gray-300'
+                }`}
+              >
+                {route.legend}
+              </Link>
+            </li>
+          ))}
+        </ul>
+      )}
+    </nav>
+  )
 }
 
-export default NavBar;
+export default NavBar

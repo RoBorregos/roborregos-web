@@ -60,8 +60,6 @@ export class Projects extends Component <Props> {
             title={this.headerTitle}
             mainText={this.headerMainText}
             subText={this.headerSubText}
-            bgColorScheme={{ primary: '#001969E6', secondary: '#141213E6' }}
-            iconColorScheme={{ primary: '#00FFFA', secondary: '#2870CE' }}
           />
           <ProjectsContent main_projects={main} carousels={carrousel} other_projects={other} />
         </>

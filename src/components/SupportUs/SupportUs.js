@@ -5,7 +5,6 @@ import SupportUsCompetitions from './SupportUsCompetitions/SupportUsCompetitions
 import HeaderBanner from '../Shared/HeaderBanner/HeaderBanner'
 import SupportUsTypes from './SupportUsTypes/SupportUsTypes'
 import SendEmail from './SendEmail/SendEmail'
-import './SupportUs.css'
 
 const Contact = () => {
   const headerTitle = ['Apóyanos', 'Support us']
@@ -23,8 +22,6 @@ const Contact = () => {
         title={headerTitle[language]}
         mainText={headerMainText[language]}
         subText={headerSubText[language]}
-        bgColorScheme={{ primary: '#6A2C94E6', secondary: '#141213E6' }}
-        iconColorScheme={{ primary: '#6A2C94', secondary: '#CB6CE6' }}
         additionalButton={{
           text: buttonText[language],
           bgColor: '#000000',
@@ -40,7 +37,7 @@ const Contact = () => {
       <button
         type="button"
         onClick={() => setLanguage(!language ? 1 : 0)}
-        className="button-sticky-language"
+        className="fixed bottom-6 right-6 z-40 rounded-full bg-roboblue px-4 py-3 font-anton tracking-wide shadow-lg transition hover:scale-105"
       >
         ES/EN
       </button>

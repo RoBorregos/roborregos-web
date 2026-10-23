@@ -1,30 +1,41 @@
 // @flow
 import React from 'react'
-import './HomeMisionVision.css'
+import misionImg from '../../../images/home/mision-vision/mision.jpg'
+import visionImg from '../../../images/home/mision-vision/vision.jpeg'
+
+const blocks = [
+  {
+    title: 'Mission',
+    img: misionImg,
+    text: 'Create a community that integrates students, teachers, alumni, companies, institutions and society in general to promote the development of robotics in Mexico.',
+    right: false,
+  },
+  {
+    title: 'Vision',
+    img: visionImg,
+    text: 'Inspire future generations of the robotics community in Latin America.',
+    right: true,
+  },
+]
 
 const HomeMisionVision = () => (
-  <div className="home-mision-vision-container">
-    <div className="home-mision row">
-      <div className="mision-overlay row">
-        <div className="col-sm-7 text-mision">
-          <h1>Mission </h1>
-          <p>
-            Create a community that integrates students, teachers, alumni,
-            companies, institutions and society in general to promote the
-            development of robotics in Mexico.
-          </p>
+  <section>
+    {blocks.map((b) => (
+      <div
+        key={b.title}
+        className="relative flex min-h-[60vh] items-center overflow-hidden px-6 py-16 lg:px-24"
+      >
+        <img src={b.img} alt="" aria-hidden="true" className="absolute inset-0 h-full w-full object-cover" />
+        <div className="absolute inset-0 bg-black/70" />
+        <div className={`relative z-10 w-full ${b.right ? 'flex justify-end' : ''}`}>
+          <div className="rb-card max-w-xl bg-black/60 backdrop-blur">
+            <h2 className="section-title mb-4">{b.title}</h2>
+            <p className="text-lg leading-relaxed text-gray-200">{b.text}</p>
+          </div>
         </div>
       </div>
-    </div>
-    <div className="home-vision row">
-      <div className="vision-overlay row">
-        <div className="col-sm-7 offset-sm-5 text-vision">
-          <h1> Vision </h1>
-          <p> Inspire future generations of the robotics community in Latin&nbsp;America.</p>
-        </div>
-      </div>
-    </div>
-  </div>
+    ))}
+  </section>
 )
 
 export default HomeMisionVision

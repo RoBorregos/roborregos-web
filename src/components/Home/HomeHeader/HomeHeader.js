@@ -1,31 +1,31 @@
 // @flow
 import React from 'react'
-import { Row, Col } from 'react-bootstrap'
 import header from '../../../images/header.png'
-import './HomeHeader.css'
+import team from '../../../images/home/team.jpg'
 
 const ReactRotatingText = require('react-rotating-text')
 
 const HomeHeader = () => (
-  <header className="home-header">
-    <Row className="justify-content-sm-center">
-      <Col className="header-img-col">
-        <span test-id="1">
-          <img className="header-img" src={header} alt="logo" />
-          <br />
-          <br />
-          <h1>
-            We
-            <ReactRotatingText
-              items={[' create', ' build', ' design', ' code', ' connect', ' compete', ' learn', ' teach']}
-              pause={2500}
-              typingInterval={70}
-              emptyPause={20}
-            />
-          </h1>
+  <header className="relative flex min-h-[calc(100vh-4rem)] items-center justify-center overflow-hidden px-6 text-center">
+    <img src={team} alt="" aria-hidden="true" className="absolute inset-0 h-full w-full object-cover object-top" />
+    <div className="absolute inset-0 bg-black/60" />
+    <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent" />
+    <div className="pointer-events-none absolute left-1/2 top-1/2 h-64 w-[28rem] -translate-x-1/2 -translate-y-1/2 rounded-full bg-navy blur-[120px]" />
+
+    <div className="relative z-10 flex flex-col items-center gap-8">
+      <img src={header} alt="RoBorregos" className="w-[80vw] max-w-3xl" />
+      <h1 className="font-jersey text-5xl text-white md:text-7xl">
+        We
+        <span className="text-roboblue">
+          <ReactRotatingText
+            items={[' create', ' build', ' design', ' code', ' connect', ' compete', ' learn', ' teach']}
+            pause={2500}
+            typingInterval={70}
+            emptyPause={20}
+          />
         </span>
-      </Col>
-    </Row>
+      </h1>
+    </div>
   </header>
 )
 
