@@ -6,14 +6,9 @@
       "url": "https://athome.robocup.org/"
     },
     {
-      "name": "Smart Factory",
+      "name": "AURA",
       "img": "projects/cobot.jpg",
-      "url": "https://www.youtube.com/watch?v=2Jw5t-hbkAU"
-    },
-    {
-      "name": "Social & Env Monitoring System",
-      "img": "projects/contador_personas.jpg",
-      "url": "https://covid19.roborregos.com/"
+      "url": "/projects"
     },
     {
       "name": "LARC",
@@ -29,6 +24,21 @@
       "name": "Soccer Lightweight",
       "img": "projects/soccer_light.jpg",
       "url": "https://junior.robocup.org/rcj-soccer-lightweight/"
+    },
+    {
+      "name": "Soccer Vision",
+      "img": "projects/soccer_open.jpg",
+      "url": "/projects"
+    },
+    {
+      "name": "VSS",
+      "img": "projects/vsss.jpg",
+      "url": "/projects"
+    },
+    {
+      "name": "Industrial",
+      "img": "projects/cobot.jpg",
+      "url": "/projects"
     }
   ]
 }

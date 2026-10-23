@@ -1,4 +1,5 @@
 import React from 'react'
+import placeholder from '../../../../images/placeholder-rectangle.png'
 
 type Project = {
   title: string,
@@ -17,7 +18,7 @@ const tryRequire = (imgPath: string) => {
   try {
     return require(`../../../../images/projects/${imgPath}`)
   } catch (err) {
-    return imgPath
+    return placeholder
   }
 }
 
