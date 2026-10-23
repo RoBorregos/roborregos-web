@@ -1,6 +1,6 @@
 // @flow
 import React from 'react'
-import backgroundImage from '../../../images/small_logo.png'
+import backgroundImage from '../../../images/white_logo.png'
 
 type ColorScheme = {
     primary: string,

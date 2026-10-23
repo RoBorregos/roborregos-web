@@ -1,7 +1,7 @@
 // @flow
 import React from 'react'
 import { Link } from 'react-router-dom'
-import logo from '../../images/small_logo.png'
+import logo from '../../images/white_logo.png'
 import routesData from '../../data/routes.json'
 
 const socials = [
@@ -16,7 +16,7 @@ const Footer = () => (
   <footer className="bg-gradient-to-tr from-neutral-950 to-neutral-800 px-6 py-12 font-archivo text-white lg:px-12">
     <div className="mx-auto grid max-w-6xl gap-10 md:grid-cols-3">
       <div className="flex flex-col items-start gap-4">
-        <img src={logo} alt="RoBorregos" className="h-20" />
+        <img src={logo} alt="RoBorregos" className="h-24 w-auto" />
         <p className="text-sm text-gray-400">Tecnológico de Monterrey, Campus Monterrey</p>
       </div>
 

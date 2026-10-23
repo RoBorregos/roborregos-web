@@ -31,7 +31,7 @@ const NavBar = ({ routes }: Props) => {
             <li key={route.path}>
               <Link
                 to={route.path}
-                className={`border-b-2 pb-1 text-sm uppercase tracking-widest transition duration-300 ${
+                className={`border-b-2 pb-1 font-anton text-base uppercase tracking-wider transition duration-300 ${
                   isActive(route.path)
                     ? 'border-roboblue text-white'
                     : 'border-transparent text-gray-300 hover:text-white'
@@ -73,7 +73,7 @@ const NavBar = ({ routes }: Props) => {
               <Link
                 to={route.path}
                 onClick={() => setOpen(false)}
-                className={`block py-3 text-sm uppercase tracking-widest ${
+                className={`block py-3 font-anton text-lg uppercase tracking-wider ${
                   isActive(route.path) ? 'text-roboblue' : 'text-gray-300'
                 }`}
               >

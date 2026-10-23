@@ -18,15 +18,19 @@ const HomeSponsors = ({ sponsors }: Props) => {
   const sponsorMedium = sponsors.filter((sponsor) => sponsor.size === 'M')
 
   return (
-    <section className="bg-gradient-to-tr from-neutral-950 to-neutral-800 px-6 py-20">
-      <div className="mx-auto max-w-6xl">
-        <h2 className="section-title mb-12 text-center">Our Sponsors</h2>
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+    <section className="bg-gradient-to-tr from-neutral-950 to-neutral-800 px-6 py-14">
+      <div className="mx-auto max-w-5xl">
+        <div className="mb-8 flex items-center gap-4">
+          <span className="h-px flex-1 bg-gray-700" />
+          <h2 className="font-anton text-lg uppercase tracking-[0.3em] text-gray-300">Our Sponsors</h2>
+          <span className="h-px flex-1 bg-gray-700" />
+        </div>
+        <div className="grid grid-cols-2 gap-4 md:grid-cols-3">
           {sponsorLarge.map((sponsor) => (
             <HomeSingleSponsor key={sponsor.name} sponsor={sponsor} large />
           ))}
         </div>
-        <div className="mt-8 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-4 grid grid-cols-2 gap-4 md:grid-cols-4">
           {sponsorMedium.map((sponsor) => (
             <HomeSingleSponsor key={sponsor.name} sponsor={sponsor} large={false} />
           ))}

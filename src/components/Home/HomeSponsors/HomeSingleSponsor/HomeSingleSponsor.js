@@ -26,8 +26,8 @@ const HomeSingleSponsor = ({ sponsor, large }: Props) => (
     href={sponsor.link}
     target="_blank"
     rel="noreferrer noopener"
-    className={`group flex items-center justify-center rounded-xl bg-white p-6 transition duration-300 hover:scale-105 hover:shadow-[0_0_30px_rgba(10,56,239,0.5)] ${
-      large ? 'h-48' : 'h-32'
+    className={`group flex items-center justify-center rounded-lg bg-white p-4 opacity-90 transition duration-300 hover:scale-105 hover:opacity-100 hover:shadow-[0_0_24px_rgba(10,56,239,0.5)] ${
+      large ? 'h-28' : 'h-20'
     }`}
   >
     <img
