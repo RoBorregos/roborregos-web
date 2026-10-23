@@ -34,7 +34,7 @@ const RevealOnScroll = () => {
           observer.unobserve(entry.target)
         }
       })
-    }, { threshold: 0.12 })
+    }, { threshold: 0, rootMargin: '0px 0px -8% 0px' })
     const targets = document.querySelectorAll('main section, footer')
     targets.forEach((el) => {
       el.classList.add('reveal')
