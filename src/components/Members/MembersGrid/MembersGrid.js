@@ -205,7 +205,7 @@ function MembersGrid() {
             />
             <div className="absolute inset-x-0 bottom-0 flex items-center justify-between gap-2 bg-gradient-to-t from-black to-transparent p-3 pt-10">
               <p className="text-sm font-semibold">{`${member.name} ${member.lastname}`}</p>
-              <i className={`fas ${memberIcon(member.role)} text-gray-300 group-hover:text-roboblue`} />
+              <i className={`fas ${memberIcon(member.role)} text-gray-300 group-hover:text-bright`} />
             </div>
           </button>
         ))}

@@ -31,7 +31,7 @@ const SponsorPackages = ({ language }: Props) => {
       <div className="mx-auto grid max-w-6xl gap-6 md:grid-cols-2 lg:grid-cols-4">
         {sponsorsData.packages.map((pkg: PackageType) => (
           <div key={pkg.name} className="flex flex-col rounded-xl border border-steel/40 bg-card p-6 transition duration-300 hover:-translate-y-1 hover:border-roboblue hover:shadow-[0_0_30px_rgba(10,56,239,0.4)]">
-            <h4 className="border-b border-gray-700 pb-4 text-center font-anton text-2xl uppercase tracking-wide text-roboblue">{pkg.name}</h4>
+            <h4 className="border-b border-gray-700 pb-4 text-center font-anton text-2xl uppercase tracking-wide text-bright">{pkg.name}</h4>
             <ul className="flex-1 space-y-3 py-6">
               {pkg.benefits.map((benefit: BenefitsType) => (
                 <li key={benefit.en} className="flex gap-3 text-sm text-gray-300">

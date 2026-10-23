@@ -43,13 +43,13 @@ function HeaderBanner({
         src={backgroundImage}
         alt=""
         aria-hidden="true"
-        className="pointer-events-none absolute left-1/2 top-1/2 h-[70%] -translate-x-1/2 -translate-y-1/2 opacity-10"
+        className="pointer-events-none absolute left-1/2 top-1/2 h-[120%] max-w-none -translate-x-1/2 -translate-y-1/2 opacity-[0.18]"
       />
       <div className="pointer-events-none absolute left-1/2 top-1/3 h-48 w-96 -translate-x-1/2 rounded-full bg-navy blur-[90px]" />
       <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black to-transparent" />
 
       <div className="relative z-10 my-auto max-w-3xl">
-        <h1 className="font-jersey text-6xl text-roboblue md:text-8xl">{title}</h1>
+        <h1 className="font-jersey text-6xl text-bright md:text-8xl">{title}</h1>
         <p className="section-subtitle mt-6 normal-case leading-relaxed">{lines(mainText)}</p>
         {additionalButton ? (
           <button type="button" onClick={additionalButton.onClick} className="rb-btn mt-8">
@@ -64,7 +64,7 @@ function HeaderBanner({
           type="button"
           aria-label="Scroll down"
           onClick={scrollToInfo}
-          className="text-3xl transition duration-300 hover:text-roboblue"
+          className="text-3xl transition duration-300 hover:text-bright"
         >
           <i className="fas fa-angle-down" />
         </button>

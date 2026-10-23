@@ -20,9 +20,22 @@
   }
 }
 
+@layer base {
+  :focus-visible {
+    @apply outline-none ring-2 ring-bright ring-offset-2 ring-offset-black;
+  }
+}
+
 @layer components {
+  .bg-grid {
+    background-image:
+      linear-gradient(rgba(92, 122, 255, 0.07) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(92, 122, 255, 0.07) 1px, transparent 1px);
+    background-size: 48px 48px;
+  }
+
   .section-title {
-    @apply font-jersey text-5xl text-roboblue md:text-7xl;
+    @apply font-jersey text-5xl text-bright md:text-7xl;
   }
 
   .section-subtitle {
@@ -39,5 +52,18 @@
 
   .rb-btn-outline {
     @apply inline-flex items-center justify-center rounded-full border border-steel px-6 py-2 font-semibold text-white transition duration-300 hover:border-roboblue hover:bg-roboblue/20;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .reveal {
+    opacity: 0;
+    transform: translateY(28px);
+    transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+  }
+
+  .reveal.reveal-visible {
+    opacity: 1;
+    transform: none;
   }
 }

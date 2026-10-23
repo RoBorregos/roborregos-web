@@ -60,7 +60,7 @@ const MemberModal = ({
         </button>
         <img src={tryRequire(`${id}.jpg`)} alt={fullName} className="h-64 w-full object-cover md:h-full" />
         <div className="flex flex-col gap-3 p-6 md:p-8">
-          <h2 className="font-jersey text-4xl text-roboblue" data-testid="member-fullName">{fullName}</h2>
+          <h2 className="font-jersey text-4xl text-bright" data-testid="member-fullName">{fullName}</h2>
           <strong className="font-anton uppercase tracking-wide">{role}</strong>
           {status === 'inactive' && (
             <div className="text-sm text-gray-400">

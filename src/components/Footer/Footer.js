@@ -13,6 +13,12 @@ const socials = [
 ]
 
 const Footer = () => (
+  <>
+  <section className="bg-gradient-to-r from-navy via-roboblue/70 to-navy px-6 py-14 text-center">
+    <h2 className="font-jersey text-4xl text-white md:text-6xl">Build the next robot with us</h2>
+    <p className="mx-auto mt-3 max-w-xl text-gray-200">Candidates opens every year to students from any major and semester.</p>
+    <Link to="/candidates" className="mt-8 inline-flex items-center justify-center rounded-full bg-white px-8 py-3 text-lg font-semibold text-black transition duration-300 hover:scale-105">Join the Team</Link>
+  </section>
   <footer className="bg-gradient-to-tr from-neutral-950 to-neutral-800 px-6 py-12 font-archivo text-white lg:px-12">
     <div className="mx-auto grid max-w-6xl gap-10 md:grid-cols-3">
       <div className="flex flex-col items-start gap-4">
@@ -25,7 +31,7 @@ const Footer = () => (
         <ul className="grid grid-cols-2 gap-2">
           {routesData.routes.map((route) => (
             <li key={route.path}>
-              <Link to={route.path} className="text-gray-300 transition duration-300 hover:text-roboblue">
+              <Link to={route.path} className="text-gray-300 transition duration-300 hover:text-bright">
                 {route.legend}
               </Link>
             </li>
@@ -59,6 +65,7 @@ const Footer = () => (
       </div>
     </div>
   </footer>
+  </>
 )
 
 export default Footer

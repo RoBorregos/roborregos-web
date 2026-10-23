@@ -17,11 +17,11 @@ const values = [
 ]
 
 const MembersValues = () => (
-  <section className="bg-gradient-to-r from-neutral-900 to-neutral-950 px-6 py-20">
+  <section className="bg-grid bg-neutral-950 px-6 py-20">
     <div className="mx-auto grid max-w-6xl gap-8 md:grid-cols-3">
       {values.map((v) => (
         <div key={v.title} className="rb-card transition duration-300 hover:-translate-y-1 hover:shadow-[0_0_30px_rgba(10,56,239,0.35)]">
-          <h3 className="mb-4 font-jersey text-4xl text-roboblue">{v.title}</h3>
+          <h3 className="mb-4 font-jersey text-4xl text-bright">{v.title}</h3>
           <p className="leading-relaxed text-gray-300">{v.text}</p>
         </div>
       ))}

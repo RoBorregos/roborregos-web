@@ -33,7 +33,7 @@ function ContactCompetitions({ language }: Props) {
           {competitions.map((competition: CompetitionType) => (
             <a key={competition.name} href={competition.url} target="_blank" rel="noreferrer" className="group flex flex-col items-center gap-3 text-center">
               <img src={tryRequire(competition.img)} alt={competition.name} className="h-28 w-28 rounded-full bg-white object-contain p-3 transition duration-300 group-hover:scale-110" />
-              <span className="text-sm text-gray-300 group-hover:text-roboblue">{competition.name}</span>
+              <span className="text-sm text-gray-300 group-hover:text-bright">{competition.name}</span>
             </a>
           ))}
         </div>

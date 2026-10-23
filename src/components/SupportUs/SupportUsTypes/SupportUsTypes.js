@@ -52,7 +52,7 @@ function SupportUsTypes({ language }: Props) {
           >
             <img src={type.img} alt={type.title[1]} className="h-56 w-full object-cover transition duration-500 group-hover:scale-105" />
             <div className="p-6">
-              <h3 className="mb-3 font-jersey text-4xl text-roboblue">{type.title[language]}</h3>
+              <h3 className="mb-3 font-jersey text-4xl text-bright">{type.title[language]}</h3>
               <p className="text-gray-300">{type.description[language]}</p>
             </div>
           </button>

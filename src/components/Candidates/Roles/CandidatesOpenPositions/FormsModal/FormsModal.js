@@ -121,7 +121,7 @@ function FormsModal(props: Props) {
             <button type="button" aria-label="Close" onClick={toggle} className="absolute right-4 top-4 flex h-9 w-9 items-center justify-center rounded-full bg-black/50 transition hover:bg-roboblue">
               <i className="fas fa-times" />
             </button>
-            <h2 className="mb-6 pr-10 font-jersey text-4xl text-roboblue">{greeting}</h2>
+            <h2 className="mb-6 pr-10 font-jersey text-4xl text-bright">{greeting}</h2>
             <form className={`grid gap-4 md:grid-cols-2 ${isLoading ? "opacity-60" : ""}`} onSubmit={(e) => e.preventDefault()}>
               <div>
                 <label className={labelCls} htmlFor="name">Name</label>

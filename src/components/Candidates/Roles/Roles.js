@@ -4,7 +4,7 @@ import CandidatesOpenPositions from './CandidatesOpenPositions/CandidatesOpenPos
 import positionsData from '../../../data/positions.json'
 
 const Roles = () => (
-  <section className="bg-gradient-to-r from-neutral-900 to-neutral-950 px-6 py-20">
+  <section className="bg-grid bg-neutral-950 px-6 py-20">
     <h2 className="section-title mb-12 text-center">Roles</h2>
     <CandidatesOpenPositions positionsData={positionsData} />
   </section>

@@ -74,7 +74,7 @@ const NavBar = ({ routes }: Props) => {
                 to={route.path}
                 onClick={() => setOpen(false)}
                 className={`block py-3 font-anton text-lg uppercase tracking-wider ${
-                  isActive(route.path) ? 'text-roboblue' : 'text-gray-300'
+                  isActive(route.path) ? 'text-bright' : 'text-gray-300'
                 }`}
               >
                 {route.legend}

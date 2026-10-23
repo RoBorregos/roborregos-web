@@ -8,7 +8,7 @@ const items = [
 ]
 
 const HomeMiniInformation = () => (
-  <section className="bg-gradient-to-r from-neutral-900 to-neutral-950 px-6 py-16">
+  <section className="bg-grid bg-neutral-950 px-6 py-16">
     <div className="mx-auto grid max-w-4xl grid-cols-1 gap-10 sm:grid-cols-3">
       {items.map((item) => (
         <div key={item.text} className="flex flex-col items-center gap-4">

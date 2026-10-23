@@ -6,6 +6,7 @@ module.exports = {
     extend: {
       colors: {
         roboblue: '#0A38EF',
+        bright: '#5C7AFF',
         navy: '#051B72',
         rbrgs: '#0070F3',
         steel: '#4F72B8',

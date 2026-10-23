@@ -1,5 +1,6 @@
 // @flow
 import React from 'react'
+import { Link } from 'react-router-dom'
 import header from '../../../images/header.png'
 import team from '../../../images/home/team.jpg'
 
@@ -13,10 +14,10 @@ const HomeHeader = () => (
     <div className="pointer-events-none absolute left-1/2 top-1/2 h-64 w-[28rem] -translate-x-1/2 -translate-y-1/2 rounded-full bg-navy blur-[120px]" />
 
     <div className="relative z-10 flex flex-col items-center gap-8">
-      <img src={header} alt="RoBorregos" className="w-[80vw] max-w-3xl" />
+      <img src={header} alt="RoBorregos" className="w-[70vw] max-w-xl" />
       <h1 className="font-jersey text-5xl text-white md:text-7xl">
         We
-        <span className="text-roboblue">
+        <span className="text-bright">
           <ReactRotatingText
             items={[' create', ' build', ' design', ' code', ' connect', ' compete', ' learn', ' teach']}
             pause={2500}
@@ -25,6 +26,10 @@ const HomeHeader = () => (
           />
         </span>
       </h1>
+      <div className="flex flex-col items-center gap-4 sm:flex-row">
+        <Link to="/candidates" className="rb-btn px-8 py-3 text-lg">Join Candidates</Link>
+        <Link to="/support-us" className="rb-btn-outline px-8 py-3 text-lg">Support us</Link>
+      </div>
     </div>
   </header>
 )

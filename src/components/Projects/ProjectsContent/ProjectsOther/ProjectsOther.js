@@ -38,7 +38,7 @@ const ProjectsOther = ({ projects }: Props) => (
             className="group overflow-hidden rounded-xl bg-card transition duration-300 hover:-translate-y-1 hover:shadow-[0_0_30px_rgba(10,56,239,0.4)]"
           >
             <img src={tryRequire(`${project.image}.jpg`)} alt={project.title} className="h-44 w-full object-cover" />
-            <p className="p-4 font-anton text-lg uppercase tracking-wide group-hover:text-roboblue">{project.title}</p>
+            <p className="p-4 font-anton text-lg uppercase tracking-wide group-hover:text-bright">{project.title}</p>
           </a>
         ))}
       </div>

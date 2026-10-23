@@ -23,6 +23,28 @@ const ScrollToTop = () => {
   return null
 }
 
+const RevealOnScroll = () => {
+  const { pathname } = useLocation()
+  useEffect(() => {
+    if (!('IntersectionObserver' in window)) return undefined
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('reveal-visible')
+          observer.unobserve(entry.target)
+        }
+      })
+    }, { threshold: 0.12 })
+    const targets = document.querySelectorAll('main section, footer')
+    targets.forEach((el) => {
+      el.classList.add('reveal')
+      observer.observe(el)
+    })
+    return () => observer.disconnect()
+  }, [pathname])
+  return null
+}
+
 const App = () => {
   useEffect(() => {
     loadCSS(
@@ -34,6 +56,7 @@ const App = () => {
   return (
     <Router>
       <ScrollToTop />
+      <RevealOnScroll />
       <div className="flex min-h-[calc(100vh-4rem)] flex-col">
         <NavBar routes={routesData.routes} />
         <main className="flex-1">
