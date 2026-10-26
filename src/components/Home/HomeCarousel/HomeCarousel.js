@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 
-const IMAGES_NUMBER = 18
+const IMAGES_NUMBER = 28
 
 function tryRequire(imgPath: string) {
   try {

@@ -5,7 +5,6 @@ import {
   BrowserRouter as Router, Route, Switch, useLocation,
 } from 'react-router-dom'
 import Home from './components/Home/Home'
-import Members from './components/Members/Members'
 import SupportUs from './components/SupportUs/SupportUs'
 import Candidates from './components/Candidates/Candidates'
 import NavBar from './components/NavBar/NavBar'
@@ -64,7 +63,6 @@ const App = () => {
             <Route exact path="/" component={Home} />
             <Route path="/about" component={About} />
             <Route path="/projects" component={() => <Project projectsData={projectsData} />} />
-            <Route path="/members" component={Members} />
             <Route path="/candidates" component={Candidates} />
             <Route path="/support-us" component={SupportUs} />
             <Route component={Home} />

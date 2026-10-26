@@ -2,13 +2,13 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import header from '../../../images/header.png'
-import team from '../../../images/home/team.jpg'
+import team from '../../../images/home/team_2026.jpg'
 
 const ReactRotatingText = require('react-rotating-text')
 
 const HomeHeader = () => (
   <header className="relative flex min-h-[calc(100vh-4rem)] items-center justify-center overflow-hidden px-6 text-center">
-    <img src={team} alt="" aria-hidden="true" className="absolute inset-0 h-full w-full object-cover object-top" />
+    <img src={team} alt="" aria-hidden="true" className="absolute inset-0 h-full w-full object-cover object-center" />
     <div className="absolute inset-0 bg-black/60" />
     <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent" />
     <div className="pointer-events-none absolute left-1/2 top-1/2 h-64 w-[28rem] -translate-x-1/2 -translate-y-1/2 rounded-full bg-navy blur-[120px]" />
