@@ -409,6 +409,14 @@
             "description": "Competed at RoboCup 2025 in Salvador, Bahia, Brazil."
         },
         {
+            "date": "2025",
+            "month": "0",
+            "year": "2025",
+            "img_path": "56",
+            "title": "RoboCamp 2025",
+            "description": "We organized RoboCamp 2025, a robotics camp for elementary school children to learn and explore robotics."
+        },
+        {
             "date": "April 2026",
             "month": "4",
             "year": "2026",
