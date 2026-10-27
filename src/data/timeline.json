@@ -413,6 +413,14 @@
             "month": "0",
             "year": "2025",
             "img_path": "56",
+            "title": "RoboChamp 2025",
+            "description": "We organized RoboChamp 2025, a robotics competition for high school students to take their first steps in robotics and programming."
+        },
+        {
+            "date": "2025",
+            "month": "0",
+            "year": "2025",
+            "img_path": "57",
             "title": "RoboCamp 2025",
             "description": "We organized RoboCamp 2025, a robotics camp for elementary school children to learn and explore robotics."
         },

@@ -61,7 +61,13 @@ function AboutTimeline({ language }: { language: number }) {
       <div className="mx-auto grid max-w-6xl gap-8 md:grid-cols-2 lg:grid-cols-3">
         {yearEvents.map((event: Event) => (
           <article key={`${event.date}-${event.title}`} className="group overflow-hidden rounded-xl bg-card transition duration-300 hover:-translate-y-1 hover:shadow-[0_0_30px_rgba(10,56,239,0.4)]">
-            <img src={tryRequire(event.img_path)} alt={event.title} className="h-56 w-full object-cover" />
+            <img
+              src={tryRequire(event.img_path)}
+              alt={event.title}
+              className={`h-56 w-full object-cover ${
+                event.img_path === '57' ? 'object-[center_20%]' : 'object-center'
+              }`}
+            />
             <div className="p-6">
               <span className="font-anton text-sm uppercase tracking-widest text-steel">{event.date}</span>
               <h3 className="mb-3 mt-1 font-anton text-2xl uppercase">{event.title}</h3>
