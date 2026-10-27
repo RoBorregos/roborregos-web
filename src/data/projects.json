@@ -11,8 +11,8 @@
     },
     {
       "priority": "0",
-      "title": "AURA",
-      "description": "AURA is the intelligent agent that grew out of our Smart Factory collaboration. We keep working on coordinating factory tasks, operation flows and materials in a space shared by collaborative robots, intelligent warehouses and humans.",
+      "title": "NAVI",
+      "description": "NAVI is an AI assistant developed by students from RoBorregos for CETEC's Smart Factory at Tec de Monterrey, combining computer vision, natural voice conversation, and robot control. From an eight-monitor wall in the lab's atrium, it detects and tracks visitors, answers their questions about the Smart Factory, and lets them move the lab's robots through voice commands. This turns the lab into an interactive, proactive space where people don't just ask about the factory but see it respond.",
       "wiki": "",
       "image": "cobot",
       "background": "",
