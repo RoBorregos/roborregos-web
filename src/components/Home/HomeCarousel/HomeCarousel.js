@@ -10,6 +10,9 @@ function tryRequire(imgPath: string) {
   }
 }
 
+// photos are almost all 3:2; the few portrait ones are shown whole instead of cropped
+const PORTRAIT = [15, 16, 19, 20]
+
 const images = Array.from({ length: IMAGES_NUMBER }, (_, i) => tryRequire(`${i + 1}.jpg`))
 
 const HomeCarousel = () => {
@@ -23,18 +26,19 @@ const HomeCarousel = () => {
   const go = (delta: number) => setCurrent((c) => (c + delta + images.length) % images.length)
 
   return (
-    <section className="relative h-[70vh] w-full overflow-hidden bg-black">
-      {images.map((src, index) => (
-        <img
-          key={src}
-          src={src}
-          alt={`RoBorregos ${index + 1}`}
-          className={`absolute inset-0 h-full w-full object-cover transition-opacity duration-700 ${
-            index === current ? 'opacity-100' : 'opacity-0'
-          }`}
-        />
-      ))}
-      <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-black/40" />
+    <section className="bg-black px-4 py-12 md:px-8">
+      <div className="relative mx-auto aspect-[3/2] w-full max-w-5xl overflow-hidden rounded-xl bg-card shadow-[0_0_40px_rgba(10,56,239,0.25)]">
+        {images.map((src, index) => (
+          <img
+            key={src}
+            src={src}
+            alt={`RoBorregos ${index + 1}`}
+            className={`absolute inset-0 h-full w-full transition-opacity duration-700 ${
+              PORTRAIT.includes(index + 1) ? 'object-contain' : 'object-cover'
+            } ${index === current ? 'opacity-100' : 'opacity-0'}`}
+          />
+        ))}
+      <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
 
       <button
         type="button"
@@ -65,6 +69,7 @@ const HomeCarousel = () => {
             }`}
           />
         ))}
+      </div>
       </div>
     </section>
   )
