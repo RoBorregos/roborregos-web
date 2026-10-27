@@ -18,6 +18,18 @@ const slides = [
   { title: 'Succeed', images: [Succeed1, Succeed2, Succeed3, Succeed4] },
 ]
 
+// Focal point for photos whose subject gets cropped by the default centered cover
+const focalPoint = { [Succeed2]: '50% 75%', [Learn2]: '50% 20%' }
+
+// Bento layout: tiles always fill the grid (2 rows on desktop) with no empty cells
+const tileClass = (i: number, count: number) => {
+  if (i === 0) return 'col-span-2 md:row-span-2'
+  if (count === 3) return 'md:col-span-2'
+  if (i === 1) return 'md:col-span-2'
+  if (i === count - 1) return 'col-span-2 md:col-span-1'
+  return ''
+}
+
 const CandidatesCarousel = () => {
   const [current, setCurrent] = useState(0)
   const go = (d: number) => setCurrent((c) => (c + d + slides.length) % slides.length)
@@ -27,13 +39,14 @@ const CandidatesCarousel = () => {
     <section className="px-6 py-20">
       <div className="mx-auto max-w-6xl">
         <h2 className="section-title mb-8 text-center">{slide.title}</h2>
-        <div className="grid h-[60vh] auto-rows-fr grid-cols-2 gap-3 overflow-hidden md:grid-cols-4">
+        <div className="grid h-[60vh] auto-rows-fr grid-cols-2 gap-3 overflow-hidden md:grid-cols-4 md:grid-rows-2">
           {slide.images.map((src, i) => (
             <img
               key={src}
               src={src}
               alt={`${slide.title} ${i + 1}`}
-              className={`h-full min-h-0 w-full rounded-xl object-cover ${i === 0 ? 'col-span-2 md:row-span-1' : ''}`}
+              style={focalPoint[src] ? { objectPosition: focalPoint[src] } : undefined}
+              className={`h-full min-h-0 w-full rounded-xl object-cover ${tileClass(i, slide.images.length)}`}
             />
           ))}
         </div>
