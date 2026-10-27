@@ -418,6 +418,22 @@
         },
         {
             "date": "2026",
+            "month": "0",
+            "year": "2026",
+            "img_path": "0",
+            "title": "Networking Event",
+            "description": "In collaboration with WIT, we hosted a panel for women featuring Patricia Armendáriz as our guest."
+        },
+        {
+            "date": "2026",
+            "month": "0",
+            "year": "2026",
+            "img_path": "0",
+            "title": "RoboCamp 2026",
+            "description": "We organized a robotics camp for elementary school children to learn and explore robotics."
+        },
+        {
+            "date": "2026",
             "month": "10",
             "year": "2026",
             "img_path": "51",

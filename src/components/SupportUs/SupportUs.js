@@ -1,19 +1,21 @@
 // @flow
-import React, { useState } from 'react'
+import React from 'react'
 import SupportUsCompetitions from './SupportUsCompetitions/SupportUsCompetitions'
 import HeaderBanner from '../Shared/HeaderBanner/HeaderBanner'
 import SupportUsTypes from './SupportUsTypes/SupportUsTypes'
 import SendEmail from './SendEmail/SendEmail'
 
-const Contact = () => {
+type Props = {
+  language: number,
+};
+
+const Contact = ({ language }: Props) => {
   const headerTitle = ['Apóyanos', 'Support us']
   const headerMainText = [['¿Te gustaría apoyarnos? ¡Colabora con nosotros!'], ['Would you like to support RoBorregos? Let’s collaborate!']]
   const headerSubText = [['Ver más'], ['Learn More']]
   const buttonText = ['Contáctanos', 'Contact Us!']
 
   document.title = 'RoBorregos | Support us'
-
-  const [language, setLanguage] = useState(1)
 
   return (
     <>
@@ -33,13 +35,6 @@ const Contact = () => {
           },
         }}
       />
-      <button
-        type="button"
-        onClick={() => setLanguage(!language ? 1 : 0)}
-        className="fixed bottom-6 right-6 z-40 rounded-full bg-roboblue px-4 py-3 font-anton tracking-wide shadow-lg transition hover:scale-105"
-      >
-        ES/EN
-      </button>
       <SupportUsTypes language={language} />
       <SendEmail language={language} />
       <SupportUsCompetitions language={language} />

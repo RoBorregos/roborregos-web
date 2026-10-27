@@ -7,12 +7,12 @@ import HomeMisionVision from './HomeMisionVision/HomeMisionVision'
 import sponsorsData from '../../data/sponsors.json'
 import HomeCarousel from './HomeCarousel/HomeCarousel'
 
-const Home = () => {
+const Home = ({ language }: { language: number }) => {
   document.title = 'RoBorregos | Home'
 
   return (
     <>
-      <HomeHeader />
+      <HomeHeader language={language} />
       <HomeMiniInformation />
       <HomeMisionVision />
       <HomeCarousel />

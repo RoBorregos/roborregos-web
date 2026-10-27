@@ -12,9 +12,18 @@ type RouteType = {
 
 type Props = {
   routes: Array<RouteType>,
+  language: number,
 };
 
-const NavBar = ({ routes }: Props) => {
+const translations = {
+  Home: ['Inicio', 'Home'],
+  About: ['Nosotros', 'About'],
+  Projects: ['Proyectos', 'Projects'],
+  Candidates: ['Candidatos', 'Candidates'],
+  'Support Us': ['Apóyanos', 'Support Us'],
+}
+
+const NavBar = ({ routes, language }: Props) => {
   const [open, setOpen] = useState(false)
   const { pathname } = useLocation()
   const isActive = (path: string) => (path === '/' ? pathname === '/' : pathname.startsWith(path))
@@ -37,7 +46,7 @@ const NavBar = ({ routes }: Props) => {
                     : 'border-transparent text-gray-300 hover:text-white'
                 }`}
               >
-                {route.legend}
+                {translations[route.legend][language]}
               </Link>
             </li>
           ))}
@@ -77,7 +86,7 @@ const NavBar = ({ routes }: Props) => {
                   isActive(route.path) ? 'text-bright' : 'text-gray-300'
                 }`}
               >
-                {route.legend}
+                {translations[route.legend][language]}
               </Link>
             </li>
           ))}

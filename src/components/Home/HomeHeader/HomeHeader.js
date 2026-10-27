@@ -6,7 +6,9 @@ import team from '../../../images/home/team_2026.jpg'
 
 const ReactRotatingText = require('react-rotating-text')
 
-const HomeHeader = () => (
+const HomeHeader = ({ language }: { language: number }) => {
+  const spanish = language === 0
+  return (
   <header className="relative flex min-h-[calc(100vh-4rem)] items-center justify-center overflow-hidden px-6 text-center">
     <img src={team} alt="" aria-hidden="true" className="absolute inset-0 h-full w-full object-cover object-center" />
     <div className="absolute inset-0 bg-black/60" />
@@ -27,11 +29,12 @@ const HomeHeader = () => (
         </span>
       </h1>
       <div className="flex flex-col items-center gap-4 sm:flex-row">
-        <Link to="/candidates" className="rb-btn px-8 py-3 text-lg">Join Candidates</Link>
-        <Link to="/support-us" className="rb-btn-outline px-8 py-3 text-lg">Support us</Link>
+        <Link to="/candidates" className="rb-btn px-8 py-3 text-lg">{spanish ? 'Únete a Candidates' : 'Join Candidates'}</Link>
+        <Link to="/support-us" className="rb-btn-outline px-8 py-3 text-lg">{spanish ? 'Apóyanos' : 'Support us'}</Link>
       </div>
     </div>
   </header>
-)
+  )
+}
 
 export default HomeHeader

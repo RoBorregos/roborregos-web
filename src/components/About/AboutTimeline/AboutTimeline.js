@@ -20,7 +20,7 @@ const tryRequire = (imgPath: string) => {
   }
 }
 
-function AboutTimeline() {
+function AboutTimeline({ language }: { language: number }) {
   const { events, years } = timelineData
   const sortedYears = useMemo(() => [...years].sort((a, b) => b - a), [years])
   const [selectedYear, setSelectedYear] = useState(sortedYears[0])
@@ -34,7 +34,12 @@ function AboutTimeline() {
 
   return (
     <section className="bg-black px-6 py-20" test-id="1">
-      <h2 className="section-title mb-10 text-center">Our Story</h2>
+      <h2 className="section-title mb-4 text-center">{language === 0 ? 'Un recorrido por nuestra historia' : 'A Journey Through Our History'}</h2>
+      <p className="mx-auto mb-10 max-w-3xl text-center text-lg leading-relaxed text-gray-300">
+        {language === 0
+          ? 'Explora los logros, las personas y las experiencias que han formado a RoBorregos a través de los años.'
+          : 'Explore the milestones, people and experiences that have shaped RoBorregos throughout the years.'}
+      </p>
 
       <div className="mx-auto mb-12 flex max-w-4xl flex-wrap justify-center gap-3">
         {sortedYears.map((year) => (

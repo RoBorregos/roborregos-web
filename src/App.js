@@ -1,5 +1,5 @@
 // @flow
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import { loadCSS } from 'fg-loadcss/src/loadCSS'
 import {
   BrowserRouter as Router, Route, Switch, useLocation,
@@ -13,6 +13,7 @@ import routesData from './data/routes.json'
 import Project from './components/Projects/Projects'
 import projectsData from './data/projects.json'
 import Footer from './components/Footer/Footer'
+import LanguageToggle from './components/Shared/LanguageToggle/LanguageToggle'
 
 const ScrollToTop = () => {
   const { pathname } = useLocation()
@@ -45,6 +46,8 @@ const RevealOnScroll = () => {
 }
 
 const App = () => {
+  const [language, setLanguage] = useState(1)
+
   useEffect(() => {
     loadCSS(
       'https://use.fontawesome.com/releases/v5.1.0/css/all.css',
@@ -57,18 +60,19 @@ const App = () => {
       <ScrollToTop />
       <RevealOnScroll />
       <div className="flex min-h-[calc(100vh-4rem)] flex-col">
-        <NavBar routes={routesData.routes} />
+        <NavBar routes={routesData.routes} language={language} />
+        <LanguageToggle onToggle={() => setLanguage(!language ? 1 : 0)} />
         <main className="flex-1">
           <Switch>
-            <Route exact path="/" component={Home} />
-            <Route path="/about" component={About} />
-            <Route path="/projects" component={() => <Project projectsData={projectsData} />} />
-            <Route path="/candidates" component={Candidates} />
-            <Route path="/support-us" component={SupportUs} />
+            <Route exact path="/" component={() => <Home language={language} />} />
+            <Route path="/about" component={() => <About language={language} />} />
+            <Route path="/projects" component={() => <Project projectsData={projectsData} language={language} />} />
+            <Route path="/candidates" component={() => <Candidates language={language} />} />
+            <Route path="/support-us" component={() => <SupportUs language={language} />} />
             <Route component={Home} />
           </Switch>
         </main>
-        <Footer />
+        <Footer language={language} />
       </div>
     </Router>
   )
