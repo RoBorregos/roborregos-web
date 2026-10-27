@@ -27,13 +27,13 @@ const CandidatesCarousel = () => {
     <section className="px-6 py-20">
       <div className="mx-auto max-w-6xl">
         <h2 className="section-title mb-8 text-center">{slide.title}</h2>
-        <div className="grid h-[60vh] grid-cols-2 gap-3 md:grid-cols-4">
+        <div className="grid h-[60vh] auto-rows-fr grid-cols-2 gap-3 overflow-hidden md:grid-cols-4">
           {slide.images.map((src, i) => (
             <img
               key={src}
               src={src}
               alt={`${slide.title} ${i + 1}`}
-              className={`h-full w-full rounded-xl object-cover ${i === 0 ? 'col-span-2 md:row-span-1' : ''}`}
+              className={`h-full min-h-0 w-full rounded-xl object-cover ${i === 0 ? 'col-span-2 md:row-span-1' : ''}`}
             />
           ))}
         </div>
