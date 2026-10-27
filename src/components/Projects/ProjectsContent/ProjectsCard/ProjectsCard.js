@@ -33,7 +33,9 @@ const ProjectsCard = ({ project, index }: Props) => (
       <img
         src={tryRequire(`${project.image}.jpg`)}
         alt={project.title}
-        className="aspect-video w-full object-cover transition duration-500 hover:scale-105"
+        className={`aspect-video w-full object-cover transition duration-500 hover:scale-105 ${
+          project.image === 'home' ? 'object-top' : 'object-center'
+        }`}
       />
     </div>
     <div>
