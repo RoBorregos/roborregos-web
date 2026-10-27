@@ -417,28 +417,28 @@
             "description": "@Home took 1st place at the Mexican Robotics Tournament 2026."
         },
         {
-            "date": "2026",
-            "month": "0",
+            "date": "July 2026",
+            "month": "7",
             "year": "2026",
-            "img_path": "0",
-            "title": "Networking Event",
-            "description": "In collaboration with WIT, we hosted a panel for women featuring Patricia Armendáriz as our guest."
+            "img_path": "51",
+            "title": "RoboCup 2026 Korea",
+            "description": "Competed in RoboCup 2026 in Korea representing RoBorregos and Mexico."
         },
         {
-            "date": "2026",
-            "month": "0",
+            "date": "August 2026",
+            "month": "8",
             "year": "2026",
-            "img_path": "0",
+            "img_path": "55",
             "title": "RoboCamp 2026",
             "description": "We organized a robotics camp for elementary school children to learn and explore robotics."
         },
         {
-            "date": "2026",
-            "month": "10",
+            "date": "September 2026",
+            "month": "9",
             "year": "2026",
-            "img_path": "51",
-            "title": "Korea 2026",
-            "description": "Competed in Korea representing RoBorregos and Mexico."
+            "img_path": "54",
+            "title": "Networking Event",
+            "description": "In collaboration with WIT, we hosted a panel for women featuring Patricia Armendáriz as our guest."
         }
     ],
     "years": [
