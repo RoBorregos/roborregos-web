@@ -6,24 +6,27 @@ import HeaderBanner from '../Shared/HeaderBanner/HeaderBanner'
 import CandidatesVideo from './CandidatesVideo/CandidatesVideo'
 import CandidatesClasses from './CandidatesClasses/CandidatesClasses'
 import CandidatesLinks from './CandidatesLinks/CandidatesLinks'
+import CandidatesProcess from './CandidatesProcess/CandidatesProcess'
+import CandidatesAlumni from './CandidatesAlumni/CandidatesAlumni'
 
-function Candidates() {
+function Candidates({ language }: { language: number }) {
   document.title = 'RoBorregos | Candidates'
-  const headerTitle = 'Candidates'
-  const headerMainText = ["Is RoBorregos' annual recruiting program where students from all majors and semesters come to learn and develop robotics."]
-  const headerSubText = ['Are you a candidate?']
+  const spanish = language === 0
+  const headerTitle = spanish ? 'Candidates' : 'Candidates'
+  const headerMainText = [spanish ? 'Es el programa anual de reclutamiento de RoBorregos, donde estudiantes de todas las carreras y semestres vienen a aprender y desarrollar robótica.' : "Is RoBorregos' annual recruiting program where students from all majors and semesters come to learn and develop robotics."]
+  const headerSubText = [spanish ? '¿Eres candidato?' : 'Are you a candidate?']
   return (
     <>
       <HeaderBanner
         title={headerTitle}
         mainText={headerMainText}
         subText={headerSubText}
-        bgColorScheme={{ primary: '#E84B77E6', secondary: '#141213E6' }}
-        iconColorScheme={{ primary: '#E84B77', secondary: '#CC2759' }}
       />
       <CandidatesVideo />
+      <CandidatesProcess />
       <CandidatesCarousel />
       <Roles />
+      <CandidatesAlumni />
       <CandidatesClasses />
       <CandidatesLinks />
     </>

@@ -1,5 +1,5 @@
 {
-  "url_contact":"mailto:teamroborregos@gmail.com",
+  "url_contact": "mailto:teamroborregos@gmail.com",
   "sponsors": [
     {
       "name": "Tecnológico de Monterrey",
@@ -28,8 +28,8 @@
   ],
   "packages": [
     {
-      "name" : "Package 1",
-      "benefits" : [
+      "name": "Package 1",
+      "benefits": [
         {
           "es": "6 menciones en redes sociales (una cada dos meses)",
           "en": "6 mentions on social media (every two months)"
@@ -57,8 +57,8 @@
       ]
     },
     {
-      "name" : "Package 2",
-      "benefits" : [
+      "name": "Package 2",
+      "benefits": [
         {
           "es": "12 menciones en redes sociales (una por mes)",
           "en": "12 mentions on social media (one per month)"
@@ -90,8 +90,8 @@
       ]
     },
     {
-      "name" : "Package 3",
-      "benefits" : [
+      "name": "Package 3",
+      "benefits": [
         {
           "es": "24 menciones genéricas en redes sociales (dos cada mes)",
           "en": "24 generic mentions in social networks (two each month)"
@@ -123,7 +123,7 @@
         {
           "es": "Exclusividad de marca",
           "en": "Brand exclusivity"
-        }        
+        }
       ]
     }
   ]

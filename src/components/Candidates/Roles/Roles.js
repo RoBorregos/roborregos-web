@@ -1,19 +1,13 @@
 // @flow
 import React from 'react'
-import { Row, Col } from 'react-bootstrap'
 import CandidatesOpenPositions from './CandidatesOpenPositions/CandidatesOpenPositions'
 import positionsData from '../../../data/positions.json'
-import './Roles.css'
 
 const Roles = () => (
-  <div className="candidates-join-us">
-    <Row>
-      <Col className="candidates-join-us-title-container">
-        <p> Roles </p>
-      </Col>
-    </Row>
+  <section className="bg-grid bg-neutral-950 px-6 py-20">
+    <h2 className="section-title mb-12 text-center">Roles</h2>
     <CandidatesOpenPositions positionsData={positionsData} />
-  </div>
+  </section>
 )
 
 export default Roles

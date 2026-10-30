@@ -30,3 +30,7 @@ public/mail/config.php
 
 # Other Files
 package-lock.json
+
+# Impeccable review screenshots and local Claude settings
+/.impeccable/review/
+/.claude/settings.local.json

@@ -1,19 +1,7 @@
 // @flow
 import React, { useState } from "react";
 import ReCAPTCHA from "react-google-recaptcha";
-import {
-  Form,
-  FormGroup,
-  Label,
-  Input,
-  Row,
-  Modal,
-  ModalHeader,
-  ModalBody,
-  Button,
-} from "reactstrap";
 import { sendJoinUsEmail } from "../../../../../scripts/apiScripts";
-import "./FormsModal.css";
 import FormsSnackBar from "../../../../Shared/FormsSnackBar/FormsSnackbar";
 
 type SelectedPosition = {
@@ -112,148 +100,70 @@ function FormsModal(props: Props) {
     recaptcha_ref.execute();
   };
 
-  const getError = () => {
-    if (
-      trySubmit &&
-      name &&
-      career &&
-      semester &&
-      matricualtionNumber &&
-      comments &&
-      (!name || !career || !semester || !matricualtionNumber || !comments)
-    ) {
-      return (
-        <Row className="mt-4 mb-1 justify-content-center">
-          <p className="text-danger"> Please fill out the entire forms</p>
-        </Row>
-      );
-    }
-    return null;
-  };
+  const inputCls =
+    "w-full rounded-lg border border-gray-700 bg-black/60 px-4 py-2 text-white outline-none transition focus:border-roboblue disabled:opacity-50";
+  const labelCls = "mb-1 block text-sm text-gray-300";
 
   return (
     <>
-      <Modal
-        id="candidates-join-modal"
-        isOpen={isOpen}
-        toggle={toggle}
-        className="position-relative"
-      >
-        <ModalHeader toggle={toggle}> {greeting}</ModalHeader>
-        <ModalBody>
-          <Form className={isLoading ? "formLoading" : ""}>
-            <Row>
-              <FormGroup className="col-md-6">
-                <Label>Name</Label>
-                <Input
-                  type="text"
-                  id="name"
-                  placeholder="Juanito"
-                  disabled={isLoading}
-                  onChange={(input) => {
-                    setName(input.target.value);
-                  }}
-                />
-              </FormGroup>
-              <FormGroup className="col-md-6">
-                <Label>Matriculation Number</Label>
-                <Input
-                  type="text"
-                  id="matricualtionNumber"
-                  placeholder="A01283070"
-                  disabled={isLoading}
-                  onChange={(input) => {
-                    setMatricualtionNumber(input.target.value);
-                  }}
-                />
-              </FormGroup>
-              <FormGroup className="col-md-6">
-                <Label>Career</Label>
-                <Input
-                  type="text"
-                  id="career"
-                  placeholder="IMT"
-                  disabled={isLoading}
-                  onChange={(input) => {
-                    setCareer(input.target.value);
-                  }}
-                />
-              </FormGroup>
-              <FormGroup className="col-md-6">
-                <Label>Semester</Label>
-                <Input
-                  type="select"
-                  id="semester"
-                  disabled={isLoading}
-                  onChange={(input) => {
-                    setSemester(input.target.value);
-                  }}
-                >
-                  <option value="1">1</option>
-                  <option value="2">2</option>
-                  <option value="3">3</option>
-                  <option value="4">4</option>
-                  <option value="5">5</option>
-                  <option value="6">6</option>
-                  <option value="7">7</option>
-                  <option value="8">8</option>
+      {isOpen && (
+        <div
+          id="candidates-join-modal"
+          className="fixed inset-0 z-[60] flex items-center justify-center bg-black/80 p-4 backdrop-blur-sm"
+          role="dialog"
+          aria-modal="true"
+          onClick={toggle}
+        >
+          <div
+            className="relative max-h-[90vh] w-full max-w-xl overflow-y-auto rounded-xl bg-gradient-to-tr from-neutral-950 to-neutral-800 p-6 shadow-[0_0_60px_rgba(10,56,239,0.35)] md:p-8"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <button type="button" aria-label="Close" onClick={toggle} className="absolute right-4 top-4 flex h-9 w-9 items-center justify-center rounded-full bg-black/50 transition hover:bg-roboblue">
+              <i className="fas fa-times" />
+            </button>
+            <h2 className="mb-6 pr-10 font-jersey text-4xl text-bright">{greeting}</h2>
+            <form className={`grid gap-4 md:grid-cols-2 ${isLoading ? "opacity-60" : ""}`} onSubmit={(e) => e.preventDefault()}>
+              <div>
+                <label className={labelCls} htmlFor="name">Name</label>
+                <input type="text" id="name" className={inputCls} placeholder="Juanito" disabled={isLoading} onChange={(e) => setName(e.target.value)} />
+              </div>
+              <div>
+                <label className={labelCls} htmlFor="matricualtionNumber">Matriculation Number</label>
+                <input type="text" id="matricualtionNumber" className={inputCls} placeholder="A01283070" disabled={isLoading} onChange={(e) => setMatricualtionNumber(e.target.value)} />
+              </div>
+              <div>
+                <label className={labelCls} htmlFor="career">Career</label>
+                <input type="text" id="career" className={inputCls} placeholder="IMT" disabled={isLoading} onChange={(e) => setCareer(e.target.value)} />
+              </div>
+              <div>
+                <label className={labelCls} htmlFor="semester">Semester</label>
+                <select id="semester" className={inputCls} disabled={isLoading} onChange={(e) => setSemester(e.target.value)}>
+                  {[1, 2, 3, 4, 5, 6, 7, 8].map((n) => (
+                    <option key={n} value={n}>{n}</option>
+                  ))}
                   <option value="9">9+</option>
-                </Input>
-              </FormGroup>
-              <FormGroup className="col-12">
-                <Label>Tell us about you</Label>
-                <Input
-                  type="textarea"
-                  id="comments"
-                  disabled={isLoading}
-                  placeholder="Why you want to join the team?"
-                  onChange={(input) => {
-                    setComments(input.target.value);
-                  }}
-                />
-              </FormGroup>
-            </Row>
-            <>{getError()} </>
-            <Row className="mt-4 mb-1 justify-content-center">
-              <Button
-                className="mr-4 col-3 join"
-                type="button"
-                onClick={handleReCaptcha}
-                disabled={isLoading}
-              >
-                Join!
-              </Button>
-            </Row>
-          </Form>
-          <div className={`loadingSymbol ${isLoading ? "" : "d-none"}`}>
-            <svg
-              className="spinSymbol"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-            >
-              <circle
-                className="opacity-25"
-                cx="12"
-                cy="12"
-                r="10"
-                stroke="currentColor"
-                strokeWidth="4"
-              />
-              <path
-                className="opacity-75"
-                fill="currentColor"
-                d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
-              />
-            </svg>
+                </select>
+              </div>
+              <div className="md:col-span-2">
+                <label className={labelCls} htmlFor="comments">Tell us about you</label>
+                <textarea id="comments" rows={4} className={inputCls} disabled={isLoading} placeholder="Why you want to join the team?" onChange={(e) => setComments(e.target.value)} />
+              </div>
+              {trySubmit && !(name && career && semester && matricualtionNumber && comments) && (
+                <p className="text-red-400 md:col-span-2">Please fill out the entire form</p>
+              )}
+              <div className="flex justify-center md:col-span-2">
+                <button type="button" className="rb-btn px-10" onClick={handleReCaptcha} disabled={isLoading}>
+                  {isLoading ? "Sending..." : "Join!"}
+                </button>
+              </div>
+            </form>
           </div>
-        </ModalBody>
-      </Modal>
+        </div>
+      )}
       <ReCAPTCHA
         ref={recaptchaRef}
         size="invisible"
         sitekey={process.env.REACT_APP_RECAPTCHA ?? "asd"} // FIXME: remove default value
-        className={isOpen ? "" : "d-none"}
         onChange={handleSubmit}
       />
       <FormsSnackBar

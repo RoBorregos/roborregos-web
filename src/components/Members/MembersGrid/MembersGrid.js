@@ -1,23 +1,7 @@
 import React, { useEffect, useState, useRef } from "react";
-import Carousel from "react-material-ui-carousel";
-import GridList from "@material-ui/core/GridList";
-import GridListTile from "@material-ui/core/GridListTile";
-import { Modal } from "react-bootstrap";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faCog,
-  faCode,
-  faBullhorn,
-  faMicrochip,
-  faRocket,
-  faSearch,
-} from "@fortawesome/free-solid-svg-icons";
 import membersData from "../../../data/members.json";
 import placeholder from "../../../images/placeholder-rectangle.png";
-import { LARGE_WIDTH, MEDIUM_WIDTH, MOBILE_WIDTH } from "../../../constants";
 import MemberModal from "./MemberModal/MemberModal";
-import { useLocation } from "react-router-dom";
-import "./MembersGrid.css";
 
 type Member = {
   id: number,
@@ -41,19 +25,6 @@ const inactiveMembers = membersData.members.filter(
 const activeMembers = membersData.members.filter(
   (member) => member.status === "active" || member.status === "comitee"
 );
-
-const numberOfGridCols = () => {
-  if (window.innerWidth >= LARGE_WIDTH) {
-    return 5;
-  }
-  if (window.innerWidth >= MEDIUM_WIDTH) {
-    return 4;
-  }
-  if (window.innerWidth >= MOBILE_WIDTH) {
-    return 3;
-  }
-  return 2;
-};
 
 const tryRequire = (imgPath: string) => {
   try {
@@ -83,7 +54,6 @@ function MembersGrid() {
   const [firstLoad, setFirstLoad] = useState(false);
   const [memberIndex, _setMemberIndex] = useState(0);
   const [active, setActive] = useState(true);
-  const [gridCols, setGridCols] = useState(numberOfGridCols());
 
   const queryParams = new URLSearchParams(location.search);
 
@@ -178,10 +148,6 @@ function MembersGrid() {
   }, [param1, filteredMembers]);
 
   useEffect(() => {
-    const updateGridCols = () => {
-      setGridCols(numberOfGridCols());
-    };
-
     const keyListener = (event: KeyboardEvent) => {
       if (event.keyCode === 27) {
         setShowModal(false);
@@ -197,138 +163,97 @@ function MembersGrid() {
       }
     };
 
-    window.addEventListener("resize", updateGridCols);
     document.addEventListener("keydown", keyListener, false);
 
     return () => {
-      window.removeEventListener("resize", updateGridCols);
       document.removeEventListener("keydown", keyListener);
     };
   }, [memberList]);
 
   const memberIcon = (role: string) => {
-    if (role === "Software Development") {
-      return faCode;
-    }
-    if (role === "Electronics") {
-      return faMicrochip;
-    }
-    if (role === "Mechanical Design") {
-      return faCog;
-    }
-    if (role === "Logistics & Sponsorship") {
-      return faBullhorn;
-    }
-    return faRocket;
+    if (role === "Software Development") return "fa-code";
+    if (role === "Electronics") return "fa-microchip";
+    if (role === "Mechanical Design") return "fa-cog";
+    if (role === "Logistics & Sponsorship") return "fa-bullhorn";
+    return "fa-rocket";
   };
 
   const renderGridList = (members: Array<Member>, title: string) => (
-    <div>
-      <div
-        style={{ display: title === "" ? "none" : "block" }}
-        className="grid-title"
-      >
-        <h1 className="grid-title-text">{title}</h1>
-      </div>
-      <GridList
-        cellHeight="auto"
-        className="members-grid"
-        cols={gridCols}
-        spacing={3}
-      >
+    <div key={title || "main"}>
+      {title !== "" && (
+        <h2 className="section-title mb-8 mt-16 text-center">{title}</h2>
+      )}
+      <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
         {members.map((member, index) => (
-          <GridListTile
+          <button
+            type="button"
             key={member.id}
-            cols={1}
             id={`members-grid-tile-${member.id}`}
-            className="members-grid-tile"
+            className="group relative aspect-square overflow-hidden rounded-xl bg-card text-left"
             onClick={() => {
               setShowModal(true);
               setMemberIndex(index);
               setActive(member.status !== "inactive");
-              if (!firstLoad) setFirstLoad(true); // Remove the first load flag
+              if (!firstLoad) setFirstLoad(true);
               updateNameQueryParam(member.name, member.lastname);
             }}
           >
-            <div className="member-image-container">
-              <img
-                className="member-image"
-                src={tryRequire(`${member.id}.jpg`)}
-                alt={member.name}
-              />
-              <div className="member-image-content">
-                <p>{`${member.name} ${member.lastname}`}</p>
-                <div className="member-image-icon">
-                  <FontAwesomeIcon
-                    icon={memberIcon(member.role)}
-                    size="1x"
-                    color="#ccc"
-                  />
-                </div>
-              </div>
+            <img
+              loading="lazy"
+              className="h-full w-full object-cover transition duration-500 group-hover:scale-110"
+              src={tryRequire(`${member.id}.jpg`)}
+              alt={member.name}
+            />
+            <div className="absolute inset-x-0 bottom-0 flex items-center justify-between gap-2 bg-gradient-to-t from-black to-transparent p-3 pt-10">
+              <p className="text-sm font-semibold">{`${member.name} ${member.lastname}`}</p>
+              <i className={`fas ${memberIcon(member.role)} text-gray-300 group-hover:text-bright`} />
             </div>
-          </GridListTile>
+          </button>
         ))}
-      </GridList>
+      </div>
     </div>
   );
 
   return (
-    <div
-      className="members-grid-container"
-      data-testid="members-grid-container"
-    >
-      <div className="members-grid-search-bar">
-        <FontAwesomeIcon icon={faSearch} className="members-search-bar-icon" />
-        <input
-          type="text"
-          className="members-grid-search-bar-input"
-          placeholder='Try  "mechanic",  "software",  "Aurora"'
-          onChange={(e) => {
-            setSearchBarText(e.target.value);
-            if (!firstLoad) setFirstLoad(true); // Remove the first load flag
-          }}
-          value={searchBarText}
-        />
-      </div>
-      {searchBarText === ""
-        ? [
-            renderGridList(activeMembers, ""),
-            renderGridList(inactiveMembers, "RoBorregos Legacy"),
-          ]
-        : renderGridList(filteredMembers, "")}
-      <Modal
-        className="modal-container"
-        data-testid="modal-container"
-        show={showModal}
-        dialogAs={() => (
-          <Carousel
-            navButtonsAlwaysVisible
-            autoPlay={false}
-            timeout={200}
-            fullHeightHover={false}
-            indicators={false}
-            onChange={(next) => {
-              setMemberIndex(next);
-              updateNameQueryParam(
-                memberList[next].name,
-                memberList[next].lastname
-              );
+    <section className="px-6 py-16" data-testid="members-grid-container">
+      <div className="mx-auto max-w-6xl">
+        <div className="relative mx-auto mb-12 max-w-xl">
+          <i className="fas fa-search absolute left-5 top-1/2 -translate-y-1/2 text-gray-400" />
+          <input
+            type="text"
+            className="w-full rounded-full bg-[#545454] py-3 pl-12 pr-5 text-gray-100 placeholder-gray-400 outline-none ring-roboblue transition focus:ring-2"
+            placeholder='Try  "mechanic",  "software",  "Aurora"'
+            onChange={(e) => {
+              setSearchBarText(e.target.value);
+              if (!firstLoad) setFirstLoad(true);
             }}
-            index={memberIndex}
-            startAt={memberIndex}
-          >
-            {memberList.map((member) => (
-              <MemberModal
-                member={member}
-                onHide={() => setShowModal(false)}
-                key={member.id}
-              />
-            ))}
-          </Carousel>
-        )}
-      />
-    </div>
+            value={searchBarText}
+          />
+        </div>
+        {searchBarText === ""
+          ? [
+              renderGridList(activeMembers, ""),
+              renderGridList(inactiveMembers, "RoBorregos Legacy"),
+            ]
+          : renderGridList(filteredMembers, "")}
+      </div>
+      {showModal && memberList[memberIndex] && (
+        <MemberModal
+          member={memberList[memberIndex]}
+          onHide={() => setShowModal(false)}
+          onPrev={() => {
+            const next = (memberIndex - 1 + memberList.length) % memberList.length;
+            setMemberIndex(next);
+            updateNameQueryParam(memberList[next].name, memberList[next].lastname);
+          }}
+          onNext={() => {
+            const next = (memberIndex + 1) % memberList.length;
+            setMemberIndex(next);
+            updateNameQueryParam(memberList[next].name, memberList[next].lastname);
+          }}
+        />
+      )}
+    </section>
   );
 }
 

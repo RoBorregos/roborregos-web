@@ -1,10 +1,10 @@
 // @flow
-
-import React, { Component } from 'react'
+import React, { useEffect, useState } from 'react'
 import { loadCSS } from 'fg-loadcss/src/loadCSS'
-import { BrowserRouter as Router, Route } from 'react-router-dom'
+import {
+  BrowserRouter as Router, Route, Switch, useLocation,
+} from 'react-router-dom'
 import Home from './components/Home/Home'
-import Members from './components/Members/Members'
 import SupportUs from './components/SupportUs/SupportUs'
 import Candidates from './components/Candidates/Candidates'
 import NavBar from './components/NavBar/NavBar'
@@ -13,42 +13,69 @@ import routesData from './data/routes.json'
 import Project from './components/Projects/Projects'
 import projectsData from './data/projects.json'
 import Footer from './components/Footer/Footer'
+import LanguageToggle from './components/Shared/LanguageToggle/LanguageToggle'
 
-type Props = {};
+const ScrollToTop = () => {
+  const { pathname } = useLocation()
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [pathname])
+  return null
+}
 
-class App extends Component<Props> {
-  componentDidMount() {
+const RevealOnScroll = () => {
+  const { pathname } = useLocation()
+  useEffect(() => {
+    if (!('IntersectionObserver' in window)) return undefined
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('reveal-visible')
+          observer.unobserve(entry.target)
+        }
+      })
+    }, { threshold: 0, rootMargin: '0px 0px -8% 0px' })
+    const targets = document.querySelectorAll('main section, footer')
+    targets.forEach((el) => {
+      el.classList.add('reveal')
+      observer.observe(el)
+    })
+    return () => observer.disconnect()
+  }, [pathname])
+  return null
+}
+
+const App = () => {
+  const [language, setLanguage] = useState(1)
+
+  useEffect(() => {
     loadCSS(
       'https://use.fontawesome.com/releases/v5.1.0/css/all.css',
       document.querySelector('#insertion-point-jss'),
     )
-  }
+  }, [])
 
-  render() {
-    document.title = 'RoBorregos'
-
-    return (
-      <Router>
-        <div className="app-container">
-          <NavBar routes={routesData.routes} />
-
-          <Route exact path="/" component={() => <Home />} />
-
-          <Route path="/about" component={() => <About />} />
-
-          <Route path="/projects" component={() => <Project projectsData={projectsData} />} />
-
-          <Route path="/members" component={() => <Members />} />
-
-          <Route path="/candidates" component={() => <Candidates />} />
-
-          <Route path="/support-us" component={() => <SupportUs />} />
-
-          <Footer />
-        </div>
-      </Router>
-    )
-  }
+  return (
+    <Router>
+      <ScrollToTop />
+      <RevealOnScroll />
+      <div className="flex min-h-[calc(100vh-4rem)] flex-col">
+        <NavBar routes={routesData.routes} language={language} />
+        <LanguageToggle onToggle={() => setLanguage(!language ? 1 : 0)} />
+        <main className="flex-1">
+          <Switch>
+            <Route exact path="/" component={() => <Home language={language} />} />
+            <Route path="/about" component={() => <About language={language} />} />
+            <Route path="/projects" component={() => <Project projectsData={projectsData} language={language} />} />
+            <Route path="/candidates" component={() => <Candidates language={language} />} />
+            <Route path="/support-us" component={() => <SupportUs language={language} />} />
+            <Route component={Home} />
+          </Switch>
+        </main>
+        <Footer language={language} />
+      </div>
+    </Router>
+  )
 }
 
 export default App

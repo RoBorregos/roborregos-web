@@ -1,8 +1,6 @@
 // @flow
 import React, { useState } from 'react'
-import { Col, Row } from 'reactstrap'
 import OpenPositionCard from './OpenPositionCard/OpenPositionCard'
-import './CandidatesOpenPositions.css'
 import FormsModal from './FormsModal/FormsModal'
 
 type Position = {
@@ -43,18 +41,16 @@ const CandidatesOpenPostions = (props: Props) => {
   }
 
   return (
-    <Row className="justify-content-center mt-4 roles">
-      <Col xs="12">
-        <Row className="positions-card-container">
-          {positions.map((position) => (
-            <OpenPositionCard
-              className="position-card"
-              position={position}
-              onClick={((pos: Position) => openModal(pos))}
-            />
-          ))}
-        </Row>
-      </Col>
+    <div className="mx-auto max-w-6xl">
+      <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        {positions.map((position) => (
+          <OpenPositionCard
+            key={position.id}
+            position={position}
+            onClick={(pos: Position) => openModal(pos)}
+          />
+        ))}
+      </div>
       <FormsModal
         onSubmit={() => onSubmit()}
         selectedPosition={selectedPosition}
@@ -62,7 +58,7 @@ const CandidatesOpenPostions = (props: Props) => {
         toggle={() => toggleModal()}
         trySubmit={trySubmit}
       />
-    </Row>
+    </div>
   )
 }
 

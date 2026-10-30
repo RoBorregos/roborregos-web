@@ -1,34 +1,13 @@
-import React, { Component } from 'react'
-import './MembersJoinUs.css'
+import React from 'react'
+import { Link } from 'react-router-dom'
 
-/**
- Component of Join us section.
-  [WIP] The component is rendered as a section with a clickable button
-  that leads to the "Candidates" page for users to get more information.
- */
-class MembersJoinUs extends Component {
-  handleClick = () => {
-    window.location.href = '/candidates'
-  }
-
-  /**
- * Renders Responsive view of Member Join Us
- * @return {renderized_component} [WIP].
- */
-  render() {
-    return (
-      <div className="members-join-us" data-testid="members-join-us">
-        <button
-          data-testid="members-join-us-button"
-          type="button"
-          onClick={this.handleClick}
-          className="members-join-us-button members-join-us-button-contain members-join-us-button-text"
-        >
-          Join the Team
-        </button>
-      </div>
-    )
-  }
-}
+const MembersJoinUs = () => (
+  <section className="relative overflow-hidden bg-gradient-to-r from-navy to-black px-6 py-20 text-center" data-testid="members-join-us">
+    <h2 className="section-title mb-8">Want to be part of the team?</h2>
+    <Link to="/candidates" data-testid="members-join-us-button" className="rb-btn text-lg">
+      Join the Team
+    </Link>
+  </section>
+)
 
 export default MembersJoinUs

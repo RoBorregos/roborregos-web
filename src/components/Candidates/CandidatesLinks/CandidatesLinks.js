@@ -1,52 +1,25 @@
 // @flow
 import React from 'react'
-import Grid from '@material-ui/core/Grid'
-import './CandidatesLinks.css'
 import roborregosLogo from '../../../images/white_logo.png'
 import facebookLogo from '../../../images/candidates/facebook-logo.png'
 import instagramLogo from '../../../images/candidates/instagram-logo.png'
 
 function CandidatesLinks() {
   return (
-    <Grid
-      container
-      alignItems="flex-start"
-      className="social-media"
-      justify="center"
-    >
-      <Grid item xs={12} className="message-us">
-        <h> Message Us! </h>
-      </Grid>
-      <Grid item xs={12} md={4} onClick={() => window.open('https://www.facebook.com/RoBorregos/')}>
-        <img
-          className="social-media-logo"
-          src={facebookLogo}
-          alt="facebook-logo"
-        />
-        <br />
-        <h className="caption"> RoBorregos </h>
-      </Grid>
-      <Grid item xs={12} md={4}>
-        <br />
-        <img
-          className="roborregos-logo"
-          src={roborregosLogo}
-          alt="RoBorregos-logo"
-        />
-        <br />
-      </Grid>
-      <Grid item xs={12} md={4} onClick={() => window.open('https://www.instagram.com/roborregos/')}>
-        <img
-          className="social-media-logo"
-          src={instagramLogo}
-          alt="instagram-logo"
-        />
-        <br />
-        <h className="caption">
-          @roborregos
-        </h>
-      </Grid>
-    </Grid>
+    <section className="px-6 py-20 text-center">
+      <h2 className="section-title mb-12">Message Us!</h2>
+      <div className="mx-auto grid max-w-4xl items-center gap-10 md:grid-cols-3">
+        <a href="https://www.facebook.com/RoBorregos/" target="_blank" rel="noreferrer" className="group flex flex-col items-center gap-3">
+          <img className="h-24 transition duration-300 group-hover:scale-110" src={facebookLogo} alt="facebook-logo" />
+          <span className="font-anton text-xl uppercase tracking-wide">RoBorregos</span>
+        </a>
+        <img className="mx-auto h-24 opacity-90" src={roborregosLogo} alt="RoBorregos-logo" />
+        <a href="https://www.instagram.com/roborregos/" target="_blank" rel="noreferrer" className="group flex flex-col items-center gap-3">
+          <img className="h-24 transition duration-300 group-hover:scale-110" src={instagramLogo} alt="instagram-logo" />
+          <span className="font-anton text-xl uppercase tracking-wide">@roborregos</span>
+        </a>
+      </div>
+    </section>
   )
 }
 

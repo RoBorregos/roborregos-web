@@ -6,7 +6,7 @@
             "year": "2015",
             "img_path": "1",
             "title": "First Step",
-            "description": "Diego, Emilio, Gerardo y Sebasti\u00e1n won first place in Rescue Maze at TMR 2015, Mexico City."
+            "description": "Diego, Emilio, Gerardo y Sebastián won first place in Rescue Maze at TMR 2015, Mexico City."
         },
         {
             "date": "July 2015",
@@ -14,7 +14,7 @@
             "year": "2015",
             "img_path": "2",
             "title": "First International",
-            "description": "Diego, Emilio, Gerardo y Sebasti\u00e1n were the first to place Mexico in the Top 10 in RoboCup Jr. Rescue Maze in Hefei, China."
+            "description": "Diego, Emilio, Gerardo y Sebastián were the first to place Mexico in the Top 10 in RoboCup Jr. Rescue Maze in Hefei, China."
         },
         {
             "date": "August 2015",
@@ -22,7 +22,7 @@
             "year": "2015",
             "img_path": "3",
             "title": "Team Foundation",
-            "description": "Team founders decided to create a program to teach the basics of robotics to Tec freshmen and then have an internal competition to find the best fit for the team. This event has become our annual \u201cCandidates\u201d"
+            "description": "Team founders decided to create a program to teach the basics of robotics to Tec freshmen and then have an internal competition to find the best fit for the team. This event has become our annual “Candidates”"
         },
         {
             "date": "February 2016",
@@ -62,7 +62,7 @@
             "year": "2016",
             "img_path": "8",
             "title": "LARC 2016",
-            "description": "Diego, Clara, Emilio, Gerardo and Sebasti\u00e1n won 2nd Place in Latin American Robotics Competition IEEE Open Challenge."
+            "description": "Diego, Clara, Emilio, Gerardo and Sebastián won 2nd Place in Latin American Robotics Competition IEEE Open Challenge."
         },
         {
             "date": "February 2017",
@@ -110,7 +110,7 @@
             "year": "2018",
             "img_path": "14",
             "title": "TMR 2018",
-            "description": "Alberto Jahuey, Itzel L\u00f3pez, Ricardo Osorio and Yulisa Farron won 1st Place in Rescue Maze; Alberto L\u00f3pez, Greg Espinosa, and Iqui Balam won 2nd in Soccer Open; Eric Uriel, Jesus Anaya, Isaac, Monica Nava and Roberto Galindo won 3rd in Soccer Light."
+            "description": "Alberto Jahuey, Itzel López, Ricardo Osorio and Yulisa Farron won 1st Place in Rescue Maze; Alberto López, Greg Espinosa, and Iqui Balam won 2nd in Soccer Open; Eric Uriel, Jesus Anaya, Isaac, Monica Nava and Roberto Galindo won 3rd in Soccer Light."
         },
         {
             "date": "March 2018",
@@ -150,7 +150,7 @@
             "year": "2019",
             "img_path": "19",
             "title": "Formalization of @Home",
-            "description": "The RoBorregos\u2019 @HOME team was formalized. The team was divided into different technology areas, integrating voice recognition, natural language processing and computer vision with neural networks, navigation, control and mechanical and structural design."
+            "description": "The RoBorregos’ @HOME team was formalized. The team was divided into different technology areas, integrating voice recognition, natural language processing and computer vision with neural networks, navigation, control and mechanical and structural design."
         },
         {
             "date": "February 2019",
@@ -182,7 +182,7 @@
             "year": "2019",
             "img_path": "23",
             "title": "Australia, Rescue Maze",
-            "description": "Arath, Aldo, Jamir and Mauricio obtained the \u201cBest Hardware Solution\u201d award on the RoboCup Jr. Rescue Maze in Sydney Australia."
+            "description": "Arath, Aldo, Jamir and Mauricio obtained the “Best Hardware Solution” award on the RoboCup Jr. Rescue Maze in Sydney Australia."
         },
         {
             "date": "August - November 2019",
@@ -214,7 +214,7 @@
             "year": "2020",
             "img_path": "27",
             "title": "Regional 2020",
-            "description": "Diego, Em\u00e9rico, Marlon and Grecia won 2nd place in Rescue Maze and Keven, Gabriela y Karyme won 3rd place in Soccer Lightweight."
+            "description": "Diego, Emérico, Marlon and Grecia won 2nd place in Rescue Maze and Keven, Gabriela y Karyme won 3rd place in Soccer Lightweight."
         },
         {
             "date": "March 2020",
@@ -229,8 +229,8 @@
             "month": "5",
             "year": "2020",
             "img_path": "29",
-            "title": "1st participation in Conexi\u00f3n Tec",
-            "description": "The team participated in the 13th Edition of Conexi\u00f3n Tec, showing their progress in speech recognition, navigation, computer vision and elevator mechanics for the @Home service robot."
+            "title": "1st participation in Conexión Tec",
+            "description": "The team participated in the 13th Edition of Conexión Tec, showing their progress in speech recognition, navigation, computer vision and elevator mechanics for the @Home service robot."
         },
         {
             "date": "June 2020",
@@ -286,14 +286,14 @@
             "year": "2021",
             "img_path": "36",
             "title": "TMR @HOME Beginners",
-            "description": "Jos\u00e9 Cisneros, Aldo, Chapa, Iqui and Aurora participated in @HOME Beginners, organized by the FMR. Even though it was a virtual event with no awarding we managed to get the computer vision and natural language understanding challenges with the highest score possible!"
+            "description": "José Cisneros, Aldo, Chapa, Iqui and Aurora participated in @HOME Beginners, organized by the FMR. Even though it was a virtual event with no awarding we managed to get the computer vision and natural language understanding challenges with the highest score possible!"
         },
         {
             "date": "May 2021",
             "month": "5",
             "year": "2021",
             "img_path": "37",
-            "title": "1st place in Conexi\u00f3n Tec",
+            "title": "1st place in Conexión Tec",
             "description": "We participated with the SEMS, @HOME, VSSS and Smart Factory proyects; The SEMS team obtained first place in the cathegory \"Software prototype\""
         },
         {
@@ -367,8 +367,95 @@
             "img_path": "46",
             "title": "Grads June 2023",
             "description": "Lore, Cisneros, Aldo, Mike, Jamir, Chapa, Emérico, Rosalba, Anel, Bryan, Kevin, Ruiz, Mau, Keven and Gaby graduated."
+        },
+        {
+            "date": "April 2024",
+            "month": "4",
+            "year": "2024",
+            "img_path": "47",
+            "title": "TMR 2024",
+            "description": "Mexican Robotics Tournament in Monterrey, where we showed FRIDA (Friendly Robotic Interactive Domestic Assistant), our @Home service robot."
+        },
+        {
+            "date": "July 2024",
+            "month": "7",
+            "year": "2024",
+            "img_path": "48",
+            "title": "RoboCup 2024",
+            "description": "Accepted and participated in RoboCup 2024 in Eindhoven, Netherlands, with FRIDA in the @Home league."
+        },
+        {
+            "date": "2025",
+            "month": "1",
+            "year": "2025",
+            "img_path": "49",
+            "title": "LARC Open 2025",
+            "description": "Developed an autonomous Coffee Harvester Robot for LARC Open 2025, focused on perception, navigation, manipulation and system integration. We also kept competing in @Home, Soccer, Rescue Maze and VSSS."
+        },
+        {
+            "date": "May 2025",
+            "month": "5",
+            "year": "2025",
+            "img_path": "53",
+            "title": "TMR 2025",
+            "description": "The whole team traveled to the Mexican Robotics Tournament 2025 to compete in our robotics categories."
+        },
+        {
+            "date": "July 2025",
+            "month": "7",
+            "year": "2025",
+            "img_path": "52",
+            "title": "RoboCup 2025",
+            "description": "Competed at RoboCup 2025 in Salvador, Bahia, Brazil."
+        },
+        {
+            "date": "2025",
+            "month": "0",
+            "year": "2025",
+            "img_path": "56",
+            "title": "RoboChamp 2025",
+            "description": "We organized RoboChamp 2025, a robotics competition for high school students to take their first steps in robotics and programming."
+        },
+        {
+            "date": "2025",
+            "month": "0",
+            "year": "2025",
+            "img_path": "57",
+            "title": "RoboCamp 2025",
+            "description": "We organized RoboCamp 2025, a robotics camp for elementary school children to learn and explore robotics."
+        },
+        {
+            "date": "April 2026",
+            "month": "4",
+            "year": "2026",
+            "img_path": "50",
+            "title": "TMR 2026",
+            "description": "@Home took 1st place at the Mexican Robotics Tournament 2026."
+        },
+        {
+            "date": "July 2026",
+            "month": "7",
+            "year": "2026",
+            "img_path": "51",
+            "title": "RoboCup 2026 Korea",
+            "description": "Competed in RoboCup 2026 in Korea representing RoBorregos and Mexico."
+        },
+        {
+            "date": "August 2026",
+            "month": "8",
+            "year": "2026",
+            "img_path": "55",
+            "title": "RoboCamp 2026",
+            "description": "We organized a robotics camp for elementary school children to learn and explore robotics."
+        },
+        {
+            "date": "September 2026",
+            "month": "9",
+            "year": "2026",
+            "img_path": "54",
+            "title": "Networking Event",
+            "description": "In collaboration with WIT, we hosted a panel for women featuring Patricia Armendáriz as our guest."
         }
-        
     ],
     "years": [
         "2015",
@@ -379,6 +466,9 @@
         "2020",
         "2021",
         "2022",
-        "2023"
+        "2023",
+        "2024",
+        "2025",
+        "2026"
     ]
 }
