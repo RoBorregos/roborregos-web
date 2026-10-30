@@ -15,8 +15,6 @@ function Members() {
         title={headerTitle}
         mainText={headerMainText}
         subText={headerSubText}
-        bgColorScheme={{ primary: '#005E69E6', secondary: '#141213E6' }}
-        iconColorScheme={{ primary: '#00FFFA', secondary: '#C43F65' }}
       />
       <MembersValues />
       <MembersGrid />

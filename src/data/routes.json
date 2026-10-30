@@ -16,11 +16,6 @@
       "component": "Projects"
     },
     {
-      "path": "/members",
-      "legend": "Members",
-      "component": "Members"
-    },
-    {
       "path": "/candidates",
       "legend": "Candidates",
       "component": "Candidates"

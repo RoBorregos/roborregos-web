@@ -1,147 +1,165 @@
 {
-    "main": [
-        {
-            "priority": "0",
-            "title": "@Home",
-            "description": "We are designing, developing, and manufacturing a home assistance robot that can carry out activities for the safety and comfort of the user, such as transporting things from different places to seeing who is at the door of the house and welcoming them! It\u2019s based on the \u201cRobocup @Home\u201d competition.",
-            "wiki": "https://github.com/RoBorregos/Robocup-Home/wiki",
-            "image": "home",
-            "background": "",
-            "color": ""
-        },
-        {
-            "priority": "0",
-            "title": "TAM",
-            "description": "Project in partnership with Mega Alimentos for the development of technological mechanisms to move products within the plant without the need for human assistance, making use of robotic models that condition the existing equipment (electric stacker) to move all types of products from one point to another within the plant.",
-            "wiki": "",
-            "image": "tam",
-            "background": "",
-            "color": ""
-        },
-        {
-            "priority": "0",
-            "title": "Smart Factory",
-            "description": "Development of an Adaptive Automated Storage and Recovery System (ASARS) for the management of factory tasks, coordinating the flows of operations and materials in a space used by collaborative robots, intelligent warehouses, and humans.",
-            "wiki": "https://youtu.be/QAbEatsBOGE",
-            "image": "cobot",
-            "background": "",
-            "color": ""
-        },
-        {
-            "priority": "0",
-            "title": "SEMS: Social and Environmental Monitoring System",
-            "description": "The SEMS project aims to generate hard data on relevant factors that impact the health of the Tec community through a monitoring system, capable of returning metrics related to environmental contamination and people's behavior for their biosecurity in post-pandemic scenarios.",
-            "wiki": "https://youtu.be/uwu-1NQMb_Q",
-            "image": "contador_personas",
-            "background": "",
-            "color": ""
-        }
+  "main": [
+    {
+      "priority": "0",
+      "title": "@Home",
+      "description": "We are designing, developing, and manufacturing a home assistance robot that can carry out activities for the safety and comfort of the user, such as transporting things from different places to seeing who is at the door of the house and welcoming them! It’s based on the “Robocup @Home” competition.",
+      "wiki": "https://github.com/RoBorregos/Robocup-Home/wiki",
+      "image": "home",
+      "background": "",
+      "color": ""
+    },
+    {
+      "priority": "0",
+      "title": "NAVI",
+      "description": "NAVI is an AI assistant developed by students from RoBorregos for CETEC's Smart Factory at Tec de Monterrey, combining computer vision, natural voice conversation, and robot control. From an eight-monitor wall in the lab's atrium, it detects and tracks visitors, answers their questions about the Smart Factory, and lets them move the lab's robots through voice commands. This turns the lab into an interactive, proactive space where people don't just ask about the factory but see it respond.",
+      "wiki": "",
+      "image": "cobot",
+      "background": "",
+      "color": ""
+    },
+    {
+      "priority": "0",
+      "title": "RoboCamp",
+      "description": "A summer robotics vocational course for kids. RoBorregos members teach the basics of robotics and programming through hands-on activities.",
+      "wiki": "",
+      "image": "robocamp",
+      "background": "",
+      "color": ""
+    },
+    {
+      "priority": "0",
+      "title": "RoboChamp",
+      "description": "A robotics competition we organize together with the Tec de Monterrey School of Engineering, where teams take their first steps into robotics and programming. It has beginner and advanced tracks.",
+      "wiki": "https://robochamp.roborregos.com/",
+      "image": "robochamp",
+      "background": "",
+      "color": ""
+    }
+  ],
+  "carrousel": [
+    [
+      {
+        "priority": "1",
+        "title": "LARC Open",
+        "description": "This project consists of the development of an autonomous robotic solution which ought to accomplish a task that reproduces the challenges of real-world robotics on a minor scale. The competition changes every year.",
+        "wiki": "https://www.youtube.com/watch?v=odfMA1n7vyY&t=7s",
+        "image": "larc_open",
+        "background": "",
+        "color": ""
+      },
+      {
+        "priority": "1",
+        "title": "Rescue maze",
+        "description": "Simulation of a disaster area where the robot has to navigate through the majority of a maze, detect victims through different stimuli (heat and visual images) and evade obstacles.",
+        "wiki": "https://github.com/RoBorregos/RoboCup_RescueMaze_2020/wiki",
+        "image": "maze",
+        "background": "",
+        "color": ""
+      },
+      {
+        "priority": "1",
+        "title": "Soccer Lightweight",
+        "description": "Futbol soccer competition where two robots must coordinate in order to put the ball in their opponents goal. The ball is detected using IR and the robot is limited to 1.1 kg of weight.",
+        "wiki": "https://github.com/RoBorregos/RoboCup_SoccerLight_2020/wiki",
+        "image": "soccer_light",
+        "background": "",
+        "color": ""
+      },
+      {
+        "priority": "1",
+        "title": "Soccer Vision",
+        "description": "Soccer competition where two robots coordinate to put the ball in the opponent’s goal, using computer vision to detect the ball.",
+        "wiki": "",
+        "image": "soccer_open",
+        "background": "",
+        "color": ""
+      },
+      {
+        "priority": "1",
+        "title": "VSS",
+        "description": "Very Small Size Soccer: teams of small autonomous robots play soccer, coordinated by a strategy that runs on a computer and follows the field through a camera.",
+        "wiki": "",
+        "image": "vsss",
+        "background": "",
+        "color": ""
+      },
+      {
+        "priority": "1",
+        "title": "Industrial",
+        "description": "Robotics challenges inspired by industrial automation, where robots move and handle parts autonomously.",
+        "wiki": "",
+        "image": "cobot",
+        "background": "",
+        "color": ""
+      }
     ],
-    "carrousel": [
-        [
-            {
-                "priority": "1",
-                "title": "LARC Open",
-                "description": "This project consists of the development of an autonomous robotic solution which ought to accomplish a task that reproduces the challenges of real-world robotics on a minor scale. The competition changes every year.",
-                "wiki": "https://www.youtube.com/watch?v=odfMA1n7vyY&t=7s",
-                "image": "larc_open",
-                "background": "",
-                "color": ""
-            },
-            {
-                "priority": "1",
-                "title": "Rescue maze",
-                "description": "Simulation of a disaster area where the robot has to navigate through the majority of a maze, detect victims through different stimuli (heat and visual images) and evade obstacles.",
-                "wiki": "https://github.com/RoBorregos/RoboCup_RescueMaze_2020/wiki",
-                "image": "maze",
-                "background": "",
-                "color": ""
-            },
-            {
-                "priority": "1",
-                "title": "Soccer Open",
-                "description": "Futbol soccer competition where two robots must coordinate in order to put the ball in their opponents goal. The ball is detected using computer vision and the robot is limited to 2.2 kg of weight.",
-                "wiki": "https://github.com/RoBorregos/RoboCup_SoccerOpen_2019",
-                "image": "soccer_open",
-                "background": "",
-                "color": ""
-            },
-            {
-                "priority": "1",
-                "title": "Soccer Light",
-                "description": "Futbol soccer competition where two robots must coordinate in order to put the ball in their opponents goal. The ball is detected using IR and the robot is limited to 1.1 kg of weight.",
-                "wiki": "https://github.com/RoBorregos/RoboCup_SoccerLight_2020/wiki",
-                "image": "soccer_light",
-                "background": "",
-                "color": ""
-            }
-        ],
-        [
-            {
-                "priority": "2",
-                "title": "RoBorregos\u2019 Warehouse",
-                "description": "Internal project consisting of the development of a secure warehouse system for all electrical and mechanical components used in our laboratory at our university Tec, Campus Monterrey.",
-                "wiki": "https://github.com/RoBorregos/roborregos-almacen/wiki",
-                "image": "roborregos_wharehouse",
-                "background": "",
-                "color": ""
-            },
-            {
-                "priority": "2",
-                "title": "RoboLinks",
-                "description": "URL shortener and link database for our most important links and works.",
-                "wiki": "",
-                "image": "robolinks",
-                "background": "",
-                "color": ""
-            },
-            {
-                "priority": "2",
-                "title": "RoBorregos\u2019 Web Page",
-                "description": "Internal project consisting of the development of this web page, all from scratch using React.js!",
-                "wiki": "https://github.com/RoBorregos/roborregos-web/wiki",
-                "image": "web_page",
-                "background": "",
-                "color": ""
-            }
-        ]
-    ],
-    "other": [
-        {
-            "priority": "1000",
-            "title": "RoboCupido",
-            "description": "",
-            "wiki": "https://github.com/RoBorregos/RoboCupido",
-            "image": "robocupido",
-            "background": "#FDBFDA",
-            "color": "black"
-        },
-        {
-            "priority": "1000",
-            "title": "Robotsim",
-            "description": "",
-            "wiki": "https://github.com/RoBorregos/robotSim",
-            "image": "robotsim",
-            "background": "#000000",
-            "color": "white"
-        },
-        {
-            "priority": "1000",
-            "title": "RoboSearch",
-            "description": "",
-            "wiki": "https://roborregos.github.io/RoBoSearch-WebUI/",
-            "image": "robosearch",
-            "background": "#FFFFFF",
-            "color": "black"
-        },
-        {
-            "priority": "1000",
-            "title": "Our GitHub",
-            "description": "",
-            "wiki": "https://github.com/RoBorregos",
-            "image": "roborregos_github",
-            "background": "#5CE1E6",
-            "color": "black"
-        }
+    [
+      {
+        "priority": "2",
+        "title": "RoBorregos’ Warehouse",
+        "description": "Internal project consisting of the development of a secure warehouse system for all electrical and mechanical components used in our laboratory at our university Tec, Campus Monterrey.",
+        "wiki": "https://github.com/RoBorregos/roborregos-almacen/wiki",
+        "image": "roborregos_wharehouse",
+        "background": "",
+        "color": ""
+      },
+      {
+        "priority": "2",
+        "title": "RoboLinks",
+        "description": "URL shortener and link database for our most important links and works.",
+        "wiki": "",
+        "image": "robolinks",
+        "background": "",
+        "color": ""
+      },
+      {
+        "priority": "2",
+        "title": "RoBorregos’ Web Page",
+        "description": "Internal project consisting of the development of this web page, all from scratch using React.js!",
+        "wiki": "https://github.com/RoBorregos/roborregos-web/wiki",
+        "image": "web_page",
+        "background": "",
+        "color": ""
+      }
     ]
+  ],
+  "other": [
+    {
+      "priority": "1000",
+      "title": "RoboCupido",
+      "description": "",
+      "wiki": "https://github.com/RoBorregos/RoboCupido",
+      "image": "robocupido",
+      "background": "#FDBFDA",
+      "color": "black"
+    },
+    {
+      "priority": "1000",
+      "title": "Robotsim",
+      "description": "",
+      "wiki": "https://github.com/RoBorregos/robotSim",
+      "image": "robotsim",
+      "background": "#000000",
+      "color": "white"
+    },
+    {
+      "priority": "1000",
+      "title": "RoboSearch",
+      "description": "",
+      "wiki": "https://roborregos.github.io/RoBoSearch-WebUI/",
+      "image": "robosearch",
+      "background": "#FFFFFF",
+      "color": "black"
+    },
+    {
+      "priority": "1000",
+      "title": "Our GitHub",
+      "description": "",
+      "wiki": "https://github.com/RoBorregos",
+      "image": "roborregos_github",
+      "background": "#5CE1E6",
+      "color": "black"
+    }
+  ]
 }

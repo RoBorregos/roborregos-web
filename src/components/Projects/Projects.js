@@ -25,7 +25,8 @@ type ProjectsData = {
 };
 
 type Props = {
-  projectsData: ProjectsData
+  projectsData: ProjectsData,
+  language: number,
 };
 
 /** Component class of Projects page. */
@@ -45,6 +46,11 @@ export class Projects extends Component <Props> {
     constructor(props: Props) {
       super(props)
       this.projects = props.projectsData
+      if (props.language === 0) {
+        this.headerTitle = 'Proyectos'
+        this.headerMainText = ['Cada año nos desafiamos a seguir aprendiendo y mejorando.', '¡Conoce lo que hemos estado haciendo!']
+        this.headerSubText = ['Conoce más']
+      }
     }
 
     /**
@@ -60,8 +66,6 @@ export class Projects extends Component <Props> {
             title={this.headerTitle}
             mainText={this.headerMainText}
             subText={this.headerSubText}
-            bgColorScheme={{ primary: '#001969E6', secondary: '#141213E6' }}
-            iconColorScheme={{ primary: '#00FFFA', secondary: '#2870CE' }}
           />
           <ProjectsContent main_projects={main} carousels={carrousel} other_projects={other} />
         </>
