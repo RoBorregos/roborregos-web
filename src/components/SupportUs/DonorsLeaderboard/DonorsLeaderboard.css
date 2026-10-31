@@ -1,0 +1,287 @@
+.donors-container {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 6vh 5vw 6vh 5vw;
+}
+
+.donors-header-icon {
+  color: #FFDE59;
+  font-size: 4vh;
+  margin-bottom: 2vh;
+}
+
+.donors-title {
+  font-size: 3vw;
+  margin-bottom: 0;
+}
+
+.donors-period {
+  color: #CB6CE6;
+  font-size: 1.2vw;
+  text-transform: uppercase;
+  letter-spacing: 0.2vw;
+  margin-bottom: 1vh;
+}
+
+.donors-subtitle {
+  font-size: 1.1vw;
+  color: #C8C8C8;
+  margin-bottom: 0;
+}
+
+.donors-stats {
+  justify-content: center;
+  margin: 4vh 0 5vh 0;
+}
+
+.donors-stat-value {
+  font-size: 2.2vw;
+  color: #FFDE59;
+  margin-bottom: 0;
+}
+
+.donors-stat-label {
+  font-size: 1vw;
+  color: #C8C8C8;
+  margin-bottom: 0;
+}
+
+.donors-podium {
+  justify-content: center;
+  margin: 0;
+  align-items: flex-end;
+}
+
+.donors-podium-column {
+  padding: 0 1vw 3vh 1vw;
+}
+
+.donors-podium-card {
+  position: relative;
+  height: 100%;
+  background-color: #13191E;
+  border: 2px solid #6A2C94;
+  border-radius: 6px;
+  padding: 4vh 1.5vw 3vh 1.5vw;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.donors-podium-card:hover {
+  transform: translateY(-1vh);
+  border-color: #CB6CE6;
+}
+
+.donors-rank {
+  position: absolute;
+  top: -2vh;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 4vh;
+  height: 4vh;
+  line-height: 4vh;
+  border-radius: 50%;
+  background-color: #6A2C94;
+  color: white;
+  font-size: 2vh;
+}
+
+.donors-avatar {
+  width: 9vh;
+  height: 9vh;
+  line-height: 9vh;
+  margin: 0 auto 2vh auto;
+  border-radius: 50%;
+  background-color: #1C2329;
+  border: 2px solid #CB6CE6;
+  font-size: 3vh;
+  color: #CB6CE6;
+  overflow: hidden;
+}
+
+.donors-avatar-logo {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.donors-podium-label {
+  font-size: 0.9vw;
+  text-transform: uppercase;
+  letter-spacing: 0.1vw;
+  color: #C8C8C8;
+  margin-bottom: 0.5vh;
+}
+
+.donors-name {
+  font-size: 1.5vw;
+  margin-bottom: 0.5vh;
+}
+
+.donors-amount {
+  font-size: 1.8vw;
+  color: #FFDE59;
+  margin-bottom: 0;
+}
+
+.donors-donations {
+  font-size: 0.9vw;
+  color: #C8C8C8;
+}
+
+.donors-message {
+  font-size: 1vw;
+  color: #C8C8C8;
+  font-style: italic;
+  margin-bottom: 0;
+}
+
+.donors-place-1 .donors-podium-card {
+  border-color: #FFDE59;
+}
+
+.donors-place-1 .donors-rank,
+.donors-place-1 .donors-avatar {
+  border-color: #FFDE59;
+  background-color: #FFDE59;
+  color: black;
+}
+
+.donors-place-2 .donors-rank {
+  background-color: #C0C0C0;
+  color: black;
+}
+
+.donors-place-3 .donors-rank {
+  background-color: #FF914D;
+  color: black;
+}
+
+.donors-list {
+  justify-content: center;
+  margin: 2vh 0 0 0;
+}
+
+.donors-list-row {
+  align-items: center;
+  margin: 0;
+  padding: 1.5vh 1vw;
+  border-bottom: 1px solid #2A2F35;
+}
+
+.donors-list-row:hover {
+  background-color: #13191E;
+}
+
+.donors-list-rank {
+  font-size: 1.2vw;
+  color: #CB6CE6;
+  text-align: left;
+}
+
+.donors-list-name {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  font-size: 1.1vw;
+}
+
+.donors-list-donations {
+  font-size: 0.8vw;
+  color: #C8C8C8;
+}
+
+.donors-list-amount {
+  text-align: right;
+  font-size: 1.2vw;
+  color: #FFDE59;
+}
+
+.donors-cta {
+  justify-content: center;
+  margin: 5vh 0 0 0;
+}
+
+.donors-cta a {
+  color: #CB6CE6;
+  font-size: 1.2vw;
+  border: 2px solid #CB6CE6;
+  border-radius: 6px;
+  padding: 1.5vh 2vw;
+  text-decoration: none;
+}
+
+.donors-cta a:hover {
+  background-color: #CB6CE6;
+  color: white;
+}
+
+.donors-cta-icon {
+  margin-right: 0.7vw;
+}
+
+.no-padding {
+  padding: 0;
+}
+
+@media (min-width: 992px) {
+  .donors-place-1 {
+    order: 2;
+  }
+
+  .donors-place-2 {
+    order: 1;
+  }
+
+  .donors-place-3 {
+    order: 3;
+  }
+
+  .donors-place-1 .donors-podium-card {
+    padding-top: 5vh;
+    padding-bottom: 4vh;
+  }
+}
+
+@media (max-width: 991px) {
+  .donors-title {
+    font-size: 6vw;
+  }
+
+  .donors-period,
+  .donors-subtitle,
+  .donors-stat-label,
+  .donors-podium-label,
+  .donors-donations,
+  .donors-message {
+    font-size: 1.8vh;
+  }
+
+  .donors-stat-value {
+    font-size: 3vh;
+  }
+
+  .donors-name,
+  .donors-amount {
+    font-size: 2.5vh;
+  }
+
+  .donors-podium-column {
+    padding: 0 0 4vh 0;
+  }
+
+  .donors-list-rank,
+  .donors-list-name,
+  .donors-list-amount {
+    font-size: 1.9vh;
+  }
+
+  .donors-list-donations {
+    font-size: 1.5vh;
+  }
+
+  .donors-cta a {
+    font-size: 2vh;
+    padding: 1.5vh 6vw;
+  }
+}

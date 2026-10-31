@@ -2,28 +2,49 @@
   "url_contact": "mailto:teamroborregos@gmail.com",
   "sponsors": [
     {
+      "name": ".mx",
+      "img_path": "Logo mx - Copy-1.svg",
+      "link": "https://www.dominios.mx/",
+      "size": "L",
+      "invert": true
+    },
+    {
       "name": "Tecnológico de Monterrey",
-      "img_path": "itesm.png",
+      "img_path": "logoTec (2).svg",
       "link": "https://tec.mx/es",
+      "size": "L"
+    },
+    {
+      "name": "Acuity Brands",
+      "img_path": "Acuity Brands Blanco.svg",
+      "link": "https://www.acuitybrands.com/",
+      "size": "L"
+    },
+    {
+      "name": "GitHub",
+      "img_path": "github.png",
+      "link": "https://github.com",
+      "size": "L",
+      "invert": true
+    },
+    {
+      "name": "Enerman",
+      "img_path": "Enerman.svg",
+      "link": "",
+      "size": "L"
+    },
+    {
+      "name": "DigiKey",
+      "img_path": "DigiKey.svg",
+      "link": "https://www.digikey.com.mx/",
       "size": "L"
     },
     {
       "name": "3D Factory",
       "img_path": "3d-factory.avif",
       "link": "https://3dfactory.mx/",
-      "size": "L"
-    },
-    {
-      "name": "Altium",
-      "img_path": "altium.png",
-      "link": "https://www.altium.com/",
-      "size": "L"
-    },
-    {
-      "name": "Github",
-      "img_path": "github.png",
-      "link": "https://github.com",
-      "size": "L"
+      "size": "L",
+      "invert": true
     }
   ],
   "packages": [

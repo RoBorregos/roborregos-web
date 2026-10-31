@@ -1,0 +1,119 @@
+{
+  "period": {
+    "year": 2026,
+    "month": 9
+  },
+  "currency": "MXN",
+  "updated_at": "2026-09-16T04:00:00Z",
+  "donors": [
+    {
+      "id": "1",
+      "name": "3D Factory",
+      "kind": "company",
+      "anonymous": false,
+      "amount": 48000,
+      "donations_count": 2,
+      "logo_url": null,
+      "message": {
+        "es": "¡Mucho éxito en RoboCup! Orgullosos de imprimir con ustedes.",
+        "en": "Good luck at RoboCup! Proud to print alongside you."
+      }
+    },
+    {
+      "id": "2",
+      "name": "Mariana Elizondo",
+      "kind": "individual",
+      "anonymous": false,
+      "amount": 32500,
+      "donations_count": 1,
+      "logo_url": null,
+      "message": {
+        "es": "De una exalumna que sigue soñando con robots.",
+        "en": "From an alumna who still dreams about robots."
+      }
+    },
+    {
+      "id": "3",
+      "name": "",
+      "kind": "individual",
+      "anonymous": true,
+      "amount": 25000,
+      "donations_count": 3,
+      "logo_url": null,
+      "message": {
+        "es": "¡Sigan construyendo!",
+        "en": "Keep building!"
+      }
+    },
+    {
+      "id": "4",
+      "name": "Altium",
+      "kind": "company",
+      "anonymous": false,
+      "amount": 18000,
+      "donations_count": 1,
+      "logo_url": null,
+      "message": null
+    },
+    {
+      "id": "5",
+      "name": "Héctor Villarreal",
+      "kind": "individual",
+      "anonymous": false,
+      "amount": 12000,
+      "donations_count": 4,
+      "logo_url": null,
+      "message": null
+    },
+    {
+      "id": "6",
+      "name": "Grupo Robotec",
+      "kind": "company",
+      "anonymous": false,
+      "amount": 9500,
+      "donations_count": 1,
+      "logo_url": null,
+      "message": null
+    },
+    {
+      "id": "7",
+      "name": "Ana Sofía Treviño",
+      "kind": "individual",
+      "anonymous": false,
+      "amount": 6000,
+      "donations_count": 2,
+      "logo_url": null,
+      "message": null
+    },
+    {
+      "id": "8",
+      "name": "",
+      "kind": "individual",
+      "anonymous": true,
+      "amount": 4200,
+      "donations_count": 1,
+      "logo_url": null,
+      "message": null
+    },
+    {
+      "id": "9",
+      "name": "Generación 2019",
+      "kind": "company",
+      "anonymous": false,
+      "amount": 3000,
+      "donations_count": 6,
+      "logo_url": null,
+      "message": null
+    },
+    {
+      "id": "10",
+      "name": "Luis Fernando Marín",
+      "kind": "individual",
+      "anonymous": false,
+      "amount": 1500,
+      "donations_count": 1,
+      "logo_url": null,
+      "message": null
+    }
+  ]
+}
