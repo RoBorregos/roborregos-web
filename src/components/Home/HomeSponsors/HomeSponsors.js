@@ -7,6 +7,7 @@ type SponsorType = {
   img_path: string,
   link: string,
   size?: string,
+  invert?: boolean,
 };
 
 type Props = {
@@ -25,9 +26,12 @@ const HomeSponsors = ({ sponsors }: Props) => {
           <h2 className="font-anton text-lg uppercase tracking-[0.3em] text-gray-300">Our Sponsors</h2>
           <span className="h-px flex-1 bg-gray-700" />
         </div>
-        <div className="grid grid-cols-2 gap-4 md:grid-cols-3">
+        {/* flex-wrap + justify-center keeps an incomplete last row centered */}
+        <div className="flex flex-wrap justify-center gap-4">
           {sponsorLarge.map((sponsor) => (
-            <HomeSingleSponsor key={sponsor.name} sponsor={sponsor} large />
+            <div key={sponsor.name} className="w-[calc(50%-0.5rem)] md:w-[calc((100%-2rem)/3)]">
+              <HomeSingleSponsor sponsor={sponsor} large />
+            </div>
           ))}
         </div>
         <div className="mt-4 grid grid-cols-2 gap-4 md:grid-cols-4">
