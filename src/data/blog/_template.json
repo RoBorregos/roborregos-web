@@ -1,0 +1,28 @@
+{
+  "title": { "es": "Título de la publicación", "en": "Post title" },
+  "date": "2026-11-09",
+  "author": "RoBorregos",
+  "cover": "my-post/cover.jpg",
+  "summary": {
+    "es": "Una o dos frases que aparecen en la tarjeta de la página de inicio.",
+    "en": "One or two sentences shown on the Home page card."
+  },
+  "draft": true,
+  "content": [
+    {
+      "type": "paragraph",
+      "text": {
+        "es": "Cada bloque es un párrafo, subtítulo, imagen o video. Cualquier texto puede ser un string simple o un objeto con 'es' y 'en'.",
+        "en": "Each block is a paragraph, heading, image or video. Any text can be a plain string or an object with 'es' and 'en'."
+      }
+    },
+    { "type": "heading", "text": { "es": "Un subtítulo", "en": "A heading" } },
+    {
+      "type": "image",
+      "src": "my-post/photo.jpg",
+      "caption": { "es": "Pie de foto opcional", "en": "Optional caption" }
+    },
+    { "type": "image", "src": "https://example.com/also-works-with-urls.jpg" },
+    { "type": "video", "src": "https://www.youtube.com/embed/VIDEO_ID" }
+  ]
+}

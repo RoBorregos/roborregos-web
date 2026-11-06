@@ -101,6 +101,16 @@ to run in the background, on Unix.
 
 Use `Ctrl + C` to exit the logs and turn the application down.
 
+## Publishing a blog post
+
+Blog posts show up on the Home page (below Mission/Vision) and at `/blog/<slug>`. Each post is a JSON file added with a pull request; merging it to `develop` publishes it.
+
+1. Copy `src/data/blog/_template.json` to `src/data/blog/<slug>.json` (e.g. `larc-2026.json`). The file name becomes the URL.
+2. Put the post's images in `src/images/blog/<slug>/` and reference them relative to `src/images/blog/` (e.g. `"cover": "larc-2026/cover.jpg"`). Full `https://` image URLs also work. Keep images under ~500 KB.
+3. Fill in `title`, `date` (`YYYY-MM-DD`), `summary` and the `content` blocks (`paragraph`, `heading`, `image`, `video` with a YouTube `/embed/` URL). Any text can be a plain string or `{ "es": "...", "en": "..." }`.
+4. Set `"draft": false` (drafts and files starting with `_` are hidden).
+5. Check it with `npm start`, then open a PR to `develop`.
+
 
 ## Devel setup
 

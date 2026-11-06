@@ -14,6 +14,8 @@ import Project from './components/Projects/Projects'
 import projectsData from './data/projects.json'
 import Footer from './components/Footer/Footer'
 import LanguageToggle from './components/Shared/LanguageToggle/LanguageToggle'
+import Blog from './components/Blog/Blog'
+import BlogPost from './components/Blog/BlogPost'
 
 const ScrollToTop = () => {
   const { pathname } = useLocation()
@@ -69,6 +71,8 @@ const App = () => {
             <Route path="/projects" component={() => <Project projectsData={projectsData} language={language} />} />
             <Route path="/candidates" component={() => <Candidates language={language} />} />
             <Route path="/support-us" component={() => <SupportUs language={language} />} />
+            <Route path="/blog/:slug" render={({ match }) => <BlogPost slug={match.params.slug} language={language} />} />
+            <Route path="/blog" component={() => <Blog language={language} />} />
             <Route component={Home} />
           </Switch>
         </main>
