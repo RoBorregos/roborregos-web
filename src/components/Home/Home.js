@@ -6,6 +6,7 @@ import HomeSponsors from './HomeSponsors/HomeSponsors'
 import HomeMisionVision from './HomeMisionVision/HomeMisionVision'
 import sponsorsData from '../../data/sponsors.json'
 import HomeCarousel from './HomeCarousel/HomeCarousel'
+import HomeBlog from './HomeBlog/HomeBlog'
 
 const Home = ({ language }: { language: number }) => {
   document.title = 'RoBorregos | Home'
@@ -15,6 +16,7 @@ const Home = ({ language }: { language: number }) => {
       <HomeHeader language={language} />
       <HomeMiniInformation />
       <HomeMisionVision />
+      <HomeBlog language={language} />
       <HomeCarousel />
       <HomeSponsors sponsors={sponsorsData.sponsors} />
     </>
