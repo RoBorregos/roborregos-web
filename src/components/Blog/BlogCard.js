@@ -15,14 +15,12 @@ const BlogCard = ({ post, language }: Props) => (
     to={`/blog/${post.slug}`}
     className="group flex flex-col overflow-hidden rounded-xl bg-card"
   >
-    <div className="overflow-hidden">
-      <img
-        src={resolveImage(post.cover)}
-        onError={onImageError}
-        alt=""
-        className="aspect-video w-full object-cover transition duration-500 group-hover:scale-105"
-      />
-    </div>
+    <img
+      src={resolveImage(post.cover)}
+      onError={onImageError}
+      alt=""
+      className="aspect-[3/2] w-full object-cover"
+    />
     <div className="flex flex-1 flex-col p-6">
       <time dateTime={post.date} className="text-sm text-gray-400">
         {formatDate(post.date, language)}

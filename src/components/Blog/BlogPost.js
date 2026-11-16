@@ -1,5 +1,5 @@
 // @flow
-import React from 'react'
+import React, { useLayoutEffect } from 'react'
 import { Link } from 'react-router-dom'
 import {
   getPost, localize, resolveImage, formatDate, onImageError, type Block,
@@ -24,12 +24,26 @@ const renderBlock = (block: Block, index: number, language: number) => {
           <img
             src={resolveImage(block.src)}
             onError={onImageError}
-            alt={localize(block.caption, language)}
+            alt={localize(block.alt || block.caption, language)}
             className="w-full rounded-xl"
           />
           {block.caption ? (
             <figcaption className="mt-2 text-center text-sm text-gray-400">
               {localize(block.caption, language)}
+            </figcaption>
+          ) : null}
+        </figure>
+      )
+    case 'quote':
+      return (
+        <figure key={index} className="my-10 border-l-4 border-roboblue pl-6">
+          <blockquote className="text-xl italic leading-relaxed text-gray-100">
+            {`“${localize(block.text, language)}”`}
+          </blockquote>
+          {block.author ? (
+            <figcaption className="mt-4">
+              <span className="font-anton uppercase tracking-wide text-white">{block.author}</span>
+              {block.role ? <span className="text-gray-400">{` · ${localize(block.role, language)}`}</span> : null}
             </figcaption>
           ) : null}
         </figure>
@@ -56,7 +70,25 @@ const renderBlock = (block: Block, index: number, language: number) => {
   }
 }
 
+// The site sets `html { scroll-behavior: smooth }`, so the global scroll-to-top animates
+// up from wherever Home was scrolled. Open posts at the top instantly, before paint.
+const useInstantScrollTop = (slug: string) => {
+  useLayoutEffect(() => {
+    const root = document.documentElement
+    if (!root) return undefined
+    root.style.scrollBehavior = 'auto'
+    // Reading the computed style forces the browser to apply the override now; without
+    // this, scrollTo uses the stale `smooth` value and still animates.
+    // eslint-disable-next-line no-void
+    void window.getComputedStyle(root).scrollBehavior
+    window.scrollTo(0, 0)
+    root.style.scrollBehavior = ''
+    return undefined
+  }, [slug])
+}
+
 const BlogPost = ({ slug, language }: Props) => {
+  useInstantScrollTop(slug)
   const post = getPost(slug)
   const back = (
     <Link to="/" className="text-sm text-gray-400 transition duration-300 hover:text-bright">
@@ -84,13 +116,23 @@ const BlogPost = ({ slug, language }: Props) => {
   return (
     <article className="mx-auto max-w-3xl px-6 py-12">
       {back}
-      <h1 className="mt-6 font-jersey text-5xl leading-tight text-bright md:text-7xl">{title}</h1>
+      {post.category ? (
+        <p className="mt-6 font-anton text-sm uppercase tracking-widest text-bright">
+          {localize(post.category, language)}
+        </p>
+      ) : null}
+      <h1 className={`${post.category ? 'mt-2' : 'mt-6'} font-jersey text-5xl leading-tight text-bright md:text-7xl`}>{title}</h1>
       <p className="mt-4 text-sm text-gray-400">
         <time dateTime={post.date}>{formatDate(post.date, language)}</time>
         {post.author ? ` · ${post.author}` : ''}
       </p>
       {post.cover ? (
-        <img src={resolveImage(post.cover)} onError={onImageError} alt="" className="mt-8 w-full rounded-xl" />
+        <img
+          src={resolveImage(post.cover)}
+          onError={onImageError}
+          alt={localize(post.coverAlt, language)}
+          className="mt-8 w-full rounded-xl"
+        />
       ) : null}
       <div className="mt-4">
         {(post.content || []).map((block, i) => renderBlock(block, i, language))}

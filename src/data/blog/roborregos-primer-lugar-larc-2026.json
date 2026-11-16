@@ -1,0 +1,106 @@
+{
+  "title": {
+    "es": "RoBorregos conquista el primer lugar en la 26.ª edición de la \"Latin American Robotics Competition (LARC 2026)\"",
+    "en": "RoBorregos takes first place at the 26th Latin American Robotics Competition (LARC 2026)"
+  },
+  "category": "LARC Open - Colombia",
+  "date": "2026-11-16",
+  "author": "Ximena Naomi Ruiz Naal y Ana Karen Ramírez Juárez",
+  "cover": "larc-2026/equipo-robot.jpg",
+  "coverAlt": {
+    "es": "Integrantes de RoBorregos sosteniendo la bandera del equipo detrás de su robot autónomo recolector de café en LARC 2026",
+    "en": "RoBorregos members holding the team flag behind their autonomous coffee-harvesting robot at LARC 2026"
+  },
+  "summary": {
+    "es": "Tras ocho meses de desarrollo, el equipo representativo del Tec de Monterrey obtuvo el primer lugar en la categoría LARC Open en Bogotá, Colombia, con un robot autónomo recolector de café.",
+    "en": "After eight months of development, Tec de Monterrey's representative team won first place in the LARC Open category in Bogotá, Colombia, with an autonomous coffee-harvesting robot."
+  },
+  "content": [
+    {
+      "type": "paragraph",
+      "text": {
+        "es": "Del 2 al 6 de noviembre se celebró en la Universidad Militar Nueva Granada, en Bogotá, Colombia, la 26.ª edición de la competencia internacional de robótica. Realizada en conjunto con el Latin American Robotics Symposium (LARS) y respaldada por la IEEE, esta competencia es el evento académico de robótica más importante de América Latina. El evento internacional reunió en más de tres categorías diferentes a delegaciones de nueve países, encontrando a Brasil, Chile, México, Ecuador, Perú, Uruguay, Australia, Estados Unidos y Colombia.",
+        "en": "From November 2 to 6, the Universidad Militar Nueva Granada in Bogotá, Colombia, hosted the 26th edition of this international robotics competition. Held alongside the Latin American Robotics Symposium (LARS) and backed by the IEEE, it is the most important academic robotics event in Latin America. Across more than three categories, the event brought together delegations from nine countries: Brazil, Chile, Mexico, Ecuador, Peru, Uruguay, Australia, the United States and Colombia."
+      }
+    },
+    {
+      "type": "paragraph",
+      "text": {
+        "es": "Para llegar a esta competencia, el equipo de RoBorregos aseguró su pase nacional tras superar a once equipos en la fase preliminar del Torneo Mexicano de Robótica (TMR 2026). Con un robot autónomo recolector de café en la categoría LARC Open, el equipo de RoBorregos del Tec de Monterrey, conformado por Hans Velarde en mecánica, Erick Flores en electrónica, Max Fajardo en visión y Ximena García en control, obtuvo el 1.er puesto, seguido por el semillero ARCoS en 2.º lugar.",
+        "en": "To get here, RoBorregos earned its national spot by beating eleven teams in the preliminary round of the Mexican Robotics Tournament (TMR 2026). With an autonomous coffee-harvesting robot in the LARC Open category, the Tec de Monterrey team, made up of Hans Velarde on mechanics, Erick Flores on electronics, Max Fajardo on vision and Ximena García on control, took 1st place, followed by the ARCoS research group in 2nd."
+      }
+    },
+    {
+      "type": "heading",
+      "text": {
+        "es": "Ocho meses de desarrollo rumbo al podio",
+        "en": "Eight months of work on the road to the podium"
+      }
+    },
+    {
+      "type": "paragraph",
+      "text": {
+        "es": "El proyecto fue el resultado de ocho meses de preparación continua dedicados al diseño, desarrollo y programación del robot, el cual fue evaluado junto con otros siete equipos dentro de la competencia.",
+        "en": "The project was the result of eight months of continuous preparation devoted to designing, building and programming the robot, which competed against seven other teams."
+      }
+    },
+    {
+      "type": "quote",
+      "author": "Max Fajardo",
+      "role": { "es": "Visión", "en": "Vision" },
+      "text": {
+        "es": "Me llevo la satisfacción de haber representado a México internacionalmente y la experiencia de crecer con el equipo. Esta competencia también me hizo darme cuenta de cuánto talento, creatividad, potencial y capacidad hay en México. Y bueno, al final dormir 8 horas era opcional, pero valió la pena.",
+        "en": "I'm taking home the satisfaction of having represented Mexico internationally and the experience of growing with the team. This competition also made me realize how much talent, creativity, potential and ability there is in Mexico. And well, in the end, sleeping 8 hours was optional, but it was worth it."
+      }
+    },
+    {
+      "type": "heading",
+      "text": {
+        "es": "Resiliencia y meta alcanzada",
+        "en": "Resilience and a goal achieved"
+      }
+    },
+    {
+      "type": "paragraph",
+      "text": {
+        "es": "Hablando con los integrantes, nos cuentan que el camino hacia la competencia estuvo lleno de altibajos y de una fuerte presión tanto externa como propia. Sin embargo, el respaldo del equipo, desde quienes apoyaron detrás con conocimiento, apoyo moral y ayuda, hasta los integrantes de LARC Open 2025 y de RoBorreGoats, fue clave para sacar el proyecto adelante.",
+        "en": "The team members told us the road to the competition was full of ups and downs and heavy pressure, both from outside and from themselves. Even so, the support of the wider team, from those who helped behind the scenes with knowledge, encouragement and a hand, to the members of LARC Open 2025 and RoBorreGoats, was key to pulling the project through."
+      }
+    },
+    {
+      "type": "paragraph",
+      "text": {
+        "es": "En la pista, el robot cumplió justo con lo planeado y resolvió la cancha completa con 251 puntos finales, un desempeño que durante la premiación despertó comentarios entre los asistentes destacando que llegaban \"bien preparados para ganar\".",
+        "en": "On the field, the robot did exactly what was planned and cleared the entire course with a final score of 251 points, a performance that during the awards ceremony had attendees remarking that the team had arrived \"well prepared to win.\""
+      }
+    },
+    {
+      "type": "quote",
+      "author": "Ximena García",
+      "role": { "es": "Control", "en": "Control" },
+      "text": {
+        "es": "Esta competencia me ha enseñado principalmente resiliencia ante la incertidumbre y las dificultades; hay que luchar por lo que se quiere sin importar la experiencia o el conocimiento. Mi satisfacción más grande es irme feliz por ganar como se tenía pensado. Que el robot, en todas sus áreas, sea reflejo del esmero de quienes lo construyen.",
+        "en": "Above all, this competition taught me resilience in the face of uncertainty and difficulty; you have to fight for what you want regardless of your experience or knowledge. My biggest satisfaction is leaving happy after winning the way we planned. May the robot, in every one of its areas, reflect the care of the people who build it."
+      }
+    },
+    {
+      "type": "image",
+      "src": "larc-2026/delegacion.jpg",
+      "alt": {
+        "es": "Delegación completa de participantes y equipos de robótica reunidos en LARC 2026",
+        "en": "The full delegation of participants and robotics teams gathered at LARC 2026"
+      },
+      "caption": {
+        "es": "Delegación de participantes junto a sus prototipos durante LARC 2026 en Bogotá.",
+        "en": "Participants with their prototypes during LARC 2026 in Bogotá."
+      }
+    },
+    {
+      "type": "paragraph",
+      "text": {
+        "es": "Les deseamos las más sinceras felicitaciones al equipo por este gran logro conseguido, demostrando que, sin rendirse nunca y saliendo adelante con la cabeza en alto, representan con orgullo lo que significa ser un RoBorrego.",
+        "en": "Our most sincere congratulations to the team on this great achievement. By never giving up and pushing forward with their heads held high, they proudly represent what it means to be a RoBorrego."
+      }
+    }
+  ]
+}
