@@ -8,10 +8,13 @@ import placeholder from '../../images/placeholder-rectangle.png'
 type Localized = string | { es?: string, en?: string };
 
 export type Block = {
-  type: 'paragraph' | 'heading' | 'image' | 'video',
+  type: 'paragraph' | 'heading' | 'image' | 'video' | 'quote',
   text?: Localized,
   src?: string,
+  alt?: Localized,
   caption?: Localized,
+  author?: string,
+  role?: Localized,
 };
 
 export type Post = {
@@ -19,7 +22,9 @@ export type Post = {
   title: Localized,
   date: string,
   author?: string,
+  category?: Localized,
   cover?: string,
+  coverAlt?: Localized,
   summary?: Localized,
   draft?: boolean,
   content: Array<Block>,
