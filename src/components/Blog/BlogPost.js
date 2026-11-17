@@ -10,6 +10,15 @@ type Props = {
   language: number,
 };
 
+// Turns inline `[text](https://url)` into links; only http(s) URLs are accepted.
+const renderLinks = (text: string) => text.split(/(\[[^\]]+\]\(https?:\/\/[^)\s]+\))/g).map((part, i) => {
+  const m = part.match(/^\[([^\]]+)\]\((https?:\/\/[^)\s]+)\)$/)
+  return m ? (
+    // eslint-disable-next-line react/no-array-index-key
+    <a key={i} href={m[2]} target="_blank" rel="noopener noreferrer" className="text-bright underline hover:text-white">{m[1]}</a>
+  ) : part
+})
+
 const renderBlock = (block: Block, index: number, language: number) => {
   switch (block.type) {
     case 'heading':
@@ -64,7 +73,7 @@ const renderBlock = (block: Block, index: number, language: number) => {
     default:
       return (
         <p key={index} className="mt-5 text-lg leading-relaxed text-gray-200">
-          {localize(block.text, language)}
+          {renderLinks(localize(block.text, language))}
         </p>
       )
   }
