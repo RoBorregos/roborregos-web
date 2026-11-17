@@ -84,6 +84,20 @@
       }
     },
     {
+    "type": "paragraph",
+    "text": {
+      "es": "Este logro también es de quienes creen en el equipo. Agradecemos especialmente a [dominios.mx](https://dominios.mx) por su apoyo como patrocinador de RoBorregos, así como a todos nuestros aliados, que hacen posible que sigamos representando a México en competencias nacionales e internacionales.",
+      "en": "This achievement also belongs to those who believe in the team. We especially thank [dominios.mx](https://dominios.mx) for its support as a RoBorregos sponsor, as well as all our partners, who make it possible for us to keep representing Mexico in national and international competitions."
+    }
+  },
+  {
+    "type": "paragraph",
+    "text": {
+      "es": "La historia también fue publicada por El Norte en su nota [\"Cosechan triunfo con robot cafetalero\"](https://www.elnorte.com/cosechan-triunfo-con-robot-cafetalero/ar3315412). Si tu empresa quiere impulsar al próximo equipo campeón, conoce cómo colaborar con nosotros en la sección Apóyanos.",
+      "en": "The story was also covered by El Norte in its article [\"Cosechan triunfo con robot cafetalero\"](https://www.elnorte.com/cosechan-triunfo-con-robot-cafetalero/ar3315412). If your company would like to back the next champion team, learn how to partner with us in our Support Us section."
+    }
+  },
+    {
       "type": "image",
       "src": "larc-2026/delegacion.jpg",
       "alt": {
