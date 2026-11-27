@@ -14,8 +14,8 @@
     {
       "type": "paragraph",
       "text": {
-        "es": "Cada bloque es un párrafo, subtítulo, cita, imagen o video. Cualquier texto puede ser un string simple o un objeto con 'es' y 'en'.",
-        "en": "Each block is a paragraph, heading, quote, image or video. Any text can be a plain string or an object with 'es' and 'en'."
+        "es": "Cada bloque es un párrafo, subtítulo, cita, imagen, video o podio. Cualquier texto puede ser un string simple o un objeto con 'es' y 'en'.",
+        "en": "Each block is a paragraph, heading, quote, image, video or podium. Any text can be a plain string or an object with 'es' and 'en'."
       }
     },
     { "type": "heading", "text": { "es": "Un subtítulo", "en": "A heading" } },
@@ -30,6 +30,14 @@
       "author": "Nombre",
       "role": { "es": "Área", "en": "Area" },
       "text": { "es": "Texto de la cita, sin comillas.", "en": "Quote text, without quotation marks." }
+    },
+    {
+      "type": "podium",
+      "title": { "es": "Podio Categoría A", "en": "Category A podium" },
+      "results": [
+        { "place": 1, "team": "Equipo", "school": "Escuela" },
+        { "place": 2, "team": "Equipo", "school": { "es": "Equipo independiente", "en": "Independent team" } }
+      ]
     },
     { "type": "image", "src": "https://example.com/also-works-with-urls.jpg" },
     { "type": "video", "src": "https://www.youtube.com/embed/VIDEO_ID" }

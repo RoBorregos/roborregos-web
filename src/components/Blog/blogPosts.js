@@ -7,14 +7,22 @@ import placeholder from '../../images/placeholder-rectangle.png'
 
 type Localized = string | { es?: string, en?: string };
 
+export type PodiumResult = {
+  place: number,
+  team: string,
+  school?: Localized,
+};
+
 export type Block = {
-  type: 'paragraph' | 'heading' | 'image' | 'video' | 'quote',
+  type: 'paragraph' | 'heading' | 'image' | 'video' | 'quote' | 'podium',
   text?: Localized,
   src?: string,
   alt?: Localized,
   caption?: Localized,
   author?: string,
   role?: Localized,
+  title?: Localized,
+  results?: Array<PodiumResult>,
 };
 
 export type Post = {
