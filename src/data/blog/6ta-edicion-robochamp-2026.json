@@ -1,0 +1,209 @@
+{
+  "title": {
+    "es": "Se celebra la 6ta edición del torneo nacional de robótica a nivel preparatoria, RoboChamp",
+    "en": "RoboChamp, the national high school robotics tournament, celebrates its 6th edition"
+  },
+  "category": { "es": "RoboChamp - 6ta edición", "en": "RoboChamp - 6th edition" },
+  "date": "2026-11-14",
+  "author": "Ana Karen Ramírez Juárez y Ximena Naomi Ruiz Naal",
+  "cover": "robochamp-2026/clausura-grupal.jpg",
+  "coverAlt": {
+    "es": "Foto grupal de participantes, ganadores y organizadores de RoBorregos frente a la pantalla de RoboChamp 2026 al cierre del torneo",
+    "en": "Group photo of participants, winners and RoBorregos organizers in front of the RoboChamp 2026 screen at the close of the tournament"
+  },
+  "summary": {
+    "es": "Más de 35 equipos de 17 planteles educativos se reunieron en el Pabellón Carreta del Tecnológico de Monterrey.",
+    "en": "More than 35 teams from 17 schools gathered at Pabellón Carreta on the Tecnológico de Monterrey campus."
+  },
+  "content": [
+    {
+      "type": "paragraph",
+      "text": {
+        "es": "Este evento de robótica reunió a más de 35 equipos de 17 planteles educativos provenientes de toda la república en el recinto de Pabellón Carreta del Tecnológico de Monterrey, donde los equipos Butter de PrepaTec Cumbres y Nostromo-CR de la preparatoria CIDEB se coronaron como campeones en las categorías de principiantes y avanzados, respectivamente.",
+        "en": "This robotics event brought together more than 35 teams from 17 schools across Mexico at Pabellón Carreta on the Tecnológico de Monterrey campus, where Butter from PrepaTec Cumbres and Nostromo-CR from the CIDEB high school were crowned champions of the beginner and advanced categories, respectively."
+      }
+    },
+    {
+      "type": "paragraph",
+      "text": {
+        "es": "Este sábado 14 de noviembre arrancó con el reto de diseñar, ensamblar y programar robots teleoperados para superar los retos de la 6ta edición de RoboChamp 2026. El torneo fue organizado por la Escuela de Ingeniería y Ciencias del Tecnológico de Monterrey en colaboración con el equipo representativo de robótica RoBorregos.",
+        "en": "On Saturday, November 14, teams took on the challenge of designing, assembling and programming teleoperated robots to beat the challenges of the 6th edition of RoboChamp 2026. The tournament was organized by Tecnológico de Monterrey's School of Engineering and Sciences in collaboration with RoBorregos, the university's representative robotics team."
+      }
+    },
+    {
+      "type": "paragraph",
+      "text": {
+        "es": "Desde las 9:00 am hasta las 7:00 pm, el Pabellón Carreta se convirtió en el espacio donde cada equipo demostró sus increíbles habilidades y pasión por el mundo de la robótica. Durante la jornada participaron seis planteles del sistema PrepaTec (CCU, CEGS, CEGL, CSC, Saltillo y CVAL), cinco de la UANL (Preparatorias 7, 9, 20, CIDEB y CIDEB Mederos) y seis instituciones públicas y privadas invitadas (Alfa Fundación, Instituto Central Coahuila, CBTIS 137 de Nuevo Laredo, CBTIS 103 de Ciudad Madero, Colegio México Orizaba y CUFM).",
+        "en": "From 9:00 a.m. to 7:00 p.m., Pabellón Carreta became the place where every team showed off its impressive skills and passion for robotics. Over the day, six PrepaTec campuses took part (CCU, CEGS, CEGL, CSC, Saltillo and CVAL), along with five UANL schools (Preparatorias 7, 9 and 20, CIDEB and CIDEB Mederos) and six invited public and private institutions (Alfa Fundación, Instituto Central Coahuila, CBTIS 137 of Nuevo Laredo, CBTIS 103 of Ciudad Madero, Colegio México Orizaba and CUFM)."
+      }
+    },
+    {
+      "type": "heading",
+      "text": {
+        "es": "Principiantes: Desde cero a la pista en un solo día",
+        "en": "Beginners: From zero to the track in a single day"
+      }
+    },
+    {
+      "type": "paragraph",
+      "text": {
+        "es": "En la categoría principiantes, 18 equipos acudieron sin un robot ensamblado. Durante la mañana, los integrantes de RoBorregos impartieron talleres de tres áreas diferentes de manera simultánea: mecánica, electrónica y programación, con el objetivo de brindarles a los jóvenes todas las herramientas necesarias para que al final los participantes crearan su propio robot antes de enfrentarse en las rondas de competencia.",
+        "en": "In the beginner category, 18 teams arrived without an assembled robot. During the morning, RoBorregos members ran simultaneous workshops in three areas (mechanics, electronics and programming) to give the students every tool they needed to build their own robot before facing off in the competition rounds."
+      }
+    },
+    {
+      "type": "image",
+      "src": "robochamp-2026/taller-principiantes.jpg",
+      "alt": {
+        "es": "Participante ensamblando y conectando circuitos en su robot durante los talleres de la categoría principiantes",
+        "en": "A participant assembling and wiring the circuits on their robot during the beginner category workshops"
+      }
+    },
+    {
+      "type": "paragraph",
+      "text": {
+        "es": "Para muchos participantes, el torneo representó su primer acercamiento a una competencia de este estilo.",
+        "en": "For many participants, the tournament was their first experience with a competition of this kind."
+      }
+    },
+    {
+      "type": "quote",
+      "author": "Pulse",
+      "role": { "es": "Integrantes del equipo, categoría principiantes", "en": "Team members, beginner category" },
+      "text": {
+        "es": "Nos interesó entrar porque lo vimos como una oportunidad para aprender sobre un tema que desconocemos. Nos gustó poder conocer personas muy preparadas, ingenieros y estudiantes de otros lugares que nos explicaron cómo trabajar y nos ayudaron a resolver problemas al momento.",
+        "en": "We wanted to take part because we saw it as a chance to learn about a subject we didn't know. We loved getting to meet very knowledgeable people, engineers and students from other places who explained how to work and helped us solve problems on the spot."
+      }
+    },
+    {
+      "type": "paragraph",
+      "text": {
+        "es": "Los integrantes del equipo Pulse destacaron la increíble organización de RoBorregos, impulsada por los doctores Ricardo Ipiña, Erick Ramírez, Jorge Iván Hidalgo, Alexandro Ortiz y Erick Andrade.",
+        "en": "The Pulse team members also highlighted the outstanding organization by RoBorregos, backed by Drs. Ricardo Ipiña, Erick Ramírez, Jorge Iván Hidalgo, Alexandro Ortiz and Erick Andrade."
+      }
+    },
+    {
+      "type": "paragraph",
+      "text": {
+        "es": "Tras cuatro rondas de clasificación, las semifinales definieron a los finalistas: Butter venció a Pantera Volt (215 puntos) y Metanoia superó a Robonuts (135 puntos). En la batalla por el título, Butter se nombró campeón con 380 puntos.",
+        "en": "After four qualifying rounds, the semifinals set the final: Butter beat Pantera Volt (215 points) and Metanoia got past Robonuts (135 points). In the battle for the title, Butter was crowned champion with 380 points."
+      }
+    },
+    {
+      "type": "podium",
+      "title": { "es": "Podio Categoría A (Principiantes)", "en": "Category A podium (Beginners)" },
+      "results": [
+        { "place": 1, "team": "Butter", "school": "PrepaTec CCU" },
+        { "place": 2, "team": "Metanoia", "school": { "es": "Equipo independiente", "en": "Independent team" } },
+        { "place": 3, "team": "Pantera Volt", "school": "Instituto Central Coahuila" }
+      ]
+    },
+    {
+      "type": "heading",
+      "text": {
+        "es": "Avanzados: Estrategia y resiliencia en la pista",
+        "en": "Advanced: Strategy and resilience on the track"
+      }
+    },
+    {
+      "type": "paragraph",
+      "text": {
+        "es": "La categoría avanzados reunió a 17 equipos que compitieron con robots previamente diseñados. Tras la fase de grupos matutina, avanzaron al Top 4 los equipos CHAMPI10N (285 pts), Alpha Bees Yellow (280 pts), Nostromo-CR (638 pts) y Sirius (80 pts).",
+        "en": "The advanced category brought together 17 teams competing with robots they had designed beforehand. After the morning group stage, CHAMPI10N (285 pts), Alpha Bees Yellow (280 pts), Nostromo-CR (638 pts) and Sirius (80 pts) advanced to the Top 4."
+      }
+    },
+    {
+      "type": "paragraph",
+      "text": {
+        "es": "En la semifinal, Alpha Bees Yellow derrotó a CHAMPI10N con 281 puntos, mientras que Nostromo-CR se impuso ante Sirius con 350 puntos. En el encuentro decisivo, Nostromo-CR aseguró el campeonato al obtener 373 puntos en la última ronda.",
+        "en": "In the semifinals, Alpha Bees Yellow defeated CHAMPI10N with 281 points, while Nostromo-CR prevailed over Sirius with 350 points. In the deciding match, Nostromo-CR secured the championship by scoring 373 points in the final round."
+      }
+    },
+    {
+      "type": "quote",
+      "author": "Nostromo-CR",
+      "role": { "es": "Campeones de la categoría avanzados", "en": "Advanced category champions" },
+      "text": {
+        "es": "Tuvimos la oportunidad de poner a prueba nuestros conocimientos, resolver muchos problemas y aprender a solucionarlos en equipo. Fue una experiencia que nos permitió reforzar lo aprendido y mejorar nuestras habilidades individuales y grupales ante la necesidad.",
+        "en": "We had the chance to put our knowledge to the test, solve lots of problems and learn to fix them as a team. It was an experience that let us reinforce what we had learned and improve our individual and group skills when it counted."
+      }
+    },
+    {
+      "type": "paragraph",
+      "text": {
+        "es": "Por su parte, los representantes de CHAMPI10N, quienes obtuvieron el tercer puesto junto a su robot \"La Ranita\", destacaron el ambiente de la competencia y la capacidad de adaptación frente a las fallas técnicas.",
+        "en": "Meanwhile, the CHAMPI10N representatives, who took third place with their robot \"La Ranita\", highlighted the atmosphere of the competition and their ability to adapt to technical failures."
+      }
+    },
+    {
+      "type": "quote",
+      "author": "CHAMPI10N",
+      "role": { "es": "Tercer lugar, categoría avanzados", "en": "Third place, advanced category" },
+      "text": {
+        "es": "Disfrutamos cada momento, desde los nervios antes de competir hasta la emoción de vernos avanzar. Aunque hubo varios obstáculos propios de la robótica, logramos adaptarnos para mantenernos en pie.",
+        "en": "We enjoyed every moment, from the nerves before competing to the thrill of seeing ourselves move forward. Even with the obstacles that come with robotics, we managed to adapt and stay in the game."
+      }
+    },
+    {
+      "type": "image",
+      "src": "robochamp-2026/competencia-pista.jpg",
+      "alt": {
+        "es": "Estudiantes poniendo a prueba su robot en la pista junto a miembros de RoBorregos",
+        "en": "Students testing their robot on the track alongside RoBorregos members"
+      }
+    },
+    {
+      "type": "paragraph",
+      "text": {
+        "es": "Su mentor, Mauricio García Fuentes, coincidió en el valor formativo del encuentro.",
+        "en": "Their mentor, Mauricio García Fuentes, also pointed to the event's value as a learning experience."
+      }
+    },
+    {
+      "type": "quote",
+      "author": "Mauricio García Fuentes",
+      "role": { "es": "Mentor de CHAMPI10N", "en": "CHAMPI10N mentor" },
+      "text": {
+        "es": "Uno de los mayores aprendizajes es ver cómo los estudiantes enfrentan las dificultades, manejan la frustración y buscan soluciones sin rendirse. Sin duda estos eventos los motivan a seguir innovando y preparándose para futuros desafíos.",
+        "en": "One of the biggest lessons is seeing how students face difficulties, handle frustration and look for solutions without giving up. Events like this no doubt motivate them to keep innovating and preparing for future challenges."
+      }
+    },
+    {
+      "type": "podium",
+      "title": { "es": "Podio Categoría B (Avanzados)", "en": "Category B podium (Advanced)" },
+      "results": [
+        { "place": 1, "team": "Nostromo-CR", "school": "CIDEB" },
+        { "place": 2, "team": "Alpha Bees Yellow", "school": "Alfa Fundación" },
+        { "place": 3, "team": "CHAMPI10N", "school": "CIDEB" }
+      ]
+    },
+    {
+      "type": "heading",
+      "text": {
+        "es": "Un mes de preparación estudiantil",
+        "en": "A month of student preparation"
+      }
+    },
+    {
+      "type": "paragraph",
+      "text": {
+        "es": "La realización de RoboChamp 2026 implicó meses de trabajo previo por parte de los integrantes de RoBorregos y la Escuela de Ingeniería, periodo en el que diseñaron y armaron los kits de robótica, calibraron las pruebas técnicas y construyeron las pistas. Durante las diez horas de competencia, los integrantes de RoBorregos también impartieron talleres, fueron jueces y coordinadores logísticos.",
+        "en": "Putting on RoboChamp 2026 took months of groundwork by RoBorregos members and the School of Engineering, during which they designed and assembled the robotics kits, calibrated the technical tests and built the tracks. Throughout the ten hours of competition, RoBorregos members also ran workshops and served as judges and logistics coordinators."
+      }
+    },
+    {
+      "type": "paragraph",
+      "text": {
+        "es": "Al cierre de la premiación, los equipos ubicados en el podio recibieron diplomas oficiales y tarjetas de regalo de Amazon otorgadas por la Escuela de Ingeniería en reconocimiento a su gran desempeño.",
+        "en": "At the close of the awards ceremony, the teams on the podium received official diplomas and Amazon gift cards from the School of Engineering in recognition of their great performance."
+      }
+    },
+    {
+      "type": "paragraph",
+      "text": {
+        "es": "Sin duda, este evento marcó una experiencia enriquecedora para todos los participantes, siendo impulsados a continuar en las áreas de STEM y robótica. RoboChamp va más allá de una competencia: busca crear una comunidad en donde cada persona pueda aprender, desarrollarse y expresarse en este mundo tan grande que es la robótica.",
+        "en": "Without a doubt, this event was an enriching experience for every participant, encouraging them to keep going in STEM and robotics. RoboChamp goes beyond a competition: it seeks to build a community where everyone can learn, grow and express themselves in the vast world of robotics."
+      }
+    }
+  ]
+}

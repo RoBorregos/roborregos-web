@@ -57,6 +57,31 @@ const renderBlock = (block: Block, index: number, language: number) => {
           ) : null}
         </figure>
       )
+    case 'podium':
+      return (
+        <section key={index} className="my-8 rounded-xl bg-card px-6 py-5">
+          {block.title ? (
+            <h3 className="font-anton text-sm uppercase tracking-widest text-bright">
+              {localize(block.title, language)}
+            </h3>
+          ) : null}
+          <ol className="mt-2 divide-y divide-white/10">
+            {(block.results || []).map((result) => (
+              <li key={`${result.place}-${result.team}`} className="flex items-center gap-5 py-3">
+                <span className="w-8 shrink-0 text-center font-jersey text-4xl leading-none text-bright">
+                  {result.place}
+                </span>
+                <div>
+                  <p className="font-anton text-xl uppercase tracking-wide text-white">{result.team}</p>
+                  {result.school ? (
+                    <p className="text-sm text-gray-400">{localize(result.school, language)}</p>
+                  ) : null}
+                </div>
+              </li>
+            ))}
+          </ol>
+        </section>
+      )
     case 'video':
       return (
         <div key={index} className="my-8 aspect-video overflow-hidden rounded-xl">
